@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,12 +9,14 @@ public class Player : MonoBehaviour
     private GameControls controls;
     public float moveSpeed = 5f;
     public TextMeshPro display;
+    Rigidbody2D rb;
      
 
     void Awake()
     {
         controls = new GameControls();
         countdown = 100;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnEnable()
@@ -40,12 +43,7 @@ public class Player : MonoBehaviour
     {
         display.text = "" + countdown;
         Vector2 movement = controls.Player.Move.ReadValue<Vector2>();
-
-                transform.position += new Vector3(
-            movement.x,
-            movement.y,
-            0f
-        ) * moveSpeed * Time.deltaTime;
+        rb.linearVelocity = movement * moveSpeed;
         Debug.Log(countdown);
     }
 
