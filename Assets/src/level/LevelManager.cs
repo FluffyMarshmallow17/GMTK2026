@@ -9,6 +9,8 @@ public class LevelManager : MonoBehaviour
     public Boss boss;
     public List<MiniEnemy> miniEnemies;
 
+    public GameObject blockPrefab;
+
     void Awake()
     {
         time = 0;
@@ -20,10 +22,21 @@ public class LevelManager : MonoBehaviour
         if (time >= 1) {
            time = 0;
            decreaseCountdown(); 
+           spawnBlock();
         }
+        
+        
+    }
 
-        
-        
+    public void spawnBlock()
+    {
+        Vector3 spawnPosition = new Vector3(
+            UnityEngine.Random.Range(-10f, 10f),
+            UnityEngine.Random.Range(-10f, 10f),
+            0
+        );
+
+        Instantiate(blockPrefab, spawnPosition, Quaternion.identity);
     }
 
     public void decreaseCountdown()
