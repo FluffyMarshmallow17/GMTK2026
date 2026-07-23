@@ -19,6 +19,11 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    void LateUpdate()
+    {
+        display.transform.rotation = Quaternion.identity;
+    }
+
     private void OnEnable()
     {
         controls.Player.Enable();
@@ -44,7 +49,7 @@ public class Player : MonoBehaviour
         display.text = "" + countdown;
         Vector2 movement = controls.Player.Move.ReadValue<Vector2>();
         rb.linearVelocity = movement * moveSpeed;
-        Debug.Log(countdown);
+        // Debug.Log(countdown);
     }
 
 }
