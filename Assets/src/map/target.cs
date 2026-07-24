@@ -23,8 +23,8 @@ public class Spin : MonoBehaviour
         transform.Rotate(0, 0, angularVelocity * Time.deltaTime);
         angularVelocity *= Mathf.Exp(-damping * Time.deltaTime);
 
-        if (Mathf.Abs(angularVelocity) < 1f)
-            angularVelocity = 0f;
+        if (Mathf.Abs(angularVelocity) < 2f)
+            angularVelocity = 2f;
 
         // Shrink back to original size
         transform.localScale = Vector3.Lerp(
