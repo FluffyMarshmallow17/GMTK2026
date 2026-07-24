@@ -34,6 +34,9 @@ public class Boss : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         Block block = other.gameObject.GetComponentInParent<Block>();
+        if (block == null)
+            return;
+
         countdown = block.applyAffect(countdown);
         Destroy(other.gameObject);
         material.SetFloat("GlowAmount", 2);

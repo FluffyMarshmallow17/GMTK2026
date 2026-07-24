@@ -63,6 +63,11 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        blocks.RemoveAll(b => b == null);
+        absorbedBlocks.RemoveAll(b => b == null);
+        inRange.RemoveAll(b => b == null);
+        if (inConnection == null)
+            inConnection = null;
 
         display.text = "" + countdown;
         Vector2 movement = controls.Player.Move.ReadValue<Vector2>();
@@ -109,8 +114,10 @@ public class Player : MonoBehaviour
 
         if (controls.Player.Absorb.WasPressedThisFrame())
         {
-            absorbedBlocks.Add(blocks[0]);
-            blocks.Remove(blocks[0]);
+            Block absorbed = blocks[0];
+            absorbedBlocks.Add(absorbed);
+            blocks.Remove(absorbed);
+            inRange.Remove(absorbed);
         }
 
         foreach (Block block in absorbedBlocks)
@@ -124,23 +131,31 @@ public class Player : MonoBehaviour
             block.transform.localScale = Vector3.one * scale;
         }
 
-        if (inConnection == null && inRange.Count > 0)
+        if (inConnection == null)
         {
-            Instantiate(targetPrefab, inRange[0].transform.position, Quaternion.identity, inRange[0].transform);
-            inConnection = inRange[0];
-            inRange.Remove(inRange[0]);
+            for (int i = 0; i < inRange.Count; i++)
+            {
+                Block candidate = inRange[i];
+                if (candidate == null || blocks.Contains(candidate) || absorbedBlocks.Contains(candidate))
+                    continue;
+
+                Instantiate(targetPrefab, candidate.transform.position, Quaternion.identity, candidate.transform);
+                inConnection = candidate;
+                inRange.RemoveAt(i);
+                break;
+            }
         }
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
         Block block = other.gameObject.GetComponentInParent<Block>();
+
         if (block != null && absorbedBlocks.Contains(block))
         {
             absorbedBlocks.Remove(block);
             blocks.Remove(block);
             inRange.Remove(block);
-
             countdown = block.applyAffect(countdown);
 
             Destroy(other.gameObject);
@@ -153,12 +168,12 @@ public class Player : MonoBehaviour
             return;
 
         Block block = other.GetComponentInParent<Block>();
-        if (block == null || blocks.Contains(block) || inRange.Contains(block))
+        if (block == null || blocks.Contains(block) || absorbedBlocks.Contains(block) || inRange.Contains(block))
             return;
 
         inRange.Add(block);
 
-        if (inConnection == null)
+        if (inConnection == null && !absorbedBlocks.Contains(block))
         {
             Instantiate(targetPrefab, block.transform.position, Quaternion.identity, block.transform);
             inConnection = block;
