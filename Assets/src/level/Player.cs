@@ -15,11 +15,13 @@ public class Player : MonoBehaviour
 
     public List<Block> inRange;
     public Block inConnection;
+    public List<Block> blocks;
+    public List<Block> absorbedBlocks;
+
 
     public GameObject targetPrefab;
     
 
-    public List<Block> blocks;
     Rigidbody2D rb;
 
      
@@ -96,16 +98,35 @@ public class Player : MonoBehaviour
 
         if (controls.Player.Absorb.WasPressedThisFrame())
         {
-            Block absorbed = blocks[0]; // fix later
-            blocks.Remove(absorbed);
-            Absorb(absorbed);
+            absorbedBlocks.Add(blocks[0]);
+            blocks.Remove(blocks[0]);
         }
 
+        foreach (Block block in absorbedBlocks)
+        {
+            Vector2 direction = transform.position - block.transform.position;
+            float strength = 1 / direction.magnitude;
+            block.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 50 * strength);
 
+            float t = Mathf.Clamp01(direction.magnitude / 4); // 4 is hardcoded radius
+            float scale = Mathf.Lerp(0.1f, 1f, t);
+            block.transform.localScale = Vector3.one * scale;
+        }
     }
-    public void Absorb(Block block)
+
+    void OnCollisionEnter2D(Collision2D other)
     {
-        // implement
+        Block block = other.gameObject.GetComponentInParent<Block>();
+        if (block != null && absorbedBlocks.Contains(block))
+        {
+            absorbedBlocks.Remove(block);
+            blocks.Remove(block);
+            inRange.Remove(block);
+
+            countdown = block.applyAffect(countdown);
+
+            Destroy(other.gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
