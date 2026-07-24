@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
@@ -8,7 +10,7 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    private int countdown;
+    public int countdown;
     private GameControls controls;
     public float moveSpeed = 5f;
     public TextMeshPro display;
@@ -17,6 +19,8 @@ public class Player : MonoBehaviour
     public Block inConnection;
     public List<Block> blocks;
     public List<Block> absorbedBlocks;
+
+    public string appliedOperation;
 
 
     public GameObject targetPrefab;
@@ -28,6 +32,7 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
+        appliedOperation = "";
         controls = new GameControls();
         countdown = 100;
         rb = GetComponent<Rigidbody2D>();
@@ -156,9 +161,42 @@ public class Player : MonoBehaviour
             absorbedBlocks.Remove(block);
             blocks.Remove(block);
             inRange.Remove(block);
-            countdown = block.applyAffect(countdown);
+            applyAffect(block);
 
             Destroy(other.gameObject);
+        }
+    }
+
+    private void applyAffect(Block block)
+    {
+        string affect = block.getAffect();
+        if (string.IsNullOrEmpty(appliedOperation)) {
+            if (string.Equals("+", affect)) {
+                appliedOperation = "+";
+            } else if (string.Equals("-", affect)) {
+                appliedOperation = "-";
+            } else if (string.Equals("x", affect)) {
+                appliedOperation = "x";
+            } else if (string.Equals("/", affect)) {
+                appliedOperation = "/";
+            } else { // attempted to apply a number without an operation
+                // red error effect
+            }
+        } else {
+            if (int.TryParse(affect, out int number)) {
+                if (string.Equals("+", appliedOperation)) {
+                    countdown += number;
+                } else if (string.Equals("-", appliedOperation)) {
+                    countdown -= number;
+                } else if (string.Equals("x", appliedOperation)) {
+                    countdown *= number;
+                } else if (string.Equals("/", appliedOperation)) {
+                    countdown /= number;
+                } 
+                appliedOperation = "";
+            } else { // attempted to apply an operation on top of an operation
+                // red error effect
+            }
         }
     }
 
