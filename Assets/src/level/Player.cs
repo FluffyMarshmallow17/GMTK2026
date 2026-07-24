@@ -13,18 +13,21 @@ public class Player : MonoBehaviour
     public int countdown;
     private GameControls controls;
     public float moveSpeed = 5f;
+    public float orbitalSpeed = 5f;
+    public float shootForce = 1000f;
     public TextMeshPro display;
 
     public List<Block> inRange;
     public Block inConnection;
     public List<Block> blocks;
     public List<Block> absorbedBlocks;
+    public Block selectedBlock;
 
     public string appliedOperation;
 
 
     public GameObject targetPrefab;
-    
+    public GameObject selectedPrefab;    
 
     Rigidbody2D rb;
 
@@ -110,11 +113,16 @@ public class Player : MonoBehaviour
             Vector2 edge = center + fromCenter * radius;
 
             Vector2 direction = edge - (Vector2)block.transform.position;
+            Vector2 tangentialDirection = Vector2.Perpendicular(fromCenter).normalized;
             float distance = direction.magnitude;
 
+            // In Radius
             block.GetComponent<Rigidbody2D>().AddForce(direction.normalized * distance * 10);
+            
+            // Orbitting
+            block.GetComponent<Rigidbody2D>().AddForce(tangentialDirection * orbitalSpeed);
         }
-        Debug.Log("Count is: " + blocks.Count);
+        // Debug.Log("Count is: " + blocks.Count);
         // Debug.Log(countdown);
 
         if (controls.Player.Absorb.WasPressedThisFrame())
@@ -134,6 +142,39 @@ public class Player : MonoBehaviour
             float t = Mathf.Clamp01(direction.magnitude / 4); // 4 is hardcoded radius
             float scale = Mathf.Lerp(0.1f, 1f, t);
             block.transform.localScale = Vector3.one * scale;
+        }
+
+        if (controls.Player.Select.WasPressedThisFrame())
+        {
+            if (!selectedBlock)
+            {
+                selectedBlock = blocks[0];
+            }
+            if (selectedBlock)
+            {
+                Transform selectedTarget = selectedBlock.transform.Find("Target(Clone)");
+                if (selectedTarget != null)
+                    Destroy(selectedTarget.gameObject);
+                int index = blocks.IndexOf(selectedBlock);
+                index = (index + 1) % blocks.Count;
+                selectedBlock = blocks[index];
+                Instantiate(selectedPrefab, selectedBlock.transform.position, Quaternion.identity, selectedBlock.transform);
+            }
+        }
+
+        if(controls.Player.Shoot.WasPressedThisFrame())
+        {
+            if (selectedBlock)
+            {
+                Transform selectedTarget = selectedBlock.transform.Find("Target(Clone)");
+                if (selectedTarget != null)
+                    Destroy(selectedTarget.gameObject);
+                Vector2 center = transform.position;
+                Vector2 shootDirection = ((Vector2)selectedBlock.transform.position - center).normalized;
+                selectedBlock.GetComponent<Rigidbody2D>().AddForce(shootDirection * shootForce);
+                blocks.Remove(selectedBlock);
+                selectedBlock = null;
+            }
         }
 
         if (inConnection == null)
