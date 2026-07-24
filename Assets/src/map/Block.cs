@@ -8,6 +8,7 @@ public enum operationType
     Subtract,
     Multiply,
     Divide,
+    Empty,
 }
 public class Block : MonoBehaviour
 {
@@ -17,31 +18,41 @@ public class Block : MonoBehaviour
 
     void Awake()
     {
-        float prob = UnityEngine.Random.Range(0, 1f);
-        Array operationStrings = Enum.GetValues(typeof(operationType));
-        if (prob > 0.2)
+        if (UnityEngine.Random.value > 0.2f)
         {
-            number = UnityEngine.Random.Range(0, 10);
-            display.text = "" + number;
+            number = UnityEngine.Random.Range(1, 10);
+            display.text = number.ToString();
+            operation = operationType.Empty;
         }
         else
         {
-            int randomIndex = UnityEngine.Random.Range(1,5);
-            operation = (operationType) operationStrings.GetValue(randomIndex);
-            display.text = "" + ToFriendlyString(operation);
-            number = 0;
+            operation = (operationType)UnityEngine.Random.Range(0, 4);
+            display.text = ToFriendlyString();
         }
     }
 
-    public string ToFriendlyString(operationType op)
+    public string getAffect()
     {
-        switch (op)
+        switch (operation)
         {
             case operationType.Add:      return "+";
             case operationType.Subtract: return "-";
             case operationType.Multiply: return "x";
             case operationType.Divide:   return "/";
-            default:                 return op.ToString();
+            case operationType.Empty:    return number + "";
+            default:                 return number + "";
+        }
+    }
+
+    public string ToFriendlyString()
+    {
+        switch (operation)
+        {
+            case operationType.Add:      return "+";
+            case operationType.Subtract: return "-";
+            case operationType.Multiply: return "x";
+            case operationType.Divide:   return "/";
+            default:                 return operation.ToString();
         }
     }
 
