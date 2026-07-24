@@ -109,6 +109,15 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Absorb"",
+                    ""type"": ""Value"",
+                    ""id"": ""e3fe0e8b-6814-456d-98dd-a1109979cf33"",
+                    ""expectedControlType"": ""Integer"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -177,6 +186,17 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
                     ""action"": ""TakeIn"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c4c43c01-48b9-415e-9298-ea8624d1969c"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Absorb"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -187,6 +207,7 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_TakeIn = m_Player.FindAction("TakeIn", throwIfNotFound: true);
+        m_Player_Absorb = m_Player.FindAction("Absorb", throwIfNotFound: true);
     }
 
     ~@GameControls()
@@ -269,6 +290,7 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_TakeIn;
+    private readonly InputAction m_Player_Absorb;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -288,6 +310,10 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/TakeIn".
         /// </summary>
         public InputAction @TakeIn => m_Wrapper.m_Player_TakeIn;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Absorb".
+        /// </summary>
+        public InputAction @Absorb => m_Wrapper.m_Player_Absorb;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -320,6 +346,9 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
             @TakeIn.started += instance.OnTakeIn;
             @TakeIn.performed += instance.OnTakeIn;
             @TakeIn.canceled += instance.OnTakeIn;
+            @Absorb.started += instance.OnAbsorb;
+            @Absorb.performed += instance.OnAbsorb;
+            @Absorb.canceled += instance.OnAbsorb;
         }
 
         /// <summary>
@@ -337,6 +366,9 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
             @TakeIn.started -= instance.OnTakeIn;
             @TakeIn.performed -= instance.OnTakeIn;
             @TakeIn.canceled -= instance.OnTakeIn;
+            @Absorb.started -= instance.OnAbsorb;
+            @Absorb.performed -= instance.OnAbsorb;
+            @Absorb.canceled -= instance.OnAbsorb;
         }
 
         /// <summary>
@@ -391,5 +423,12 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnTakeIn(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Absorb" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAbsorb(InputAction.CallbackContext context);
     }
 }

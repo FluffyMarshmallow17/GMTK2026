@@ -91,9 +91,21 @@ public class Player : MonoBehaviour
 
             block.GetComponent<Rigidbody2D>().AddForce(direction.normalized * distance * 10);
         }
+        Debug.Log("Count is: " + blocks.Count);
         // Debug.Log(countdown);
 
+        if (controls.Player.Absorb.WasPressedThisFrame())
+        {
+            Block absorbed = blocks[0]; // fix later
+            blocks.Remove(absorbed);
+            Absorb(absorbed);
+        }
 
+
+    }
+    public void Absorb(Block block)
+    {
+        // implement
     }
 
     void OnTriggerEnter2D(Collider2D other)
