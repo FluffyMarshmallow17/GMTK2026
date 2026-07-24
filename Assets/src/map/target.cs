@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class Spin : MonoBehaviour
+// ONLY VIBE CODED SCRIPT, SORRY
+public class Spin : MonoBehaviour 
 {
     public float angularVelocity = 720f;
     public float damping = 4f;

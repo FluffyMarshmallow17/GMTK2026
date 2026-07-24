@@ -66,6 +66,12 @@ public class Player : MonoBehaviour
 
         display.text = "" + countdown;
         Vector2 movement = controls.Player.Move.ReadValue<Vector2>();
+
+        if (movement.x != 0)
+        {
+            rb.AddTorque(-movement.x * 0.5f);
+        }
+
         rb.linearVelocity = movement * moveSpeed;
 
         if (controls.Player.TakeIn.WasPressedThisFrame())
