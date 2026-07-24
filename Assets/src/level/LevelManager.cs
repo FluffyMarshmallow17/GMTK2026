@@ -31,8 +31,8 @@ public class LevelManager : MonoBehaviour
     public void spawnBlock()
     {
         Vector3 spawnPosition = new Vector3(
-            UnityEngine.Random.Range(-10f, 10f),
-            UnityEngine.Random.Range(-10f, 10f),
+            UnityEngine.Random.Range(-15f, 15f),
+            UnityEngine.Random.Range(-15f, 15f),
             0
         );
 

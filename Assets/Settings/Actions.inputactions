@@ -14,6 +14,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "TakeIn",
+                    "type": "Value",
+                    "id": "4e3c2d6c-8b1e-4c1d-995d-bd282e2c3c49",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -71,6 +80,17 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "1afb70d4-3401-4403-a54c-06561a2499de",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TakeIn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
