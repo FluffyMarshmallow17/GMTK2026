@@ -399,6 +399,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 03085bced234e49f580218a1d56ce354, type: 3}
   - {fileID: 21300000, guid: 55b899c315d1e4c5e8318cbbcea6d189, type: 3}
   - {fileID: 21300000, guid: 04438e23f9035467ab1fd433b43644ee, type: 3}
+  - {fileID: 21300000, guid: 25fd9ca50768247e984efbf8202fcbc0, type: 3}
+  - {fileID: 21300000, guid: 98c6811bc0d8547be80d8dea85fec8c8, type: 3}
+  - {fileID: 21300000, guid: 366d847b03eb24640875171fd1c5c726, type: 3}
+  - {fileID: 21300000, guid: 1477d8197cb794c309afdcdd61fdf0bd, type: 3}
+  - {fileID: 21300000, guid: fb3a64940f34647b5aa3dc0529214cea, type: 3}
   operationSprites:
   - {fileID: 21300000, guid: b94c909c29c65409989b677c8008e37d, type: 3}
   - {fileID: 21300000, guid: ff5dfd59fd6934970b38287728ebad06, type: 3}
