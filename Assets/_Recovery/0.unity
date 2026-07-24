@@ -628,6 +628,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1454467151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454467152}
+  m_Layer: 0
+  m_Name: Particle System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454467152
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454467151}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 263458122}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &9005224912412234033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -696,7 +727,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6144043785534046284, guid: a2e916ad0ce594c8ba9696928a6ec7ff, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3919631794307122813, guid: a2e916ad0ce594c8ba9696928a6ec7ff, type: 3}
@@ -781,6 +813,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5024085192460261768, guid: f78260964b7e247659b183801f145147, type: 3}
       insertIndex: -1
       addedObject: {fileID: 865871494}
+    - targetCorrespondingSourceObject: {fileID: 5024085192460261768, guid: f78260964b7e247659b183801f145147, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1454467152}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2829920719499533336, guid: f78260964b7e247659b183801f145147, type: 3}
       insertIndex: -1
