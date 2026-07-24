@@ -31,6 +31,9 @@ public class Player : MonoBehaviour
         controls = new GameControls();
         countdown = 100;
         rb = GetComponent<Rigidbody2D>();
+        inRange = new List<Block>();
+        blocks = new List<Block>();
+        absorbedBlocks = new List<Block>();
     }
 
     void LateUpdate()
@@ -65,14 +68,16 @@ public class Player : MonoBehaviour
         Vector2 movement = controls.Player.Move.ReadValue<Vector2>();
         rb.linearVelocity = movement * moveSpeed;
 
-        if (controls.Player.TakeIn.IsPressed())
+        if (controls.Player.TakeIn.WasPressedThisFrame())
         {
             Debug.Log("reading this");
             if (inConnection)
             {
                 blocks.Add(inConnection);
                 inRange.Remove(inConnection);
-                Destroy(inConnection.transform.Find("Target(Clone)").gameObject);
+                Transform target = inConnection.transform.Find("Target(Clone)");
+                if (target != null)
+                    Destroy(target.gameObject);
                 inConnection = null;
             }
         }
@@ -112,6 +117,13 @@ public class Player : MonoBehaviour
             float scale = Mathf.Lerp(0.1f, 1f, t);
             block.transform.localScale = Vector3.one * scale;
         }
+
+        if (inConnection == null && inRange.Count > 0)
+        {
+            Instantiate(targetPrefab, inRange[0].transform.position, Quaternion.identity, inRange[0].transform);
+            inConnection = inRange[0];
+            inRange.Remove(inRange[0]);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -131,31 +143,39 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
-        if (rb != null)
+        if (other.GetComponent<Rigidbody2D>() == null)
+            return;
+
+        Block block = other.GetComponentInParent<Block>();
+        if (block == null || blocks.Contains(block) || inRange.Contains(block))
+            return;
+
+        inRange.Add(block);
+
+        if (inConnection == null)
         {
-            inRange.Add(other.GetComponentInParent<Block>());
-            if (inConnection == null && other.CompareTag("Block") && !blocks.Contains(other.GetComponentInParent<Block>()))
-            {
-                Instantiate(targetPrefab, other.transform.position, Quaternion.identity, other.transform);
-                inConnection = other.GetComponentInParent<Block>();
-            }
-            inRange.Add(other.GetComponentInParent<Block>());
+            Instantiate(targetPrefab, block.transform.position, Quaternion.identity, block.transform);
+            inConnection = block;
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
-        if (rb != null)
+        if (other.GetComponent<Rigidbody2D>() == null)
+            return;
+
+        Block block = other.GetComponentInParent<Block>();
+        if (block == null)
+            return;
+
+        inRange.Remove(block);
+
+        if (inConnection == block)
         {
-            inRange.Remove(other.GetComponentInParent<Block>());
-            Transform temp = other.transform.Find("Target(Clone)"); // beware of this tiny issue
-            if (temp != null)
-            {
-                Destroy(temp.gameObject);
-                inConnection = null;
-            }
+            Transform target = block.transform.Find("Target(Clone)");
+            if (target != null)
+                Destroy(target.gameObject);
+            inConnection = null;
         }
     }
 }
