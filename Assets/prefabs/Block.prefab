@@ -394,3 +394,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Block
   display: {fileID: 3427297103728972790}
+  numberSprites:
+  - {fileID: 21300000, guid: 1978dd89f562341c0a75f54fdbd28a43, type: 3}
+  - {fileID: 21300000, guid: 03085bced234e49f580218a1d56ce354, type: 3}
+  - {fileID: 21300000, guid: 55b899c315d1e4c5e8318cbbcea6d189, type: 3}
+  - {fileID: 21300000, guid: 04438e23f9035467ab1fd433b43644ee, type: 3}
+  operationSprites:
+  - {fileID: 21300000, guid: b94c909c29c65409989b677c8008e37d, type: 3}
+  - {fileID: 21300000, guid: ff5dfd59fd6934970b38287728ebad06, type: 3}
+  - {fileID: 21300000, guid: ca38d55b13fbe4569b082d857407f229, type: 3}
+  - {fileID: 21300000, guid: efab237f2d78540a8ae70f7b7f8d1190, type: 3}
