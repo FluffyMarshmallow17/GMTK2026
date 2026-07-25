@@ -10,6 +10,8 @@ public class LevelManager : MonoBehaviour
     public List<MiniEnemy> miniEnemies;
     public GameObject miniEnemyPrefab;
     public GameObject map;
+    public GameObject winScreen;
+    public GameObject loseScreen;
 
     public GameObject blockPrefab;
 
@@ -29,7 +31,24 @@ public class LevelManager : MonoBehaviour
         time += Time.deltaTime;
         if (time >= 1) {
            time = 0;
-           decreaseCountdown(); 
+           decreaseCountdown();
+
+           if (player.getCountdown() <= 0)
+           {
+               // Player loses
+               string currentLevel = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name.Remove(0, 6); // Remove "Level " prefix
+               print(currentLevel);
+               int currentLevelIndex = int.Parse(currentLevel);
+               loseScreen.GetComponent<LoseScreen>().ShowLoseScreen(currentLevelIndex);
+           }
+           else if (boss.getCountdown() <= 0)
+           {
+               // Player wins
+               string currentLevel = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name.Remove(0, 6); // Remove "Level " prefix
+               int currentLevelIndex = int.Parse(currentLevel);
+               PlayerPrefs.SetInt("LevelsUnlocked", Math.Max(PlayerPrefs.GetInt("LevelsUnlocked", 1), currentLevelIndex + 1));
+               winScreen.GetComponent<WinScreen>().ShowWinScreen(currentLevelIndex);
+           }
            spawnBlock();
         }
         
