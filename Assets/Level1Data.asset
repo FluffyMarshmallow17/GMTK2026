@@ -22,7 +22,7 @@ MonoBehaviour:
   - 0.2
   - 0.3
   - 0.4
-  addProbability: 0.33
-  subtractProbability: 0.66
-  multiplyProbability: 0
+  addProbability: 0
+  subtractProbability: 0
+  multiplyProbability: 1
   divideProbability: 0
