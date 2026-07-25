@@ -13,7 +13,7 @@ Shader "Custom/ResponsiveGrid"
         _PulseOutsideColor ("Pulse Color outside (HDR)", Color) = (2.0, 0.5, 0.3, 1)
         _PulseWidth ("Pulse Ring Width", Float) = 1.5
         _PulseIntensity ("Pulse Intensity", Float) = 1.8
-        _PulseWhiten ("Pulse Whitening", Range(0, 1)) = 1
+        _PulseWhiten ("Pulse Whitening", Range(0, 1)) = 0.72
         _PulseNoise ("Pulse Noise Amount", Range(0, 1)) = 0.55
         _SpotRadius ("Block Glow Radius", Float) = 1.1
         _SpotIntensity ("Block Glow Intensity", Float) = 0.3
@@ -191,8 +191,8 @@ Shader "Custom/ResponsiveGrid"
                 float3 pulseCol = lerp(_PulseOutsideColor.rgb, _PulseInsideColor.rgb, inside);
                 // Soft-saturating whiten for the same reason: a hard saturate() sits
                 // pinned at the cap and then visibly "unclamps" while fading.
-                float whiten = 1.0 - exp(-energy * 2.0 * _PulseWhiten);
-                pulseCol = lerp(pulseCol, float3(2.5, 2.5, 2.5), whiten);
+                float whiten = 1.0 - exp(-energy * 1.6 * _PulseWhiten);
+                pulseCol = lerp(pulseCol, float3(2.0, 2.15, 2.3), whiten);
                 float3 col = (baseCol + pulseCol * energy * _PulseIntensity) * gridMask;
 
                 // Flat red wash over the whole out-of-bounds area (lines and cells

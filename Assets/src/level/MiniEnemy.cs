@@ -3,6 +3,7 @@ using TMPro;
 
 public class MiniEnemy : MonoBehaviour
 {
+    const float GridPulseStrength = 0.5f;
     public float time;
     public float rate;
     private int countdown;
@@ -112,7 +113,7 @@ public class MiniEnemy : MonoBehaviour
     public void decreaseCountdown()
     {
         countdown--;
-        GridBackground.Pulse(transform.position, 1f, rb != null ? rb.linearVelocity : Vector2.zero);
+        GridBackground.Pulse(transform.position, GridPulseStrength, rb != null ? rb.linearVelocity : Vector2.zero, GetInstanceID());
     }
     
     void OnCollisionEnter2D(Collision2D other)
@@ -157,6 +158,7 @@ public class MiniEnemy : MonoBehaviour
         } else {
             if (int.TryParse(affect, out int number)) {
                 int before = countdown;
+                double rateBefore = rate;
                 if (string.Equals("+", appliedOperation)) {
                     countdown += number;
                 } else if (string.Equals("-", appliedOperation)) {
@@ -173,9 +175,11 @@ public class MiniEnemy : MonoBehaviour
                 if (countdown != before)
                 {
                     GridBackground.PulseFromChange(transform.position, before, countdown,
-                        rb != null ? rb.linearVelocity : Vector2.zero);
+                        rb != null ? rb.linearVelocity : Vector2.zero, GetInstanceID(), GridPulseStrength);
                     CameraShake.ShakeFromChange(before, countdown);
                 }
+                if (rate != rateBefore)
+                    CameraShake.ShakeFromChange((float)rateBefore, (float)rate);
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation
                 // red error effect
