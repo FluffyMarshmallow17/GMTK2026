@@ -278,6 +278,7 @@ public class Player : MonoBehaviour
         selectedBlock = next;
         GameObject selectMarker = Instantiate(selectedPrefab, next.transform.position, Quaternion.identity, next.transform);
         selectMarker.AddComponent<SelectZoom>();
+        AudioManager.Instance.PlaySFX(SFX.Target);
     }
 
     // Blocks are ordered by a full sweep around the player: across the top from right
@@ -379,12 +380,16 @@ public class Player : MonoBehaviour
                 int before = countdown;
                 if (string.Equals("+", appliedOperation)) {
                     countdown += number;
+                    AudioManager.Instance.PlaySFX(SFX.Add);
                 } else if (string.Equals("-", appliedOperation)) {
                     countdown -= number;
+                    AudioManager.Instance.PlaySFX(SFX.Subtract);
                 } else if (string.Equals("x", appliedOperation)) {
                     countdown *= number;
+                    AudioManager.Instance.PlaySFX(SFX.Multiply);
                 } else if (string.Equals("/", appliedOperation)) {
                     countdown /= number;
+                    AudioManager.Instance.PlaySFX(SFX.Divide);
                 } else if (string.Equals("decay", appliedOperation)) {
                     rate /= number;
                 } else if (string.Equals("grow", appliedOperation)) {

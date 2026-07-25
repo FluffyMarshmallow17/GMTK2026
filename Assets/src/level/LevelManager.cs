@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour
 
     public GameObject blockPrefab;
     public LevelData levelData;
-    public AudioClip music;
+    public AudioClip[] musicTracks;
 
     int numberSpriteCount;
 
@@ -40,8 +40,15 @@ public class LevelManager : MonoBehaviour
         else
             mapScript.snapToRadius(levelData.hardcodeRadius);
 
-        AudioManager.Instance.PlayMusic(music);
+        AudioManager.Instance.PlayMusic(GetRandomTrack());
     }
+
+    AudioClip GetRandomTrack()
+{
+    if (musicTracks == null || musicTracks.Length == 0)
+        return null;
+    return musicTracks[UnityEngine.Random.Range(0, musicTracks.Length)];
+}
 
     void FixedUpdate()
     {

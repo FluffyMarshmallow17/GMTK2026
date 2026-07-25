@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum SFX { PickupBlock, PickupOperator, TimerUp, TimerDown, Absorb }
+public enum SFX { PickupBlock, PickupOperator, Add, Subtract, Multiply, Divide, Target}
 
 [System.Serializable]
 public class SFXEntry
