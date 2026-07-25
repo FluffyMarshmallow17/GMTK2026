@@ -8,12 +8,11 @@ public class MiniEnemy : MonoBehaviour
     public string appliedOperation;
     public int moveSpeed;
     public TextMeshPro display;
-    public float countdownDisplaySmoothTime = 0.35f;    public float launchForce = 12f;
+    public float launchForce = 12f;
     public float launchDuration = 0.45f;
     public float launchStartScale = 0.2f;
 
     Rigidbody2D rb;
-    SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
     Vector3 normalScale;
     bool launching;
     float launchTimer;
@@ -28,15 +27,9 @@ public class MiniEnemy : MonoBehaviour
         {
             playerTransform = playerObject.transform;
         }
-        countdownDisplay.Init(display, countdown, countdownDisplaySmoothTime);
     }
 
     void Update()
-    {
-        countdownDisplay.Update(countdown);
-    }
-
-    void FixedUpdate()
     {
         if (countdown <= 0)
         {
@@ -58,6 +51,7 @@ public class MiniEnemy : MonoBehaviour
             return;
         }
 
+        print("Player Transform: " + playerTransform);
         if (playerTransform != null)
         {
             Vector2 direction = (playerTransform.position - transform.position).normalized;
@@ -87,7 +81,6 @@ public class MiniEnemy : MonoBehaviour
     public void setCountdown(int countdown)
     {
         this.countdown = countdown;
-        countdownDisplay.Snap(countdown);
     }
 
     public int getCountdown()

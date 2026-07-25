@@ -17,7 +17,7 @@ public class Spin : MonoBehaviour
         transform.localScale = targetScale * startScaleMultiplier;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         // Rotate
         transform.Rotate(0, 0, angularVelocity * Time.deltaTime);
