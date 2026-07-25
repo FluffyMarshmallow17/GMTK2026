@@ -69,6 +69,11 @@ public class Player : MonoBehaviour
         countdown--;
     }
 
+    public void decreaseCountdown(int amount)
+    {
+        countdown -= amount;
+    }
+
     void Update()
     {
         blocks.RemoveAll(b => b == null);

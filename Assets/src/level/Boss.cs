@@ -28,6 +28,11 @@ public class Boss : MonoBehaviour
         countdown--;
     }
 
+    public void decreaseCountdown(int amount)
+    {
+        countdown -= amount;
+    }
+
     void Update()
     {
         display.text = "" + countdown;
@@ -76,5 +81,4 @@ public class Boss : MonoBehaviour
             }
         }
     }
-
 }

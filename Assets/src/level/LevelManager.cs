@@ -8,12 +8,14 @@ public class LevelManager : MonoBehaviour
     public Player player; 
     public Boss boss;
     public List<MiniEnemy> miniEnemies;
+    public GameObject miniEnemyPrefab;
 
     public GameObject blockPrefab;
 
     void Awake()
     {
         time = 0;
+        miniEnemies = new List<MiniEnemy>();
     }
 
     void Update()
@@ -37,6 +39,7 @@ public class LevelManager : MonoBehaviour
         );
 
         Instantiate(blockPrefab, spawnPosition, Quaternion.identity);
+        addMiniEnemy(UnityEngine.Random.Range(5, 15), (spawnPosition - 10 * Vector3.up));
     }
 
     public void decreaseCountdown()
@@ -49,6 +52,18 @@ public class LevelManager : MonoBehaviour
                 enemy.decreaseCountdown();
             }
         }
-        
+    }
+
+    public void addMiniEnemy(int countdown, Vector3 spawnPosition = default(Vector3))
+    {
+        if (miniEnemies == null)
+        {
+            miniEnemies = new List<MiniEnemy>();
+        }
+        boss.decreaseCountdown(countdown);
+        GameObject miniEnemy = Instantiate(miniEnemyPrefab, spawnPosition, Quaternion.identity);
+        MiniEnemy miniEnemyScript = miniEnemy.GetComponent<MiniEnemy>();
+        miniEnemyScript.setCountdown(countdown);
+        miniEnemies.Add(miniEnemyScript);
     }
 }
