@@ -1,19 +1,19 @@
-// Player Start Countdown = 10
-// Boss Start Countdown = 20
+using UnityEngine;
 
-// Allowed Operators:
-// +
-// -
+[CreateAssetMenu(fileName = "LevelData", menuName = "Game/Level Data")]
+public class LevelData : ScriptableObject
+{
+    public int initialPlayerCount;
+    public int initialBossCount;
+    public bool includeMiniEnemies;
 
-// Spawn Rates:
-// Numbers 80%
-// + 10%
-// - 10%
+    [Range(0f, 1f)] public float numberProbability;
+    [Range(0f, 1f)] public float operationProbability;
 
-// Map Shrink Speed
+    public float[] numberProbabilities;
 
-// Boss AI Type
-
-// Music
-
-// Tutorial Popups
+    public float addProbability;
+    public float subtractProbability;
+    public float multiplyProbability;
+    public float divideProbability;
+}

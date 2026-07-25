@@ -37,7 +37,6 @@ public class Player : MonoBehaviour
     {
         appliedOperation = "";
         controls = new GameControls();
-        countdown = 100;
         rb = GetComponent<Rigidbody2D>();
         inRange = new List<Block>();
         blocks = new List<Block>();
@@ -72,6 +71,11 @@ public class Player : MonoBehaviour
     public void decreaseCountdown(int amount)
     {
         countdown -= amount;
+    }
+
+    public void setCountdown(int countdown)
+    {
+        this.countdown = countdown;
     }
 
     void Update()

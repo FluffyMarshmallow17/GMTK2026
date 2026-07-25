@@ -12,9 +12,13 @@ public class Boss : MonoBehaviour
     void Awake()
     {
         appliedOperation = "";
-        countdown = 500;
         sr = transform.Find("Sprite").GetComponent<SpriteRenderer>();
         material = sr.material;
+    }
+
+    public void setCountdown(int countdown)
+    {
+        this.countdown = countdown;
     }
 
     public int getCountdown()
@@ -28,10 +32,11 @@ public class Boss : MonoBehaviour
         countdown--;
     }
 
-    public void decreaseCountdown(int amount)
+    public void decreaseCountdown(int countdown)
     {
-        countdown -= amount;
+        this.countdown -= countdown;
     }
+
 
     void Update()
     {

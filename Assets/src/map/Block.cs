@@ -20,25 +20,28 @@ public class Block : MonoBehaviour
     [SerializeField] Sprite[] numberSprites;
     [SerializeField] Sprite[] operationSprites;
 
+    public int NumberSpriteCount => numberSprites.Length;
+
     void Awake()
     {
         symbolRenderer = transform.Find("Sprite").GetComponent<SpriteRenderer>();
         symbolRenderer.transform.localScale *= 0.5f;
 
-        if (Random.value > 0.2f)
-        {
-            number = Random.Range(1, numberSprites.Length + 1);
-            operation = operationType.Empty;
-            symbolRenderer.sprite = numberSprites[number - 1];
-        }
-        else
-        {
-            operation = (operationType)Random.Range(0, 4);
-            symbolRenderer.sprite = operationSprites[(int)operation];
-        }
-
         if (display != null)
             display.gameObject.SetActive(false);
+    }
+
+    public void SetNumber(int index)
+    {
+        number = index + 1;
+        operation = operationType.Empty;
+        symbolRenderer.sprite = numberSprites[index];
+    }
+
+    public void SetOperation(operationType op)
+    {
+        operation = op;
+        symbolRenderer.sprite = operationSprites[(int)operation];
     }
 
     public string getAffect()
