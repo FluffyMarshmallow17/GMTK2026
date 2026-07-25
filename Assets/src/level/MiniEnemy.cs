@@ -30,7 +30,6 @@ public class MiniEnemy : MonoBehaviour
         }
         display.text = "" + countdown;
 
-        print("Player Transform: " + playerTransform);
         if (playerTransform != null)
         {
             Vector2 direction = (playerTransform.position - transform.position).normalized;
