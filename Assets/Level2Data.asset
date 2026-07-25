@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf51b65da19b746b79fcfc7f8332b357, type: 3}
   m_Name: Level2Data
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  initialPlayerCount: 20
+  initialPlayerCount: 60
   initialBossCount: 100
-  includeMiniEnemies: 1
+  includeMiniEnemies: 0
   changingBorders: 0
   hardcodeRadius: 20
+  maxBlocks: 30
   spawnMin: 10
   spawnMax: 20
   blockRate: 1

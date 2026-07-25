@@ -38,6 +38,16 @@ public class Block : MonoBehaviour
             display.gameObject.SetActive(false);
     }
 
+    void OnEnable()
+    {
+        GridBackground.RegisterSpot(transform);
+    }
+
+    void OnDisable()
+    {
+        GridBackground.UnregisterSpot(transform);
+    }
+
     public void SetNumber(int index)
     {
         number = index + 1;

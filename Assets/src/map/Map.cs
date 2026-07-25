@@ -4,8 +4,10 @@ public class Map : MonoBehaviour
 {
     public float mapSize = 1f;
     public int segments = 64;
-    public float lineWidth = 0.15f;
-    public Color lineColor = Color.white;
+    [Tooltip("Fallback width if the grid material can't be read. Normally the border matches the grid's line thickness automatically.")]
+    public float lineWidth = 0.024f;
+    [ColorUsage(true, true)]
+    public Color lineColor = new Color(2f, 0.25f, 0.2f, 1f);
     [Tooltip("Time to roughly reach the target radius. Lower = snappier.")]
     public float radiusSmoothTime = 0.45f;
     [Tooltip("Optional cap on how fast the radius can change. 0 = uncapped.")]
@@ -23,12 +25,15 @@ public class Map : MonoBehaviour
 
         // Keep transform scale fixed so line thickness stays constant.
         transform.localScale = Vector3.one;
+
+        if (GetComponent<GridBackground>() == null)
+            gameObject.AddComponent<GridBackground>();
         
         border = GetComponent<LineRenderer>();
 
         border.loop = true;
         border.useWorldSpace = true;
-        border.widthMultiplier = lineWidth;
+        border.widthMultiplier = GridLineThickness();
         border.positionCount = segments;
         border.numCornerVertices = 2;
         border.numCapVertices = 2;
@@ -79,6 +84,16 @@ public class Map : MonoBehaviour
         currentRadius = destinationRadius;
         radiusVelocity = 0f;
         ApplyRadius(currentRadius);
+    }
+
+    float GridLineThickness()
+    {
+        // The grid shader lights pixels within _LineWidth on both sides of a line,
+        // so the visible thickness is twice that value.
+        Material gridMaterial = Resources.Load<Material>("GridBackground");
+        if (gridMaterial != null && gridMaterial.HasProperty("_LineWidth"))
+            return gridMaterial.GetFloat("_LineWidth") * 2f;
+        return lineWidth;
     }
 
     float RadiusFromCountdown(int totalCountdown)

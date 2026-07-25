@@ -608,7 +608,7 @@ MonoBehaviour:
   miniEnemyPrefab: {fileID: 84658857129703309, guid: dae0b46c1f2d6448fb6709da0810e8ba, type: 3}
   map: {fileID: 390365656}
   blockPrefab: {fileID: 5749191797275787021, guid: 2b9b9f6be3332427a9843c360391bc13, type: 3}
-  levelData: {fileID: 11400000, guid: abccbad89b41c4dd4aa52aa3157fd119, type: 2}
+  levelData: {fileID: 11400000, guid: 3be5037fe9feb4d5f971c3220380b673, type: 2}
 --- !u!4 &1010630083
 Transform:
   m_ObjectHideFlags: 0

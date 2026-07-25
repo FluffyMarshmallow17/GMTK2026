@@ -39,11 +39,14 @@ public class Boss : MonoBehaviour
     public void decreaseCountdown()
     {
         countdown--;
+        GridBackground.Pulse(transform.position);
     }
 
     public void decreaseCountdown(int countdown)
     {
+        int before = this.countdown;
         this.countdown -= countdown;
+        GridBackground.PulseFromChange(transform.position, before, this.countdown);
     }
 
     public double getRate()
@@ -93,6 +96,7 @@ public class Boss : MonoBehaviour
             operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
         } else {
             if (int.TryParse(affect, out int number)) {
+                int before = countdown;
                 if (string.Equals("+", appliedOperation)) {
                     countdown += number;
                 } else if (string.Equals("-", appliedOperation)) {
@@ -105,6 +109,11 @@ public class Boss : MonoBehaviour
                     rate /= number;
                 } else if (string.Equals("grow", appliedOperation)) {
                     rate *= number;
+                }
+                if (countdown != before)
+                {
+                    GridBackground.PulseFromChange(transform.position, before, countdown);
+                    CameraShake.ShakeFromChange(before, countdown);
                 }
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation

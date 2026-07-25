@@ -17,6 +17,7 @@ MonoBehaviour:
   includeMiniEnemies: 0
   changingBorders: 0
   hardcodeRadius: 20
+  maxBlocks: 60
   spawnMin: 10
   spawnMax: 20
   blockRate: 1
