@@ -13,6 +13,7 @@ public class Boss : MonoBehaviour
 
     SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
     OperationFlash operationFlash = new OperationFlash();
+    bool displayFrozen;
 
     void Awake()
     {
@@ -28,6 +29,22 @@ public class Boss : MonoBehaviour
     public void setCountdown(int countdown)
     {
         this.countdown = countdown;
+    }
+
+    public void SnapDisplay(int value)
+    {
+        countdownDisplay.Snap(value);
+    }
+
+    public void FreezeDisplay(int value)
+    {
+        displayFrozen = true;
+        countdownDisplay.Snap(value);
+    }
+
+    public void UnfreezeDisplay()
+    {
+        displayFrozen = false;
     }
 
     public int getCountdown()
@@ -58,7 +75,7 @@ public class Boss : MonoBehaviour
     {
         if (operationFlash.IsActive)
             operationFlash.Update();
-        else
+        else if (!displayFrozen)
             countdownDisplay.Update(countdown);
     }
 

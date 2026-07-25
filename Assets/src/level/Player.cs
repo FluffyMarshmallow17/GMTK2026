@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     Rigidbody2D rb;
     SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
     OperationFlash operationFlash = new OperationFlash();
+    bool displayFrozen;
 
     void Awake()
     {
@@ -83,6 +84,22 @@ public class Player : MonoBehaviour
     public void setCountdown(int countdown)
     {
         this.countdown = countdown;
+    }
+
+    public void SnapDisplay(int value)
+    {
+        countdownDisplay.Snap(value);
+    }
+
+    public void FreezeDisplay(int value)
+    {
+        displayFrozen = true;
+        countdownDisplay.Snap(value);
+    }
+
+    public void UnfreezeDisplay()
+    {
+        displayFrozen = false;
     }
 
     void FixedUpdate()
@@ -168,7 +185,7 @@ public class Player : MonoBehaviour
     {
         if (operationFlash.IsActive)
             operationFlash.Update();
-        else
+        else if (!displayFrozen)
             countdownDisplay.Update(countdown);
         if (controls.Player.TakeIn.WasPressedThisFrame())
         {

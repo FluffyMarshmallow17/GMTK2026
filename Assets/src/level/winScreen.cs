@@ -7,16 +7,31 @@ public class WinScreen : MonoBehaviour
     public GameObject nextLevelButton;
     public GameObject menuButton;
 
-    private void Start()
+    GameObject BranchRoot =>
+        transform.parent != null && transform.parent.parent != null
+            ? transform.parent.parent.gameObject
+            : gameObject;
+
+    void SnapToMainCamera()
     {
-        // Hide the win screen UI at the start of the game
-        gameObject.SetActive(false);
+        Camera cam = Camera.main;
+        if (cam == null) return;
+
+        Transform root = BranchRoot.transform.root;
+        Vector3 p = cam.transform.position;
+        root.position = new Vector3(p.x, p.y, 0f);
+    }
+
+    void Start()
+    {
+        // Hide the whole Win branch (sprite + canvas + buttons), not just this panel.
+        BranchRoot.SetActive(false);
     }
 
     public void ShowWinScreen(int currentLevelIndex)
     {
-        // Show the win screen UI
-        gameObject.SetActive(true);
+        SnapToMainCamera();
+        BranchRoot.SetActive(true);
 
         int totalLevels = UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings - 1;
 
@@ -36,6 +51,7 @@ public class WinScreen : MonoBehaviour
 
     public void LoadNextLevel(int currentLevelIndex)
     {
+        Time.timeScale = 1f;
         // Load the next level if it exists
         int nextLevelIndex = currentLevelIndex + 1;
         if (nextLevelIndex <= PlayerPrefs.GetInt("LevelsUnlocked", 1))
@@ -46,6 +62,7 @@ public class WinScreen : MonoBehaviour
 
     public void ReturnToMenu()
     {
+        Time.timeScale = 1f;
         UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
     }
 }
