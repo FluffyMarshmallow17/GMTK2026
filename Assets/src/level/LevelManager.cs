@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
     public Boss boss;
     public List<MiniEnemy> miniEnemies;
     public GameObject miniEnemyPrefab;
+    public GameObject map;
 
     public GameObject blockPrefab;
     public LevelData levelData;
@@ -24,7 +25,12 @@ public class LevelManager : MonoBehaviour
         boss.setCountdown(levelData.initialBossCount);
     }
 
-    void Update()
+    void Start()
+    {
+        map.GetComponent<Map>().snapToCountdown(GetTotalCountdown());
+    }
+
+    void FixedUpdate()
     {
         time += Time.deltaTime;
         if (time >= 1) {
@@ -33,7 +39,19 @@ public class LevelManager : MonoBehaviour
            spawnBlock();
         }
         
-        
+        map.GetComponent<Map>().resizeMap(GetTotalCountdown());
+    }
+
+    int GetTotalCountdown()
+    {
+        int totalCountdown = player.getCountdown() + boss.getCountdown();
+        if (miniEnemies != null) {
+            foreach (MiniEnemy enemy in miniEnemies)
+            {
+                totalCountdown += enemy.getCountdown();
+            }
+        }
+        return totalCountdown;
     }
 
     public void spawnBlock()
