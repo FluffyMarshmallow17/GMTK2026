@@ -19,7 +19,12 @@ public class LevelManager : MonoBehaviour
         miniEnemies = new List<MiniEnemy>();
     }
 
-    void Update()
+    void Start()
+    {
+        map.GetComponent<Map>().snapToCountdown(GetTotalCountdown());
+    }
+
+    void FixedUpdate()
     {
         time += Time.deltaTime;
         if (time >= 1) {
@@ -28,6 +33,11 @@ public class LevelManager : MonoBehaviour
            spawnBlock();
         }
         
+        map.GetComponent<Map>().resizeMap(GetTotalCountdown());
+    }
+
+    int GetTotalCountdown()
+    {
         int totalCountdown = player.getCountdown() + boss.getCountdown();
         if (miniEnemies != null) {
             foreach (MiniEnemy enemy in miniEnemies)
@@ -35,7 +45,7 @@ public class LevelManager : MonoBehaviour
                 totalCountdown += enemy.getCountdown();
             }
         }
-        map.GetComponent<Map>().resizeMap(totalCountdown);
+        return totalCountdown;
     }
 
     public void spawnBlock()
@@ -47,7 +57,7 @@ public class LevelManager : MonoBehaviour
         );
 
         Instantiate(blockPrefab, spawnPosition, Quaternion.identity);
-        addMiniEnemy(UnityEngine.Random.Range(5, 15), (spawnPosition - 10 * Vector3.up));
+        // addMiniEnemy(UnityEngine.Random.Range(5, 15), (spawnPosition - 10 * Vector3.up));
     }
 
     public void decreaseCountdown()

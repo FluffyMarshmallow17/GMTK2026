@@ -8,9 +8,10 @@ public class MiniEnemy : MonoBehaviour
     public string appliedOperation;
     public int moveSpeed;
     public TextMeshPro display;
-
+    public float countdownDisplaySmoothTime = 0.35f;
 
     Rigidbody2D rb;
+    SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
 
     void Awake()
     {
@@ -20,15 +21,20 @@ public class MiniEnemy : MonoBehaviour
         {
             playerTransform = playerObject.transform;
         }
+        countdownDisplay.Init(display, countdown, countdownDisplaySmoothTime);
     }
 
     void Update()
+    {
+        countdownDisplay.Update(countdown);
+    }
+
+    void FixedUpdate()
     {
         if (countdown <= 0)
         {
             Destroy(gameObject);
         }
-        display.text = "" + countdown;
 
         if (playerTransform != null)
         {
@@ -45,6 +51,7 @@ public class MiniEnemy : MonoBehaviour
     public void setCountdown(int countdown)
     {
         this.countdown = countdown;
+        countdownDisplay.Snap(countdown);
     }
 
     public int getCountdown()
