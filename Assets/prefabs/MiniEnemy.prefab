@@ -170,6 +170,10 @@ MonoBehaviour:
   appliedOperation: 
   moveSpeed: 4
   display: {fileID: 8116244689087765951}
+  countdownDisplaySmoothTime: 0.35
+  launchForce: 12
+  launchDuration: 0.45
+  launchStartScale: 0.2
 --- !u!60 &6437930924121714340
 PolygonCollider2D:
   m_ObjectHideFlags: 0
