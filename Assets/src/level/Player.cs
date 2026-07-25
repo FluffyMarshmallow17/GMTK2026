@@ -7,7 +7,6 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Controls;
 
 public class Player : MonoBehaviour
 {
@@ -23,30 +22,25 @@ public class Player : MonoBehaviour
     public List<Block> blocks;
     public List<Block> absorbedBlocks;
     public Block selectedBlock;
-    public double time;
-    bool inBounds;
 
     public string appliedOperation;
 
 
     public GameObject targetPrefab;
-    public GameObject selectedPrefab;
-    public float countdownDisplaySmoothTime = 0.35f;
+    public GameObject selectedPrefab;    
 
     Rigidbody2D rb;
-    SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
+
+     
 
     void Awake()
     {
-        time = 0;
-        inBounds = true;
         appliedOperation = "";
         controls = new GameControls();
         rb = GetComponent<Rigidbody2D>();
         inRange = new List<Block>();
         blocks = new List<Block>();
         absorbedBlocks = new List<Block>();
-        countdownDisplay.Init(display, countdown, countdownDisplaySmoothTime);
     }
 
     void LateUpdate()
@@ -84,7 +78,7 @@ public class Player : MonoBehaviour
         this.countdown = countdown;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         blocks.RemoveAll(b => b == null);
         absorbedBlocks.RemoveAll(b => b == null);
@@ -92,6 +86,7 @@ public class Player : MonoBehaviour
         if (inConnection == null)
             inConnection = null;
 
+        display.text = "" + countdown;
         Vector2 movement = controls.Player.Move.ReadValue<Vector2>();
 
         if (movement.x != 0)
@@ -100,6 +95,20 @@ public class Player : MonoBehaviour
         }
 
         rb.linearVelocity = movement * moveSpeed;
+
+        if (controls.Player.TakeIn.WasPressedThisFrame())
+        {
+            Debug.Log("reading this");
+            if (inConnection)
+            {
+                blocks.Add(inConnection);
+                inRange.Remove(inConnection);
+                Transform target = inConnection.transform.Find("Target(Clone)");
+                if (target != null)
+                    Destroy(target.gameObject);
+                inConnection = null;
+            }
+        }
 
         foreach (Block block in blocks)
         {
@@ -117,7 +126,7 @@ public class Player : MonoBehaviour
             float distance = direction.magnitude;
 
             // In Radius
-            block.GetComponent<Rigidbody2D>().AddForce(direction.normalized * distance * 20);
+            block.GetComponent<Rigidbody2D>().AddForce(direction.normalized * distance * 10);
             
             // Orbitting
             block.GetComponent<Rigidbody2D>().AddForce(tangentialDirection * orbitalSpeed);
@@ -125,62 +134,23 @@ public class Player : MonoBehaviour
         // Debug.Log("Count is: " + blocks.Count);
         // Debug.Log(countdown);
 
-        foreach (Block block in absorbedBlocks)
-        {
-            Vector2 direction = transform.position - block.transform.position;
-            float strength = 1 / direction.magnitude;
-            block.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 100 * strength);
-
-            float t = Mathf.Clamp01(direction.magnitude / 4); // 4 is hardcoded radius
-            float scale = Mathf.Lerp(0.1f, 1f, t);
-            block.transform.localScale = Vector3.one * scale;
-        }
-
-        if (inConnection == null)
-        {
-            for (int i = 0; i < inRange.Count; i++)
-            {
-                Block candidate = inRange[i];
-                if (candidate == null || blocks.Contains(candidate) || absorbedBlocks.Contains(candidate))
-                    continue;
-
-                Instantiate(targetPrefab, candidate.transform.position, Quaternion.identity, candidate.transform);
-                inConnection = candidate;
-                inRange.RemoveAt(i);
-                break;
-            }
-        }
-        time += Time.fixedDeltaTime;
-        if (!inBounds && time >= 1)
-        {
-            countdown = (int) ((double) countdown * 0.75);
-            time = 0;
-        }
-    }
-
-    void Update()
-    {
-        countdownDisplay.Update(countdown);
-        if (controls.Player.TakeIn.WasPressedThisFrame())
-        {
-            Debug.Log("reading this");
-            if (inConnection)
-            {
-                blocks.Add(inConnection);
-                inRange.Remove(inConnection);
-                Transform target = inConnection.transform.Find("Target(Clone)");
-                if (target != null)
-                    Destroy(target.gameObject);
-                inConnection = null;
-            }
-        }
-
         if (controls.Player.Absorb.WasPressedThisFrame())
         {
             Block absorbed = blocks[0];
             absorbedBlocks.Add(absorbed);
             blocks.Remove(absorbed);
             inRange.Remove(absorbed);
+        }
+
+        foreach (Block block in absorbedBlocks)
+        {
+            Vector2 direction = transform.position - block.transform.position;
+            float strength = 1 / direction.magnitude;
+            block.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 50 * strength);
+
+            float t = Mathf.Clamp01(direction.magnitude / 4); // 4 is hardcoded radius
+            float scale = Mathf.Lerp(0.1f, 1f, t);
+            block.transform.localScale = Vector3.one * scale;
         }
 
         if (controls.Player.Select.WasPressedThisFrame())
@@ -216,6 +186,20 @@ public class Player : MonoBehaviour
             }
         }
 
+        if (inConnection == null)
+        {
+            for (int i = 0; i < inRange.Count; i++)
+            {
+                Block candidate = inRange[i];
+                if (candidate == null || blocks.Contains(candidate) || absorbedBlocks.Contains(candidate))
+                    continue;
+
+                Instantiate(targetPrefab, candidate.transform.position, Quaternion.identity, candidate.transform);
+                inConnection = candidate;
+                inRange.RemoveAt(i);
+                break;
+            }
+        }
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -264,11 +248,6 @@ public class Player : MonoBehaviour
                 // red error effect
             }
         }
-    }
-
-    public void setInBounds(bool inBounds)
-    {
-        this.inBounds = inBounds;
     }
 
     void OnTriggerEnter2D(Collider2D other)

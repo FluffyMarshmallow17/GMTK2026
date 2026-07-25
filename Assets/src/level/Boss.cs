@@ -1,6 +1,6 @@
+using UnityEditor;
 using UnityEngine;
 using TMPro;
-
 public class Boss : MonoBehaviour
 {
     private int countdown;
@@ -8,17 +8,12 @@ public class Boss : MonoBehaviour
     private Material material;
     public TextMeshPro display;
     public string appliedOperation;
-    public float countdownDisplaySmoothTime = 0.35f;
-
-    SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
 
     void Awake()
     {
         appliedOperation = "";
-        countdown = 100;
         sr = transform.Find("Sprite").GetComponent<SpriteRenderer>();
         material = sr.material;
-        countdownDisplay.Init(display, countdown, countdownDisplaySmoothTime);
     }
 
     public void setCountdown(int countdown)
@@ -45,7 +40,7 @@ public class Boss : MonoBehaviour
 
     void Update()
     {
-        countdownDisplay.Update(countdown);
+        display.text = "" + countdown;
     }
 
     void OnCollisionEnter2D(Collision2D other)
