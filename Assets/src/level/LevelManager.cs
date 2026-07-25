@@ -77,8 +77,15 @@ public class LevelManager : MonoBehaviour
             time = 0;
             spawnBlock();
         }
-        foreach (MiniEnemy mini in miniEnemies)
+        for (int i = miniEnemies.Count - 1; i >= 0; i--)
         {
+            MiniEnemy mini = miniEnemies[i];
+            if (mini == null)
+            {
+                miniEnemies.RemoveAt(i);
+                continue;
+            }
+
             mini.time += Time.deltaTime;
             if (mini.time >= (1 * mini.getRate()))
             {
@@ -95,8 +102,14 @@ public class LevelManager : MonoBehaviour
     {
         int totalCountdown = player.getCountdown() + boss.getCountdown();
         if (miniEnemies != null) {
-            foreach (MiniEnemy enemy in miniEnemies)
+            for (int i = miniEnemies.Count - 1; i >= 0; i--)
             {
+                MiniEnemy enemy = miniEnemies[i];
+                if (enemy == null)
+                {
+                    miniEnemies.RemoveAt(i);
+                    continue;
+                }
                 totalCountdown += enemy.getCountdown();
             }
         }
@@ -169,6 +182,11 @@ public class LevelManager : MonoBehaviour
         miniEnemyScript.setCountdown(countdown);
         miniEnemyScript.LaunchFromBoss(spawnPosition);
         miniEnemies.Add(miniEnemyScript);
+    }
+
+    public void UnregisterMiniEnemy(MiniEnemy mini)
+    {
+        miniEnemies?.Remove(mini);
     }
 
     static int PickWeightedIndex(float[] weights, int count)

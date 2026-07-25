@@ -123,8 +123,6 @@ public class Player : MonoBehaviour
             // Orbitting
             block.GetComponent<Rigidbody2D>().AddForce(tangentialDirection * orbitalSpeed);
         }
-        // Debug.Log("Count is: " + blocks.Count);
-        // Debug.Log(countdown);
 
         foreach (Block block in absorbedBlocks)
         {
@@ -174,7 +172,6 @@ public class Player : MonoBehaviour
             countdownDisplay.Update(countdown);
         if (controls.Player.TakeIn.WasPressedThisFrame())
         {
-            Debug.Log("reading this");
             if (inConnection)
             {
                 blocks.Add(inConnection);

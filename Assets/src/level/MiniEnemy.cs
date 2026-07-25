@@ -16,6 +16,7 @@ public class MiniEnemy : MonoBehaviour
     public float launchStartScale = 0.2f;
 
     Rigidbody2D rb;
+    LevelManager levelManager;
     SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
     OperationFlash operationFlash = new OperationFlash();
     Vector3 normalScale;
@@ -28,6 +29,7 @@ public class MiniEnemy : MonoBehaviour
         rate = 1;
         time = 0;
         rb = GetComponent<Rigidbody2D>();
+        levelManager = FindAnyObjectByType<LevelManager>();
         normalScale = transform.localScale;
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
         if (playerObject != null)
@@ -116,6 +118,12 @@ public class MiniEnemy : MonoBehaviour
         GridBackground.Pulse(transform.position, GridPulseStrength, rb != null ? rb.linearVelocity : Vector2.zero, GetInstanceID());
     }
     
+    void OnDestroy()
+    {
+        if (levelManager != null)
+            levelManager.UnregisterMiniEnemy(this);
+    }
+
     void OnCollisionEnter2D(Collision2D other)
     {
         Block block = other.gameObject.GetComponentInParent<Block>();
