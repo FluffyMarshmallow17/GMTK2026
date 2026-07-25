@@ -409,3 +409,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ff5dfd59fd6934970b38287728ebad06, type: 3}
   - {fileID: 21300000, guid: ca38d55b13fbe4569b082d857407f229, type: 3}
   - {fileID: 21300000, guid: efab237f2d78540a8ae70f7b7f8d1190, type: 3}
+  - {fileID: 21300000, guid: fbf200ebe66944b41abaf845b2b060ca, type: 3}
+  - {fileID: 21300000, guid: 651694393445d4f719caf0cd49623571, type: 3}
+  decayGlow: {fileID: 2100000, guid: 930251ea4ddac4d079357ca5e28086f1, type: 2}
+  growthGlow: {fileID: 2100000, guid: d7b1da4d569114a81b41ea766fca0615, type: 2}

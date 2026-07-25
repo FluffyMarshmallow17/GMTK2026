@@ -9,16 +9,20 @@ public class Boss : MonoBehaviour
     public TextMeshPro display;
     public string appliedOperation;
     public float countdownDisplaySmoothTime = 0.35f;
+    public double rate;
 
     SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
+    OperationFlash operationFlash = new OperationFlash();
 
     void Awake()
     {
+        rate = 1;
         appliedOperation = "";
         countdown = 100;
         sr = transform.Find("Sprite").GetComponent<SpriteRenderer>();
         material = sr.material;
         countdownDisplay.Init(display, countdown, countdownDisplaySmoothTime);
+        operationFlash.Init(display, transform);
     }
 
     public void setCountdown(int countdown)
@@ -42,10 +46,17 @@ public class Boss : MonoBehaviour
         this.countdown -= countdown;
     }
 
+    public double getRate()
+    {
+        return rate;
+    }
 
     void Update()
     {
-        countdownDisplay.Update(countdown);
+        if (operationFlash.IsActive)
+            operationFlash.Update();
+        else
+            countdownDisplay.Update(countdown);
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -71,9 +82,15 @@ public class Boss : MonoBehaviour
                 appliedOperation = "x";
             } else if (string.Equals("/", affect)) {
                 appliedOperation = "/";
+            } else if (string.Equals("decay", affect)) {
+                appliedOperation = "decay";
+            } else if (string.Equals("grow", affect)) {
+                appliedOperation = "grow";
             } else { // attempted to apply a number without an operation
                 // red error effect
+                return;
             }
+            operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
         } else {
             if (int.TryParse(affect, out int number)) {
                 if (string.Equals("+", appliedOperation)) {
@@ -84,7 +101,11 @@ public class Boss : MonoBehaviour
                     countdown *= number;
                 } else if (string.Equals("/", appliedOperation)) {
                     countdown /= number;
-                } 
+                } else if (string.Equals("decay", appliedOperation)) {
+                    rate /= number;
+                } else if (string.Equals("grow", appliedOperation)) {
+                    rate *= number;
+                }
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation
                 // red error effect

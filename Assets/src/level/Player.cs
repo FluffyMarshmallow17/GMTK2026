@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using Unity.IntegerTime;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -7,7 +8,7 @@ public class Player : MonoBehaviour
     public int countdown;
     private GameControls controls;
     public float moveSpeed = 5f;
-    public float orbitalSpeed = 5f;
+    public float orbitalSpeed = 15f;
     public float shootForce = 1000f;
     public TextMeshPro display;
 
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
     public List<Block> absorbedBlocks;
     public Block selectedBlock;
     public double time;
+    private double rate;
     bool inBounds;
 
     public string appliedOperation;
@@ -28,9 +30,11 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rb;
     SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
+    OperationFlash operationFlash = new OperationFlash();
 
     void Awake()
     {
+        rate = 1;
         time = 0;
         inBounds = true;
         appliedOperation = "";
@@ -40,6 +44,7 @@ public class Player : MonoBehaviour
         blocks = new List<Block>();
         absorbedBlocks = new List<Block>();
         countdownDisplay.Init(display, countdown, countdownDisplaySmoothTime);
+        operationFlash.Init(display, transform);
     }
 
     void LateUpdate()
@@ -151,9 +156,17 @@ public class Player : MonoBehaviour
         }
     }
 
+    public double getRate()
+    {
+        return rate;
+    }
+
     void Update()
     {
-        countdownDisplay.Update(countdown);
+        if (operationFlash.IsActive)
+            operationFlash.Update();
+        else
+            countdownDisplay.Update(countdown);
         if (controls.Player.TakeIn.WasPressedThisFrame())
         {
             Debug.Log("reading this");
@@ -340,9 +353,15 @@ public class Player : MonoBehaviour
                 appliedOperation = "x";
             } else if (string.Equals("/", affect)) {
                 appliedOperation = "/";
+            } else if (string.Equals("decay", affect)) {
+                appliedOperation = "decay";
+            } else if (string.Equals("grow", affect)) {
+                appliedOperation = "grow";
             } else { // attempted to apply a number without an operation
                 // red error effect
+                return;
             }
+            FlashOperation(block);
         } else {
             if (int.TryParse(affect, out int number)) {
                 if (string.Equals("+", appliedOperation)) {
@@ -353,12 +372,21 @@ public class Player : MonoBehaviour
                     countdown *= number;
                 } else if (string.Equals("/", appliedOperation)) {
                     countdown /= number;
-                } 
+                } else if (string.Equals("decay", appliedOperation)) {
+                    rate /= number;
+                } else if (string.Equals("grow", appliedOperation)) {
+                    rate *= number;
+                }
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation
                 // red error effect
             }
         }
+    }
+
+    void FlashOperation(Block block)
+    {
+        operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
     }
 
     public void setInBounds(bool inBounds)

@@ -608,7 +608,7 @@ MonoBehaviour:
   miniEnemyPrefab: {fileID: 84658857129703309, guid: dae0b46c1f2d6448fb6709da0810e8ba, type: 3}
   map: {fileID: 390365656}
   blockPrefab: {fileID: 5749191797275787021, guid: 2b9b9f6be3332427a9843c360391bc13, type: 3}
-  levelData: {fileID: 11400000, guid: 2160a0ca4595c4cd9a82548cf9f83d8a, type: 2}
+  levelData: {fileID: 11400000, guid: 2af7a874499a2449bbcaf9c20006467e, type: 2}
 --- !u!4 &1010630083
 Transform:
   m_ObjectHideFlags: 0
@@ -791,14 +791,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4128198153091421303, guid: f78260964b7e247659b183801f145147, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4789408417511807134, guid: f78260964b7e247659b183801f145147, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 5024085192460261768, guid: f78260964b7e247659b183801f145147, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9
@@ -838,22 +830,6 @@ PrefabInstance:
     - target: {fileID: 5024085192460261768, guid: f78260964b7e247659b183801f145147, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5383881194380793318, guid: f78260964b7e247659b183801f145147, type: 3}
-      propertyPath: targetPrefab
-      value: 
-      objectReference: {fileID: 7390702372494616823, guid: 438ab6b34dc004862a8a9469a48c4f94, type: 3}
-    - target: {fileID: 5383881194380793318, guid: f78260964b7e247659b183801f145147, type: 3}
-      propertyPath: selectedPrefab
-      value: 
-      objectReference: {fileID: 5563583969229557322, guid: 3c872765e04064db8ad76359db80e3e0, type: 3}
-    - target: {fileID: 7044466213375244462, guid: f78260964b7e247659b183801f145147, type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7044466213375244462, guid: f78260964b7e247659b183801f145147, type: 3}
-      propertyPath: m_AngularDamping
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

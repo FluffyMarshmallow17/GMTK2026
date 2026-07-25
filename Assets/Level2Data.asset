@@ -15,15 +15,22 @@ MonoBehaviour:
   initialPlayerCount: 20
   initialBossCount: 100
   includeMiniEnemies: 1
+  changingBorders: 0
+  hardcodeRadius: 20
+  spawnMin: 10
+  spawnMax: 20
+  blockRate: 1
   numberProbability: 0.5
   operationProbability: 0.5
   numberProbabilities:
   - 0.2
-  - 0.2
-  - 0.2
-  - 0.2
-  - 0.2
-  addProbability: 0.45
-  subtractProbability: 0.45
-  multiplyProbability: 0.1
+  - 0.3
+  - 0.3
+  - 0.1
+  - 0.1
+  addProbability: 0.4
+  subtractProbability: 0.4
+  multiplyProbability: 0.2
   divideProbability: 0
+  decayProbability: 0
+  growProbability: 0
