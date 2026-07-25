@@ -170,37 +170,31 @@ public class Player : MonoBehaviour
 
         if (controls.Player.Absorb.WasPressedThisFrame())
         {
-            Block absorbed = blocks[0];
-            absorbedBlocks.Add(absorbed);
-            blocks.Remove(absorbed);
-            inRange.Remove(absorbed);
-        }
-
-        if (controls.Player.Select.WasPressedThisFrame())
-        {
-            if (!selectedBlock)
-            {
-                selectedBlock = blocks[0];
-            }
             if (selectedBlock)
             {
-                Transform selectedTarget = selectedBlock.transform.Find("Target(Clone)");
-                if (selectedTarget != null)
-                    Destroy(selectedTarget.gameObject);
-                int index = blocks.IndexOf(selectedBlock);
-                index = (index + 1) % blocks.Count;
-                selectedBlock = blocks[index];
-                Instantiate(selectedPrefab, selectedBlock.transform.position, Quaternion.identity, selectedBlock.transform);
+                RemoveMarker(selectedBlock, selectedPrefab);
+                absorbedBlocks.Add(selectedBlock);
+                blocks.Remove(selectedBlock);
+                inRange.Remove(selectedBlock);
+                selectedBlock = null;
             }
+        }
+
+        if (controls.Player.RotatePossible.WasPressedThisFrame())
+        {
+            RotateConnection();
+        }
+
+        if (controls.Player.RotateInventory.WasPressedThisFrame())
+        {
+            RotateSelection();
         }
 
         if(controls.Player.Shoot.WasPressedThisFrame())
         {
             if (selectedBlock)
             {
-                Transform selectedTarget = selectedBlock.transform.Find("Target(Clone)");
-                if (selectedTarget != null)
-                    Destroy(selectedTarget.gameObject);
+                RemoveMarker(selectedBlock, selectedPrefab);
                 Vector2 center = transform.position;
                 Vector2 shootDirection = ((Vector2)selectedBlock.transform.position - center).normalized;
                 selectedBlock.GetComponent<Rigidbody2D>().AddForce(shootDirection * shootForce);
@@ -209,6 +203,114 @@ public class Player : MonoBehaviour
             }
         }
 
+    }
+
+    // Rotates the in-range connection target through all pickable blocks around the player.
+    void RotateConnection()
+    {
+        List<Block> candidates = new List<Block>();
+        foreach (Block block in inRange)
+        {
+            if (block != null && !blocks.Contains(block) && !absorbedBlocks.Contains(block))
+                candidates.Add(block);
+        }
+        if (inConnection != null)
+            candidates.Add(inConnection);
+        if (candidates.Count == 0)
+            return;
+
+        Block next = NextBlockInRotation(candidates, inConnection);
+        if (next == null || next == inConnection)
+            return;
+
+        if (inConnection != null)
+        {
+            RemoveMarker(inConnection, targetPrefab);
+            // Hand the old connection back to the in-range pool (FixedUpdate removes the
+            // active connection from inRange, so re-add it to keep it cycleable).
+            if (!inRange.Contains(inConnection))
+                inRange.Add(inConnection);
+        }
+
+        inRange.Remove(next);
+        inConnection = next;
+        Instantiate(targetPrefab, next.transform.position, Quaternion.identity, next.transform);
+    }
+
+    // Rotates the selection (used by Absorb/Shoot) through the blocks held in orbit.
+    void RotateSelection()
+    {
+        if (blocks.Count == 0)
+            return;
+
+        Block next = NextBlockInRotation(blocks, selectedBlock);
+        if (next == null || next == selectedBlock)
+            return;
+
+        if (selectedBlock != null)
+            RemoveMarker(selectedBlock, selectedPrefab);
+
+        selectedBlock = next;
+        GameObject selectMarker = Instantiate(selectedPrefab, next.transform.position, Quaternion.identity, next.transform);
+        selectMarker.AddComponent<SelectZoom>();
+    }
+
+    // Blocks are ordered by a full sweep around the player: across the top from right
+    // to left, then across the bottom from left to right, then wrapping around.
+    // Returns the candidate that comes after `current` in that sweep (the one with the
+    // smallest positive angular step). With no current block, starts at the sweep origin.
+    Block NextBlockInRotation(List<Block> candidates, Block current)
+    {
+        Block best = null;
+        float bestDelta = float.MaxValue;
+
+        if (current == null)
+        {
+            foreach (Block candidate in candidates)
+            {
+                if (candidate == null)
+                    continue;
+                float angle = SweepAngle(candidate);
+                if (angle < bestDelta)
+                {
+                    bestDelta = angle;
+                    best = candidate;
+                }
+            }
+            return best;
+        }
+
+        float currentAngle = SweepAngle(current);
+        foreach (Block candidate in candidates)
+        {
+            if (candidate == null || candidate == current)
+                continue;
+            float delta = Mathf.Repeat(SweepAngle(candidate) - currentAngle, 360f);
+            if (delta <= 0f)
+                delta += 360f;
+            if (delta < bestDelta)
+            {
+                bestDelta = delta;
+                best = candidate;
+            }
+        }
+        return best;
+    }
+
+    // Angle of the block around the player in [0, 360), increasing in sweep order.
+    float SweepAngle(Block block)
+    {
+        Vector2 offset = block.transform.position - transform.position;
+        return Mathf.Repeat(Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg, 360f);
+    }
+
+    void RemoveMarker(Block block, GameObject markerPrefab)
+    {
+        if (block == null || markerPrefab == null)
+            return;
+        Transform marker = block.transform.Find(markerPrefab.name + "(Clone)");
+        if (marker != null)
+            Destroy(marker.gameObject);
     }
 
     void OnCollisionEnter2D(Collision2D other)
