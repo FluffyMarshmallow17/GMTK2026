@@ -54,7 +54,8 @@ public class LevelManager : MonoBehaviour
             bossTime = 0;
             boss.decreaseCountdown();
         }
-        if (time >= levelData.blockRate) {
+        float spawnInterval = GetBlockSpawnInterval();
+        if (time >= spawnInterval) {
             time = 0;
             spawnBlock();
         }
@@ -84,8 +85,31 @@ public class LevelManager : MonoBehaviour
         return totalCountdown;
     }
 
+    float GetBlockSpawnInterval()
+    {
+        // Interval grows as the field fills: blockRate / (1 - count/maxBlocks).
+        // e.g. maxBlocks=50, count=48 → multiplier 25 → very slow spawns.
+        if (levelData.maxBlocks <= 0)
+            return Mathf.Max(0.01f, levelData.blockRate);
+
+        int count = CountBlocks();
+        if (count >= levelData.maxBlocks)
+            return float.PositiveInfinity;
+
+        float fill = (float)count / levelData.maxBlocks;
+        return Mathf.Max(0.01f, levelData.blockRate / (1f - fill));
+    }
+
+    static int CountBlocks()
+    {
+        return FindObjectsByType<Block>(FindObjectsSortMode.None).Length;
+    }
+
     public void spawnBlock()
     {
+        if (levelData.maxBlocks > 0 && CountBlocks() >= levelData.maxBlocks)
+            return;
+
         float minRadius = Mathf.Min(levelData.spawnMin, levelData.spawnMax);
         float maxRadius = Mathf.Max(levelData.spawnMin, levelData.spawnMax);
         float radius = UnityEngine.Random.Range(minRadius, maxRadius);

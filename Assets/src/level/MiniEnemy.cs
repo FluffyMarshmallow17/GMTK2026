@@ -112,6 +112,7 @@ public class MiniEnemy : MonoBehaviour
     public void decreaseCountdown()
     {
         countdown--;
+        GridBackground.Pulse(transform.position, 1f, rb != null ? rb.linearVelocity : Vector2.zero);
     }
     
     void OnCollisionEnter2D(Collision2D other)
@@ -155,6 +156,7 @@ public class MiniEnemy : MonoBehaviour
             operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
         } else {
             if (int.TryParse(affect, out int number)) {
+                int before = countdown;
                 if (string.Equals("+", appliedOperation)) {
                     countdown += number;
                 } else if (string.Equals("-", appliedOperation)) {
@@ -167,6 +169,12 @@ public class MiniEnemy : MonoBehaviour
                     rate /= number;
                 } else if (string.Equals("grow", appliedOperation)) {
                     rate *= number;
+                }
+                if (countdown != before)
+                {
+                    GridBackground.PulseFromChange(transform.position, before, countdown,
+                        rb != null ? rb.linearVelocity : Vector2.zero);
+                    CameraShake.ShakeFromChange(before, countdown);
                 }
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation

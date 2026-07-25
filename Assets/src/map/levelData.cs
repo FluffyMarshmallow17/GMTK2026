@@ -8,6 +8,7 @@ public class LevelData : ScriptableObject
     public bool includeMiniEnemies;
     public bool changingBorders;
     public float hardcodeRadius;
+    public int maxBlocks;
 
     public int spawnMin;
     public int spawnMax;
