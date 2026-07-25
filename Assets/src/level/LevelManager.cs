@@ -12,11 +12,17 @@ public class LevelManager : MonoBehaviour
     public GameObject map;
 
     public GameObject blockPrefab;
+    public LevelData levelData;
+
+    int numberSpriteCount;
 
     void Awake()
     {
         time = 0;
         miniEnemies = new List<MiniEnemy>();
+        numberSpriteCount = blockPrefab.GetComponent<Block>().NumberSpriteCount;
+        player.setCountdown(levelData.initialPlayerCount);
+        boss.setCountdown(levelData.initialBossCount);
     }
 
     void Start()
@@ -56,8 +62,22 @@ public class LevelManager : MonoBehaviour
             0
         );
 
-        Instantiate(blockPrefab, spawnPosition, Quaternion.identity);
-        // addMiniEnemy(UnityEngine.Random.Range(5, 15), (spawnPosition - 10 * Vector3.up));
+        Block block = Instantiate(blockPrefab, spawnPosition, Quaternion.identity)
+            .GetComponent<Block>();
+
+        float categoryTotal = levelData.numberProbability + levelData.operationProbability;
+        bool spawnNumber = categoryTotal <= 0f
+            || UnityEngine.Random.value < levelData.numberProbability / categoryTotal;
+
+        if (spawnNumber)
+            block.SetNumber(PickWeightedIndex(levelData.numberProbabilities, numberSpriteCount));
+        else
+            block.SetOperation((operationType)PickWeightedIndex(
+                new[] { levelData.addProbability, levelData.subtractProbability, levelData.multiplyProbability, levelData.divideProbability },
+                4));
+
+        if (levelData.includeMiniEnemies)
+            addMiniEnemy(UnityEngine.Random.Range(5, 15));
     }
 
     public void decreaseCountdown()
@@ -72,16 +92,39 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void addMiniEnemy(int countdown, Vector3 spawnPosition = default(Vector3))
+    public void addMiniEnemy(int countdown)
     {
         if (miniEnemies == null)
         {
             miniEnemies = new List<MiniEnemy>();
         }
         boss.decreaseCountdown(countdown);
+        Vector3 spawnPosition = boss.transform.position;
         GameObject miniEnemy = Instantiate(miniEnemyPrefab, spawnPosition, Quaternion.identity);
         MiniEnemy miniEnemyScript = miniEnemy.GetComponent<MiniEnemy>();
         miniEnemyScript.setCountdown(countdown);
+        miniEnemyScript.LaunchFromBoss(spawnPosition);
         miniEnemies.Add(miniEnemyScript);
+    }
+
+    static int PickWeightedIndex(float[] weights, int count)
+    {
+        float total = 0f;
+        for (int i = 0; i < count; i++)
+            total += i < weights.Length ? weights[i] : 0f;
+
+        if (total <= 0f)
+            return UnityEngine.Random.Range(0, count);
+
+        float roll = UnityEngine.Random.value * total;
+        float cumulative = 0f;
+        for (int i = 0; i < count; i++)
+        {
+            cumulative += i < weights.Length ? weights[i] : 0f;
+            if (roll <= cumulative)
+                return i;
+        }
+
+        return count - 1;
     }
 }

@@ -21,6 +21,11 @@ public class Boss : MonoBehaviour
         countdownDisplay.Init(display, countdown, countdownDisplaySmoothTime);
     }
 
+    public void setCountdown(int countdown)
+    {
+        this.countdown = countdown;
+    }
+
     public int getCountdown()
     {
         return countdown;
@@ -32,10 +37,11 @@ public class Boss : MonoBehaviour
         countdown--;
     }
 
-    public void decreaseCountdown(int amount)
+    public void decreaseCountdown(int countdown)
     {
-        countdown -= amount;
+        this.countdown -= countdown;
     }
+
 
     void Update()
     {
