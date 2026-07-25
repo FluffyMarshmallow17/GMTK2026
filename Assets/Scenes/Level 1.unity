@@ -634,6 +634,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: e7a09e0975f3d49a7995d898502c53ff, type: 3}
     volume: 1
     pitchJitter: 0
+  - id: 7
+    clip: {fileID: 8300000, guid: fb2bbb1aa8c4e42be86ecf0497b822b5, type: 3}
+    volume: 1
+    pitchJitter: 0
   musicSource: {fileID: 912994586}
 --- !u!4 &912994585
 Transform:

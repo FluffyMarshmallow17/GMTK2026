@@ -224,6 +224,7 @@ public class Player : MonoBehaviour
                 selectedBlock.GetComponent<Rigidbody2D>().AddForce(shootDirection * shootForce);
                 blocks.Remove(selectedBlock);
                 selectedBlock = null;
+                AudioManager.Instance.PlaySFX(SFX.Push);
             }
         }
 
