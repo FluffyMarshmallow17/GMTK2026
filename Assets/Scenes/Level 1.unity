@@ -535,6 +535,7 @@ MonoBehaviour:
   miniEnemies: []
   miniEnemyPrefab: {fileID: 84658857129703309, guid: dae0b46c1f2d6448fb6709da0810e8ba, type: 3}
   blockPrefab: {fileID: 5749191797275787021, guid: 2b9b9f6be3332427a9843c360391bc13, type: 3}
+  levelData: {fileID: 11400000, guid: ca4c631f330bd4a9da39cc9ca662bed6, type: 2}
 --- !u!4 &1010630083
 Transform:
   m_ObjectHideFlags: 0
