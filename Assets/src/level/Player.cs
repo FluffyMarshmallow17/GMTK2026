@@ -182,6 +182,12 @@ public class Player : MonoBehaviour
                 Transform target = inConnection.transform.Find("Target(Clone)");
                 if (target != null)
                     Destroy(target.gameObject);
+                    // decide which pickup sound based on the block's affect
+                    if (int.TryParse(inConnection.getAffect(), out _))
+                        AudioManager.Instance.PlaySFX(SFX.PickupBlock);
+                    else
+                        AudioManager.Instance.PlaySFX(SFX.PickupOperator);
+
                 inConnection = null;
             }
         }
@@ -253,6 +259,7 @@ public class Player : MonoBehaviour
         inRange.Remove(next);
         inConnection = next;
         Instantiate(targetPrefab, next.transform.position, Quaternion.identity, next.transform);
+
     }
 
     // Rotates the selection (used by Absorb/Shoot) through the blocks held in orbit.

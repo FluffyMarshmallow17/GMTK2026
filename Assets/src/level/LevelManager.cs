@@ -17,6 +17,7 @@ public class LevelManager : MonoBehaviour
 
     public GameObject blockPrefab;
     public LevelData levelData;
+    public AudioClip music;
 
     int numberSpriteCount;
 
@@ -38,6 +39,8 @@ public class LevelManager : MonoBehaviour
             mapScript.snapToCountdown(GetTotalCountdown());
         else
             mapScript.snapToRadius(levelData.hardcodeRadius);
+
+        AudioManager.Instance.PlayMusic(music);
     }
 
     void FixedUpdate()
