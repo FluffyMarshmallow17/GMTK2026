@@ -7,6 +7,8 @@ public enum operationType
     Subtract,
     Multiply,
     Divide,
+    Decay,
+    Grow,
     Empty,
 }
 
@@ -19,6 +21,10 @@ public class Block : MonoBehaviour
 
     [SerializeField] Sprite[] numberSprites;
     [SerializeField] Sprite[] operationSprites;
+    [SerializeField] Material decayGlow;
+    [SerializeField] Material growthGlow;
+
+    Material defaultMaterial;
 
     public int NumberSpriteCount => numberSprites.Length;
 
@@ -26,6 +32,7 @@ public class Block : MonoBehaviour
     {
         symbolRenderer = transform.Find("Sprite").GetComponent<SpriteRenderer>();
         symbolRenderer.transform.localScale *= 0.5f;
+        defaultMaterial = symbolRenderer.sharedMaterial;
 
         if (display != null)
             display.gameObject.SetActive(false);
@@ -36,12 +43,27 @@ public class Block : MonoBehaviour
         number = index + 1;
         operation = operationType.Empty;
         symbolRenderer.sprite = numberSprites[index];
+        ApplyGlowMaterial();
     }
 
     public void SetOperation(operationType op)
     {
         operation = op;
         symbolRenderer.sprite = operationSprites[(int)operation];
+        ApplyGlowMaterial();
+    }
+
+    void ApplyGlowMaterial()
+    {
+        if (symbolRenderer == null)
+            return;
+
+        if (operation == operationType.Decay && decayGlow != null)
+            symbolRenderer.material = decayGlow;
+        else if (operation == operationType.Grow && growthGlow != null)
+            symbolRenderer.material = growthGlow;
+        else
+            symbolRenderer.material = defaultMaterial;
     }
 
     public string getAffect()
@@ -52,9 +74,21 @@ public class Block : MonoBehaviour
             case operationType.Subtract: return "-";
             case operationType.Multiply: return "x";
             case operationType.Divide: return "/";
+            case operationType.Decay: return "decay";
+            case operationType.Grow: return "grow";
             case operationType.Empty: return number.ToString();
             default: return number.ToString();
         }
+    }
+
+    public Sprite GetSymbolSprite()
+    {
+        return symbolRenderer != null ? symbolRenderer.sprite : null;
+    }
+
+    public Material GetSymbolMaterial()
+    {
+        return symbolRenderer != null ? symbolRenderer.sharedMaterial : null;
     }
 
     public string ToFriendlyString()
@@ -65,6 +99,8 @@ public class Block : MonoBehaviour
             case operationType.Subtract: return "-";
             case operationType.Multiply: return "x";
             case operationType.Divide: return "/";
+            case operationType.Decay: return "decay";
+            case operationType.Grow: return "grow";            
             default: return operation.ToString();
         }
     }

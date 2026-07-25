@@ -70,7 +70,12 @@ public class Map : MonoBehaviour
 
     public void snapToCountdown(int totalCountdown)
     {
-        destinationRadius = RadiusFromCountdown(totalCountdown);
+        snapToRadius(RadiusFromCountdown(totalCountdown));
+    }
+
+    public void snapToRadius(float radius)
+    {
+        destinationRadius = Mathf.Max(0.01f, radius);
         currentRadius = destinationRadius;
         radiusVelocity = 0f;
         ApplyRadius(currentRadius);

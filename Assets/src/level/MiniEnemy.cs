@@ -3,6 +3,8 @@ using TMPro;
 
 public class MiniEnemy : MonoBehaviour
 {
+    public float time;
+    public float rate;
     private int countdown;
     private Transform playerTransform;
     public string appliedOperation;
@@ -14,6 +16,7 @@ public class MiniEnemy : MonoBehaviour
 
     Rigidbody2D rb;
     SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
+    OperationFlash operationFlash = new OperationFlash();
     Vector3 normalScale;
     bool launching;
     float launchTimer;
@@ -21,6 +24,8 @@ public class MiniEnemy : MonoBehaviour
 
     void Awake()
     {
+        rate = 1;
+        time = 0;
         rb = GetComponent<Rigidbody2D>();
         normalScale = transform.localScale;
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
@@ -29,11 +34,20 @@ public class MiniEnemy : MonoBehaviour
             playerTransform = playerObject.transform;
         }
         countdownDisplay.Init(display, countdown, countdownDisplaySmoothTime);
+        operationFlash.Init(display, transform);
+    }
+
+    public float getRate()
+    {
+        return rate;
     }
 
     void Update()
     {
-        countdownDisplay.Update(countdown);
+        if (operationFlash.IsActive)
+            operationFlash.Update();
+        else
+            countdownDisplay.Update(countdown);
     }
 
     void FixedUpdate()
@@ -42,7 +56,6 @@ public class MiniEnemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        display.text = "" + countdown;
 
         if (launching)
         {
@@ -131,9 +144,15 @@ public class MiniEnemy : MonoBehaviour
                 appliedOperation = "x";
             } else if (string.Equals("/", affect)) {
                 appliedOperation = "/";
+            } else if (string.Equals("decay", affect)) {
+                appliedOperation = "decay";
+            } else if (string.Equals("grow", affect)) {
+                appliedOperation = "grow";
             } else { // attempted to apply a number without an operation
                 // red error effect
+                return;
             }
+            operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
         } else {
             if (int.TryParse(affect, out int number)) {
                 if (string.Equals("+", appliedOperation)) {
@@ -144,7 +163,11 @@ public class MiniEnemy : MonoBehaviour
                     countdown *= number;
                 } else if (string.Equals("/", appliedOperation)) {
                     countdown /= number;
-                } 
+                } else if (string.Equals("decay", appliedOperation)) {
+                    rate /= number;
+                } else if (string.Equals("grow", appliedOperation)) {
+                    rate *= number;
+                }
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation
                 // red error effect
