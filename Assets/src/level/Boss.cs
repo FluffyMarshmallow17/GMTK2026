@@ -117,12 +117,16 @@ public class Boss : MonoBehaviour
                 double rateBefore = rate;
                 if (string.Equals("+", appliedOperation)) {
                     countdown += number;
+                    AudioManager.Instance.PlaySFX(SFX.Add);
                 } else if (string.Equals("-", appliedOperation)) {
                     countdown -= number;
+                    AudioManager.Instance.PlaySFX(SFX.Subtract);
                 } else if (string.Equals("x", appliedOperation)) {
                     countdown *= number;
+                    AudioManager.Instance.PlaySFX(SFX.Multiply);
                 } else if (string.Equals("/", appliedOperation)) {
                     countdown /= number;
+                    AudioManager.Instance.PlaySFX(SFX.Divide);
                 } else if (string.Equals("decay", appliedOperation)) {
                     rate /= number;
                 } else if (string.Equals("grow", appliedOperation)) {

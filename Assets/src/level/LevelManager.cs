@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour
 
     public GameObject blockPrefab;
     public LevelData levelData;
+    public AudioClip[] musicTracks;
 
     const float SlowMoDiveDuration = 0.95f;
     const float SlowMoScale = 0.12f;
@@ -59,7 +60,16 @@ public class LevelManager : MonoBehaviour
             mapScript.snapToCountdown(GetTotalCountdown());
         else
             mapScript.snapToRadius(levelData.hardcodeRadius);
+
+        AudioManager.Instance.PlayMusic(GetRandomTrack());
     }
+
+    AudioClip GetRandomTrack()
+{
+    if (musicTracks == null || musicTracks.Length == 0)
+        return null;
+    return musicTracks[UnityEngine.Random.Range(0, musicTracks.Length)];
+}
 
     void FixedUpdate()
     {
