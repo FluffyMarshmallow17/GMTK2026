@@ -33,7 +33,7 @@ Material:
     - _OutsideIntensity: 0.09
     - _PulseIntensity: 1.8
     - _PulseNoise: 0.55
-    - _PulseWhiten: 1
+    - _PulseWhiten: 0.72
     - _PulseWidth: 1.5
     - _SpotIntensity: 0.3
     - _SpotRadius: 1.1

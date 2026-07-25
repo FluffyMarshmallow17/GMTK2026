@@ -13,6 +13,7 @@ public class Boss : MonoBehaviour
 
     SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
     OperationFlash operationFlash = new OperationFlash();
+    bool displayFrozen;
 
     void Awake()
     {
@@ -30,6 +31,22 @@ public class Boss : MonoBehaviour
         this.countdown = countdown;
     }
 
+    public void SnapDisplay(int value)
+    {
+        countdownDisplay.Snap(value);
+    }
+
+    public void FreezeDisplay(int value)
+    {
+        displayFrozen = true;
+        countdownDisplay.Snap(value);
+    }
+
+    public void UnfreezeDisplay()
+    {
+        displayFrozen = false;
+    }
+
     public int getCountdown()
     {
         return countdown;
@@ -39,14 +56,14 @@ public class Boss : MonoBehaviour
     public void decreaseCountdown()
     {
         countdown--;
-        GridBackground.Pulse(transform.position);
+        GridBackground.Pulse(transform.position, 1f, default, GetInstanceID());
     }
 
     public void decreaseCountdown(int countdown)
     {
         int before = this.countdown;
         this.countdown -= countdown;
-        GridBackground.PulseFromChange(transform.position, before, this.countdown);
+        GridBackground.PulseFromChange(transform.position, before, this.countdown, default, GetInstanceID());
     }
 
     public double getRate()
@@ -58,7 +75,7 @@ public class Boss : MonoBehaviour
     {
         if (operationFlash.IsActive)
             operationFlash.Update();
-        else
+        else if (!displayFrozen)
             countdownDisplay.Update(countdown);
     }
 
@@ -97,6 +114,7 @@ public class Boss : MonoBehaviour
         } else {
             if (int.TryParse(affect, out int number)) {
                 int before = countdown;
+                double rateBefore = rate;
                 if (string.Equals("+", appliedOperation)) {
                     countdown += number;
                     AudioManager.Instance.PlaySFX(SFX.Add);
@@ -116,9 +134,11 @@ public class Boss : MonoBehaviour
                 }
                 if (countdown != before)
                 {
-                    GridBackground.PulseFromChange(transform.position, before, countdown);
+                    GridBackground.PulseFromChange(transform.position, before, countdown, default, GetInstanceID());
                     CameraShake.ShakeFromChange(before, countdown);
                 }
+                if (rate != rateBefore)
+                    CameraShake.ShakeFromChange((float)rateBefore, (float)rate);
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation
                 // red error effect

@@ -188,19 +188,21 @@ public class GridBackground : MonoBehaviour
     /// Emit a glow ring from a world position (call when a countdown decreases).
     /// Pass the emitter's velocity so the ring leads and follows a moving emitter.
     /// </summary>
-    static float lastPulseTime = -999f;
+    static readonly System.Collections.Generic.Dictionary<int, float> lastPulseBySource =
+        new System.Collections.Generic.Dictionary<int, float>();
 
-    public static void Pulse(Vector2 worldPosition, float strength = 1f, Vector2 velocity = default)
+    public static void Pulse(Vector2 worldPosition, float strength = 1f, Vector2 velocity = default, int sourceId = 0)
     {
         if (instance == null)
             return;
 
-        // Rate-limit: rapid-fire countdown changes (e.g. decay) would otherwise
-        // stack rings into a noisy mess.
+        // Rate-limit per emitter so rapid decay on the player doesn't steal
+        // pulses from the boss / minis ticking on the same frame.
         float minInterval = 1f / Mathf.Max(instance.maxPulsesPerSecond, 0.01f);
-        if (Time.time - lastPulseTime < minInterval)
+        if (lastPulseBySource.TryGetValue(sourceId, out float lastTime)
+            && Time.time - lastTime < minInterval)
             return;
-        lastPulseTime = Time.time;
+        lastPulseBySource[sourceId] = Time.time;
 
         // Prefer a free slot so an in-flight pulse is never cut short; if every
         // slot is busy, recycle the oldest (most faded) one.
@@ -235,17 +237,17 @@ public class GridBackground : MonoBehaviour
     /// A small tick (e.g. 100 -> 99) gives a normal pulse; halving or doubling gives
     /// roughly a 2.5x pulse, and bigger ratio jumps scale up from there (capped at 4x).
     /// </summary>
-    public static void PulseFromChange(Vector2 worldPosition, float oldValue, float newValue, Vector2 velocity = default)
+    public static void PulseFromChange(Vector2 worldPosition, float oldValue, float newValue, Vector2 velocity = default, int sourceId = 0, float strengthScale = 1f)
     {
         if (oldValue <= 0f || newValue <= 0f)
         {
-            Pulse(worldPosition, 2f, velocity);
+            Pulse(worldPosition, 2f * strengthScale, velocity, sourceId);
             return;
         }
 
         // |log2(new/old)|: 0 for no change, 1 for a doubling or halving.
         float magnitude = Mathf.Abs(Mathf.Log(newValue / oldValue, 2f));
-        float strength = Mathf.Clamp(1f + magnitude * 1.5f, 1f, 4f);
-        Pulse(worldPosition, strength, velocity);
+        float strength = Mathf.Clamp(1f + magnitude * 1.5f, 1f, 4f) * strengthScale;
+        Pulse(worldPosition, strength, velocity, sourceId);
     }
 }

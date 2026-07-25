@@ -33,9 +33,9 @@ MonoBehaviour:
   - 0.05
   - 0.05
   - 0.05
-  addProbability: 0.45
-  subtractProbability: 0.45
-  multiplyProbability: 0.05
-  divideProbability: 0.05
+  addProbability: 0.1
+  subtractProbability: 0.1
+  multiplyProbability: 0.4
+  divideProbability: 0.4
   decayProbability: 0
   growProbability: 0
