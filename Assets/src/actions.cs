@@ -136,6 +136,24 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""RotatePossible"",
+                    ""type"": ""Value"",
+                    ""id"": ""8f43fa5f-7cd0-455e-8441-283547bcf97d"",
+                    ""expectedControlType"": ""Integer"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""RotateInventory"",
+                    ""type"": ""Value"",
+                    ""id"": ""f81b2576-afe7-4978-86c9-18f2900b3409"",
+                    ""expectedControlType"": ""Integer"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -237,6 +255,28 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
                     ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0ce9f05d-95c6-4ffd-9b53-bcb9d04f928b"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RotatePossible"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0d765b49-7fb7-4f42-8400-af5e81029791"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RotateInventory"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -250,6 +290,8 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
         m_Player_Absorb = m_Player.FindAction("Absorb", throwIfNotFound: true);
         m_Player_Select = m_Player.FindAction("Select", throwIfNotFound: true);
         m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
+        m_Player_RotatePossible = m_Player.FindAction("RotatePossible", throwIfNotFound: true);
+        m_Player_RotateInventory = m_Player.FindAction("RotateInventory", throwIfNotFound: true);
     }
 
     ~@GameControls()
@@ -335,6 +377,8 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Absorb;
     private readonly InputAction m_Player_Select;
     private readonly InputAction m_Player_Shoot;
+    private readonly InputAction m_Player_RotatePossible;
+    private readonly InputAction m_Player_RotateInventory;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -366,6 +410,14 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Shoot".
         /// </summary>
         public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/RotatePossible".
+        /// </summary>
+        public InputAction @RotatePossible => m_Wrapper.m_Player_RotatePossible;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/RotateInventory".
+        /// </summary>
+        public InputAction @RotateInventory => m_Wrapper.m_Player_RotateInventory;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -407,6 +459,12 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
             @Shoot.started += instance.OnShoot;
             @Shoot.performed += instance.OnShoot;
             @Shoot.canceled += instance.OnShoot;
+            @RotatePossible.started += instance.OnRotatePossible;
+            @RotatePossible.performed += instance.OnRotatePossible;
+            @RotatePossible.canceled += instance.OnRotatePossible;
+            @RotateInventory.started += instance.OnRotateInventory;
+            @RotateInventory.performed += instance.OnRotateInventory;
+            @RotateInventory.canceled += instance.OnRotateInventory;
         }
 
         /// <summary>
@@ -433,6 +491,12 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
             @Shoot.started -= instance.OnShoot;
             @Shoot.performed -= instance.OnShoot;
             @Shoot.canceled -= instance.OnShoot;
+            @RotatePossible.started -= instance.OnRotatePossible;
+            @RotatePossible.performed -= instance.OnRotatePossible;
+            @RotatePossible.canceled -= instance.OnRotatePossible;
+            @RotateInventory.started -= instance.OnRotateInventory;
+            @RotateInventory.performed -= instance.OnRotateInventory;
+            @RotateInventory.canceled -= instance.OnRotateInventory;
         }
 
         /// <summary>
@@ -508,5 +572,19 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnShoot(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "RotatePossible" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnRotatePossible(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "RotateInventory" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnRotateInventory(InputAction.CallbackContext context);
     }
 }
