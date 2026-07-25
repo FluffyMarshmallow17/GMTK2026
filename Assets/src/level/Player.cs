@@ -70,14 +70,14 @@ public class Player : MonoBehaviour
     public void decreaseCountdown()
     {
         countdown--;
-        GridBackground.Pulse(transform.position, 1f, rb.linearVelocity);
+        GridBackground.Pulse(transform.position, 1f, rb.linearVelocity, GetInstanceID());
     }
 
     public void decreaseCountdown(int amount)
     {
         int before = countdown;
         countdown -= amount;
-        GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity);
+        GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity, GetInstanceID());
     }
 
     public void setCountdown(int countdown)
@@ -123,8 +123,6 @@ public class Player : MonoBehaviour
             // Orbitting
             block.GetComponent<Rigidbody2D>().AddForce(tangentialDirection * orbitalSpeed);
         }
-        // Debug.Log("Count is: " + blocks.Count);
-        // Debug.Log(countdown);
 
         foreach (Block block in absorbedBlocks)
         {
@@ -157,7 +155,7 @@ public class Player : MonoBehaviour
             int before = countdown;
             countdown = (int) ((double) countdown * 0.75);
             time = 0;
-            GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity);
+            GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity, GetInstanceID());
         }
     }
 
@@ -174,7 +172,6 @@ public class Player : MonoBehaviour
             countdownDisplay.Update(countdown);
         if (controls.Player.TakeIn.WasPressedThisFrame())
         {
-            Debug.Log("reading this");
             if (inConnection)
             {
                 blocks.Add(inConnection);
@@ -370,6 +367,7 @@ public class Player : MonoBehaviour
         } else {
             if (int.TryParse(affect, out int number)) {
                 int before = countdown;
+                double rateBefore = rate;
                 if (string.Equals("+", appliedOperation)) {
                     countdown += number;
                 } else if (string.Equals("-", appliedOperation)) {
@@ -385,9 +383,11 @@ public class Player : MonoBehaviour
                 }
                 if (countdown != before)
                 {
-                    GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity);
+                    GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity, GetInstanceID());
                     CameraShake.ShakeFromChange(before, countdown);
                 }
+                if (rate != rateBefore)
+                    CameraShake.ShakeFromChange((float)rateBefore, (float)rate);
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation
                 // red error effect

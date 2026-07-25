@@ -3,6 +3,7 @@ using TMPro;
 
 public class MiniEnemy : MonoBehaviour
 {
+    const float GridPulseStrength = 0.5f;
     public float time;
     public float rate;
     private int countdown;
@@ -15,6 +16,7 @@ public class MiniEnemy : MonoBehaviour
     public float launchStartScale = 0.2f;
 
     Rigidbody2D rb;
+    LevelManager levelManager;
     SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
     OperationFlash operationFlash = new OperationFlash();
     Vector3 normalScale;
@@ -27,6 +29,7 @@ public class MiniEnemy : MonoBehaviour
         rate = 1;
         time = 0;
         rb = GetComponent<Rigidbody2D>();
+        levelManager = FindAnyObjectByType<LevelManager>();
         normalScale = transform.localScale;
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
         if (playerObject != null)
@@ -112,9 +115,15 @@ public class MiniEnemy : MonoBehaviour
     public void decreaseCountdown()
     {
         countdown--;
-        GridBackground.Pulse(transform.position, 1f, rb != null ? rb.linearVelocity : Vector2.zero);
+        GridBackground.Pulse(transform.position, GridPulseStrength, rb != null ? rb.linearVelocity : Vector2.zero, GetInstanceID());
     }
     
+    void OnDestroy()
+    {
+        if (levelManager != null)
+            levelManager.UnregisterMiniEnemy(this);
+    }
+
     void OnCollisionEnter2D(Collision2D other)
     {
         Block block = other.gameObject.GetComponentInParent<Block>();
@@ -157,6 +166,7 @@ public class MiniEnemy : MonoBehaviour
         } else {
             if (int.TryParse(affect, out int number)) {
                 int before = countdown;
+                double rateBefore = rate;
                 if (string.Equals("+", appliedOperation)) {
                     countdown += number;
                 } else if (string.Equals("-", appliedOperation)) {
@@ -173,9 +183,11 @@ public class MiniEnemy : MonoBehaviour
                 if (countdown != before)
                 {
                     GridBackground.PulseFromChange(transform.position, before, countdown,
-                        rb != null ? rb.linearVelocity : Vector2.zero);
+                        rb != null ? rb.linearVelocity : Vector2.zero, GetInstanceID(), GridPulseStrength);
                     CameraShake.ShakeFromChange(before, countdown);
                 }
+                if (rate != rateBefore)
+                    CameraShake.ShakeFromChange((float)rateBefore, (float)rate);
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation
                 // red error effect
