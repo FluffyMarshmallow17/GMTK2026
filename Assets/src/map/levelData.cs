@@ -7,6 +7,7 @@ public class LevelData : ScriptableObject
     public int initialBossCount;
     public bool includeMiniEnemies;
     public bool changingBorders;
+    public bool spawnZones;
     public float hardcodeRadius;
     public int maxBlocks;
 
