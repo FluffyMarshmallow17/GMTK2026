@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+// Runs before Player/Boss Awake so it can set their countdowns from LevelData
+// before their displays initialize.
+[DefaultExecutionOrder(-100)]
 public class LevelManager : MonoBehaviour
 {
     float time;
@@ -42,6 +45,9 @@ public class LevelManager : MonoBehaviour
     const float HoldWhite = 0.25f;
     const float FadeFromWhite = 0.9f;
 
+    [Tooltip("How far directly below the boss the player spawns (world units).")]
+    public float playerSpawnBelowBoss = 15f;
+
     int numberSpriteCount;
 
     void Awake()
@@ -61,6 +67,18 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
+        // Spawn the player directly below the boss (same X, offset down in Y).
+        if (player != null && boss != null)
+        {
+            Vector3 spawn = boss.transform.position;
+            spawn.y -= playerSpawnBelowBoss;
+            player.transform.position = spawn;
+
+            Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
+            if (playerRb != null)
+                playerRb.position = spawn; // keep physics in sync with the teleport
+        }
+
         Map mapScript = map.GetComponent<Map>();
         if (levelData.changingBorders)
             mapScript.snapToCountdown(GetTotalCountdown());
