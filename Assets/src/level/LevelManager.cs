@@ -167,6 +167,7 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator LevelEndCinematic(Transform focus, TextMeshPro countdownLabel, Action showScreen)
     {
+        AudioManager.Instance.PlaySFX(SFX.Boom);
         if (player != null)
         {
             Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();

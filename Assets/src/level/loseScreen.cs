@@ -73,6 +73,7 @@ public class LoseScreen : MonoBehaviour
         RevealAmbientBackground();
         FitLoseArtToCamera();
         BranchRoot.SetActive(true);
+        AudioManager.Instance.PlayLossMusic();
 
         retryButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => RetryLevel(currentLevelIndex));
         returnToMenuButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => returnToMenu());

@@ -45,6 +45,7 @@ public class SceneLoader : MonoBehaviour
 
     void Start()
     {
+        AudioManager.Instance.PlayMenuMusic();
         int levelsUnlocked = PlayerPrefs.GetInt("LevelsUnlocked", 1);
         int totalLevels = DetermineLevelCount();
 
