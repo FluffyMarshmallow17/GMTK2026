@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Level8Data
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   initialPlayerCount: 50
-  initialBossCount: 500
+  initialBossCount: 9999
   includeMiniEnemies: 1
-  miniEnemySpawnRate: 2
+  miniEnemySpawnRate: 1
   changingBorders: 1
   spawnZones: 0
   zoneSpawnRate: 0
@@ -27,12 +27,12 @@ MonoBehaviour:
   zoneBlocksMin: 0
   zoneBlocksMax: 0
   hardcodeRadius: 0
-  maxBlocks: 200
+  maxBlocks: 300
   spawnMin: 15
-  spawnMax: 50
-  blockRate: 0.1
-  numberProbability: 0.5
-  operationProbability: 0.5
+  spawnMax: 40
+  blockRate: 0.5
+  numberProbability: 0.95
+  operationProbability: 0.05
   numberProbabilities:
   - 0.15
   - 0.2
@@ -43,9 +43,9 @@ MonoBehaviour:
   - 0.05
   - 0.025
   - 0.025
-  addProbability: 0.48
-  subtractProbability: 0.48
-  multiplyProbability: 0.01
-  divideProbability: 0.01
-  decayProbability: 0
-  growProbability: 0
+  addProbability: 0
+  subtractProbability: 0
+  multiplyProbability: 0.4
+  divideProbability: 0.4
+  decayProbability: 0.1
+  growProbability: 0.1

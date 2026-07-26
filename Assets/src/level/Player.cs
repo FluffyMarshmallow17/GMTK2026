@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public const int MaxCountdown = 9999;
+
     public int countdown;
     private GameControls controls;
     public float moveSpeed = 5f;
@@ -39,11 +41,6 @@ public class Player : MonoBehaviour
     bool coasting;
     Vector2 coastVelocity;
     Vector2 recoilVelocity;
-
-    // The operation currently staged, remembered so the follow-up number can flash
-    // the whole operation+number combo together.
-    Sprite pendingOpSprite;
-    Material pendingOpMaterial;
 
     // While touching the boss, both drain 10% of their countdown per second.
     Boss touchingBoss;
@@ -102,7 +99,7 @@ public class Player : MonoBehaviour
 
     public void setCountdown(int countdown)
     {
-        this.countdown = countdown;
+        this.countdown = Mathf.Min(countdown, MaxCountdown);
     }
 
     public void SnapDisplay(int value)
@@ -228,7 +225,7 @@ public class Player : MonoBehaviour
 
         float dt = Time.fixedDeltaTime;
 
-        playerBossDrainAccum += Mathf.Max(0, countdown) * 0.10f * dt;
+        playerBossDrainAccum += Mathf.Max(0, countdown) * 0.33f * dt;
         int playerLoss = (int)playerBossDrainAccum;
         if (playerLoss > 0)
         {
@@ -238,7 +235,7 @@ public class Player : MonoBehaviour
             GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity, GetInstanceID());
         }
 
-        bossBossDrainAccum += Mathf.Max(0, touchingBoss.getCountdown()) * 0.10f * dt;
+        bossBossDrainAccum += Mathf.Max(0, touchingBoss.getCountdown()) * 0.33f * dt;
         int bossLoss = (int)bossBossDrainAccum;
         if (bossLoss > 0)
         {
@@ -471,24 +468,29 @@ public class Player : MonoBehaviour
         if (string.IsNullOrEmpty(appliedOperation)) {
             if (string.Equals("+", affect)) {
                 appliedOperation = "+";
+                FlashOperation(block);
             } else if (string.Equals("-", affect)) {
                 appliedOperation = "-";
+                FlashOperation(block);
             } else if (string.Equals("x", affect)) {
                 appliedOperation = "x";
+                FlashOperation(block);
             } else if (string.Equals("/", affect)) {
                 appliedOperation = "/";
+                FlashOperation(block);
             } else if (string.Equals("decay", affect)) {
                 appliedOperation = "decay";
+                FlashOperation(block);
             } else if (string.Equals("grow", affect)) {
                 appliedOperation = "grow";
-            } else { // attempted to apply a number without an operation
-                // red error effect
+                FlashOperation(block);
+            } else if (int.TryParse(affect, out int number)) { // attempted to apply a number without an operation
+                countdown += number;
+                countdown = Mathf.Min(countdown, MaxCountdown);
+                AudioManager.Instance.PlaySFX(SFX.Add);
+            } else {
                 return;
             }
-            FlashOperation(block);
-            // Remember this operation so the follow-up number flashes the whole combo.
-            pendingOpSprite = block.GetSymbolSprite();
-            pendingOpMaterial = block.GetSymbolMaterial();
         } else {
             if (int.TryParse(affect, out int number)) {
                 int before = countdown;
@@ -510,6 +512,7 @@ public class Player : MonoBehaviour
                 } else if (string.Equals("grow", appliedOperation)) {
                     rate *= number;
                 }
+                countdown = Mathf.Min(countdown, MaxCountdown);
                 if (countdown != before)
                 {
                     GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity, GetInstanceID());
@@ -517,10 +520,6 @@ public class Player : MonoBehaviour
                 }
                 if (rate != rateBefore)
                     CameraShake.ShakeFromChange((float)rateBefore, (float)rate);
-                // Flash the operation and the number together as one combo.
-                operationFlash.PlayCombo(pendingOpSprite, pendingOpMaterial, block.GetSymbolSprite(), block.GetSymbolMaterial());
-                pendingOpSprite = null;
-                pendingOpMaterial = null;
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation
                 // red error effect

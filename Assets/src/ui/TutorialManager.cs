@@ -28,8 +28,8 @@ public class TutorialManager : MonoBehaviour
     public Sprite symbolTutorial;   // auto-shown after all of the above
 
     [Header("Level intro (optional, plays on start — not triggered)")]
-    [Tooltip("If set, this image plays once when the level begins, e.g. \"Introducing new symbols!\"")]
-    public Sprite intro;
+    [Tooltip("Images shown in order when the level begins, one after another (e.g. a short intro sequence).")]
+    public Sprite[] intro;
 
     [Header("Display")]
     [Tooltip("Height of the popup in pixels (width follows the image's aspect).")]
@@ -67,7 +67,10 @@ public class TutorialManager : MonoBehaviour
     void Start()
     {
         // Level intro: not triggered by anything, just plays first when the level loads.
-        Enqueue(intro);
+        // Each image is queued in order so they play back-to-back.
+        if (intro != null)
+            foreach (Sprite image in intro)
+                Enqueue(image);
     }
 
     void OnDestroy()

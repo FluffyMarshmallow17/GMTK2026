@@ -386,8 +386,9 @@ MonoBehaviour:
   rCycleInventory: {fileID: 21300000, guid: f4a4adba0bd36414986d905fc3760fdf, type: 3}
   fShoot: {fileID: 21300000, guid: d277d22f624b34aa6a7399f1bde4c0e5, type: 3}
   qAbsorb: {fileID: 21300000, guid: 5ff14bcca2e6c43b99b5ce542185f2b8, type: 3}
-  symbolTutorial: {fileID: 21300000, guid: 4f56983100ce94d05a88251de7cdd2af, type: 3}
-  intro: {fileID: 21300000, guid: d41ed894a2d334193b6fc25f294f056d, type: 3}
+  symbolTutorial: {fileID: 21300000, guid: 78298a65ea9614bceaf658432a2888c4, type: 3}
+  intro:
+  - {fileID: 21300000, guid: d41ed894a2d334193b6fc25f294f056d, type: 3}
   popupHeight: 350
   bottomMargin: 120
   holdDuration: 4.5

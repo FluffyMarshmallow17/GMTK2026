@@ -13,16 +13,26 @@ MonoBehaviour:
   m_Name: Level3Data
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   initialPlayerCount: 50
-  initialBossCount: 1000
+  initialBossCount: 5000
   includeMiniEnemies: 0
+  miniEnemySpawnRate: 5
   changingBorders: 0
+  spawnZones: 0
+  zoneSpawnRate: 0
+  zoneLifespan: 0
+  zoneSizeMin: 0
+  zoneSizeMax: 0
+  zoneCostMin: 0
+  zoneCostMax: 0
+  zoneBlocksMin: 0
+  zoneBlocksMax: 0
   hardcodeRadius: 20
   maxBlocks: 60
   spawnMin: 10
   spawnMax: 20
   blockRate: 1
-  numberProbability: 0.66
-  operationProbability: 0.34
+  numberProbability: 0.9
+  operationProbability: 0.1
   numberProbabilities:
   - 0.05
   - 0.1
@@ -33,9 +43,9 @@ MonoBehaviour:
   - 0.1
   - 0.05
   - 0.05
-  addProbability: 0.35
-  subtractProbability: 0.35
-  multiplyProbability: 0.2
-  divideProbability: 0.1
+  addProbability: 0
+  subtractProbability: 0
+  multiplyProbability: 0.5
+  divideProbability: 0.5
   decayProbability: 0
   growProbability: 0

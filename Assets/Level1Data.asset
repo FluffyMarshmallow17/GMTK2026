@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf51b65da19b746b79fcfc7f8332b357, type: 3}
   m_Name: Level1Data
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  initialPlayerCount: 60
+  initialPlayerCount: 55
   initialBossCount: 65
   includeMiniEnemies: 0
+  miniEnemySpawnRate: 0
   changingBorders: 0
   spawnZones: 0
   zoneSpawnRate: 1
@@ -30,8 +31,8 @@ MonoBehaviour:
   spawnMin: 10
   spawnMax: 20
   blockRate: 2
-  numberProbability: 0.5
-  operationProbability: 0.5
+  numberProbability: 1
+  operationProbability: 0
   numberProbabilities:
   - 0.4
   - 0.3

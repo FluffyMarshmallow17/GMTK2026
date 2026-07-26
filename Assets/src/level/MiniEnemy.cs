@@ -130,7 +130,10 @@ public class MiniEnemy : MonoBehaviour
         Player player = other.gameObject.GetComponentInParent<Player>();
         if (player != null)
         {
+            int before = player.getCountdown();
             player.decreaseCountdown(countdown);
+            CameraShake.ShakeFromChange(before, player.getCountdown());
+            AudioManager.Instance.PlaySFX(SFX.Subtract);
             Destroy(gameObject);
         }
         if (block != null)
