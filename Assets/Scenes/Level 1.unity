@@ -352,6 +352,60 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8979198888939951852, guid: 6a6605e824ac149d9b1e7985e1a644e7, type: 3}
   m_PrefabInstance: {fileID: 7423626227589507898}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &506180292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 506180294}
+  - component: {fileID: 506180293}
+  m_Layer: 0
+  m_Name: TutorialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &506180293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506180292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4c8aca27c4f431d8bc125670025153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TutorialManager
+  ePickUp: {fileID: 21300000, guid: b91633dc4f4d74c948b36bb10b601e30, type: 3}
+  gCyclePickable: {fileID: 21300000, guid: 2a2cf657ab89b491393d09c19465ddad, type: 3}
+  rCycleInventory: {fileID: 21300000, guid: f4a4adba0bd36414986d905fc3760fdf, type: 3}
+  fShoot: {fileID: 21300000, guid: d277d22f624b34aa6a7399f1bde4c0e5, type: 3}
+  qAbsorb: {fileID: 21300000, guid: 5ff14bcca2e6c43b99b5ce542185f2b8, type: 3}
+  symbolTutorial: {fileID: 21300000, guid: 4f56983100ce94d05a88251de7cdd2af, type: 3}
+  popupHeight: 600
+  bottomMargin: 120
+  holdDuration: 4.5
+  fadeDuration: 0.3
+--- !u!4 &506180294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506180292}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2034.9386, y: 1347.0776, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &823468369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -382,7 +436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1174728591628182110, guid: 92ce1244e5b084207aba106319a6b119, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -230
       objectReference: {fileID: 0}
     - target: {fileID: 5118085155669641517, guid: 92ce1244e5b084207aba106319a6b119, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -903,3 +957,4 @@ SceneRoots:
   - {fileID: 7423626227589507898}
   - {fileID: 823468369}
   - {fileID: 8847522135606779364}
+  - {fileID: 506180294}

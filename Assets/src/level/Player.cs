@@ -218,6 +218,15 @@ public class Player : MonoBehaviour
                         AudioManager.Instance.PlaySFX(SFX.PickupOperator);
 
                 inConnection = null;
+
+                // Tutorials: the first time the player holds two blocks, teach how to
+                // cycle the inventory (R), then shoot (F) and absorb (Q) in turn.
+                if (blocks.Count >= 2)
+                {
+                    TutorialManager.Show(TutorialStep.CycleInventory);
+                    TutorialManager.Show(TutorialStep.Shoot);
+                    TutorialManager.Show(TutorialStep.Absorb);
+                }
             }
         }
 
@@ -466,6 +475,24 @@ public class Player : MonoBehaviour
             Instantiate(targetPrefab, block.transform.position, Quaternion.identity, block.transform);
             inConnection = block;
         }
+
+        // Tutorials: the first block in range, then the first time two are pickable.
+        TutorialManager.Show(TutorialStep.PickUp);
+        if (PickableCount() >= 2)
+            TutorialManager.Show(TutorialStep.CyclePickable);
+    }
+
+    // Number of blocks currently around the player that can still be picked up
+    // (the in-range pool plus the active connection).
+    int PickableCount()
+    {
+        int count = 0;
+        foreach (Block block in inRange)
+            if (block != null && !blocks.Contains(block) && !absorbedBlocks.Contains(block))
+                count++;
+        if (inConnection != null && !inRange.Contains(inConnection))
+            count++;
+        return count;
     }
 
     void OnTriggerExit2D(Collider2D other)
