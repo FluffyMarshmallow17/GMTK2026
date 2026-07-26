@@ -718,6 +718,7 @@ MonoBehaviour:
   loseScreen: {fileID: 770846160}
   levelEnded: 0
   blockPrefab: {fileID: 5749191797275787021, guid: 2b9b9f6be3332427a9843c360391bc13, type: 3}
+  zonePrefab: {fileID: 0}
   levelData: {fileID: 11400000, guid: 2160a0ca4595c4cd9a82548cf9f83d8a, type: 2}
   musicTracks:
   - {fileID: 8300000, guid: f756667aacdeb4eda8affcc06e8a270a, type: 3}
@@ -890,6 +891,18 @@ PrefabInstance:
       propertyPath: intro
       value: 
       objectReference: {fileID: 21300000, guid: 8130caa64fabd405c9b38d2837740547, type: 3}
+    - target: {fileID: 2889951805636015582, guid: a9600373c97be42a8b93b0e69c48d613, type: 3}
+      propertyPath: intro.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2889951805636015582, guid: a9600373c97be42a8b93b0e69c48d613, type: 3}
+      propertyPath: 'intro.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 8130caa64fabd405c9b38d2837740547, type: 3}
+    - target: {fileID: 2889951805636015582, guid: a9600373c97be42a8b93b0e69c48d613, type: 3}
+      propertyPath: 'intro.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 762319a826a2e4d71b2f0144ae7617f0, type: 3}
     - target: {fileID: 6353089329277168770, guid: a9600373c97be42a8b93b0e69c48d613, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2034.9386

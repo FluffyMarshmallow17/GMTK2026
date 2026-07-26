@@ -2,9 +2,8 @@ using TMPro;
 using UnityEngine;
 
 /// <summary>
-/// Briefly hides the countdown label and flashes operation/number sprites that pop
-/// in, fit inside the host body, stay dark for glow contrast, then restore the
-/// number. Can show a single symbol (an operation) or an operation+number combo.
+/// Briefly hides the countdown label and flashes an operation sprite that pops in,
+/// fits inside the host body, stays dark for glow contrast, then restores the number.
 /// </summary>
 public class OperationFlash
 {
@@ -14,15 +13,13 @@ public class OperationFlash
     public float holdDuration = 0.2f;
     [Tooltip("How much of the host body the flash should fill at rest (0-1).")]
     public float fitFraction = 0.55f;
-    [Tooltip("Gap between the two symbols in a combo, as a fraction of symbol height.")]
-    public float comboSpacing = 0.2f;
     public Color flashColor = new Color(0.05f, 0.05f, 0.07f, 1f);
 
     TextMeshPro label;
     Transform host;
     SpriteRenderer hostBody;
-    Transform flashTransform;                              // container that animates
-    readonly SpriteRenderer[] symbols = new SpriteRenderer[2];
+    SpriteRenderer flashRenderer;
+    Transform flashTransform;
     Vector3 restScale = Vector3.one * 0.4f;
     float scaleVelocity;
     float holdTimer;
@@ -45,109 +42,56 @@ public class OperationFlash
                 hostBody = spriteChild.GetComponent<SpriteRenderer>();
         }
 
-        var container = new GameObject("OperationFlash");
-        flashTransform = container.transform;
+        GameObject flashObject = new GameObject("OperationFlash");
+        flashTransform = flashObject.transform;
         flashTransform.SetParent(host != null ? host : label.transform.parent, false);
         flashTransform.localPosition = Vector3.zero;
         flashTransform.localRotation = Quaternion.identity;
 
-        for (int i = 0; i < symbols.Length; i++)
-        {
-            var go = new GameObject("Symbol" + i);
-            go.transform.SetParent(flashTransform, false);
-            var sr = go.AddComponent<SpriteRenderer>();
-            sr.color = flashColor;
-            sr.sortingOrder = 80;
-            sr.enabled = false;
-            symbols[i] = sr;
-        }
+        flashRenderer = flashObject.AddComponent<SpriteRenderer>();
+        flashRenderer.color = flashColor;
+        flashRenderer.sortingOrder = 80;
+        flashRenderer.enabled = false;
     }
 
-    /// <summary>Flash a single symbol (e.g. an operation on its own).</summary>
     public void Play(Sprite sprite, Material material = null)
     {
-        PlaySymbols(sprite, material, null, null);
-    }
-
-    /// <summary>Flash an operation and the number applied to it, side by side.</summary>
-    public void PlayCombo(Sprite opSprite, Material opMaterial, Sprite numberSprite, Material numberMaterial)
-    {
-        // Fall back to a single flash if the operation sprite is missing.
-        if (opSprite == null)
-            PlaySymbols(numberSprite, numberMaterial, null, null);
-        else
-            PlaySymbols(opSprite, opMaterial, numberSprite, numberMaterial);
-    }
-
-    void PlaySymbols(Sprite a, Material aMat, Sprite b, Material bMat)
-    {
-        if (label == null || flashTransform == null || a == null)
+        if (label == null || flashRenderer == null || sprite == null)
             return;
 
-        Assign(symbols[0], a, aMat);
-        Assign(symbols[1], b, bMat);
-        LayoutSymbols();
+        flashRenderer.sprite = sprite;
+        flashRenderer.color = flashColor;
+        if (material != null)
+            flashRenderer.sharedMaterial = material;
+        flashRenderer.enabled = true;
+
+        FitToHost(sprite);
 
         label.gameObject.SetActive(false);
         flashTransform.localPosition = Vector3.zero;
         flashTransform.localScale = restScale * startScaleMultiplier;
+        scaleVelocity = 0f;
         scaleVelocity = Mathf.Abs(restScale.x * (peakScaleMultiplier - startScaleMultiplier) / Mathf.Max(0.01f, settleSmoothTime));
         holdTimer = 0f;
         settling = true;
         active = true;
     }
 
-    void Assign(SpriteRenderer sr, Sprite sprite, Material material)
+    void FitToHost(Sprite sprite)
     {
-        if (sprite == null)
+        float targetWorldSize;
+        if (hostBody != null && hostBody.sprite != null)
         {
-            sr.sprite = null;
-            sr.enabled = false;
-            return;
+            float bodySize = Mathf.Min(hostBody.bounds.size.x, hostBody.bounds.size.y);
+            targetWorldSize = bodySize * fitFraction;
         }
-        sr.sprite = sprite;
-        sr.color = flashColor;
-        if (material != null)
-            sr.sharedMaterial = material;
-        sr.enabled = true;
-    }
-
-    // Normalizes each active symbol to unit height, lays them in a centered row, and
-    // sets the container rest scale so the whole row fits the host body.
-    void LayoutSymbols()
-    {
-        float[] widths = new float[symbols.Length];
-        int count = 0;
-        float totalWidth = 0f;
-
-        for (int i = 0; i < symbols.Length; i++)
+        else
         {
-            if (!symbols[i].enabled || symbols[i].sprite == null) { widths[i] = 0f; continue; }
-            Vector2 size = symbols[i].sprite.bounds.size;
-            float childScale = 1f / Mathf.Max(size.y, 0.001f); // normalize to 1 unit tall
-            symbols[i].transform.localScale = Vector3.one * childScale;
-            widths[i] = size.x * childScale;
-            totalWidth += widths[i];
-            count++;
-        }
-        if (count == 0)
-            return;
-        totalWidth += comboSpacing * (count - 1);
-
-        float x = -totalWidth * 0.5f;
-        for (int i = 0; i < symbols.Length; i++)
-        {
-            if (!symbols[i].enabled || symbols[i].sprite == null) continue;
-            symbols[i].transform.localPosition = new Vector3(x + widths[i] * 0.5f, 0f, 0f);
-            x += widths[i] + comboSpacing;
+            targetWorldSize = 0.45f;
         }
 
-        float targetWorldSize = (hostBody != null && hostBody.sprite != null)
-            ? Mathf.Min(hostBody.bounds.size.x, hostBody.bounds.size.y) * fitFraction
-            : 0.45f;
-
-        float assemblyExtent = Mathf.Max(1f, totalWidth); // row is 1 unit tall
-        float worldScale = targetWorldSize / assemblyExtent;
+        float spriteSize = Mathf.Max(sprite.bounds.size.x, sprite.bounds.size.y);
+        float worldScale = targetWorldSize / Mathf.Max(spriteSize, 0.001f);
         float parentLossy = flashTransform.parent != null
             ? Mathf.Max(Mathf.Abs(flashTransform.parent.lossyScale.x), 0.001f)
             : 1f;
@@ -205,9 +149,7 @@ public class OperationFlash
     {
         active = false;
         settling = false;
-        for (int i = 0; i < symbols.Length; i++)
-            if (symbols[i] != null)
-                symbols[i].enabled = false;
+        flashRenderer.enabled = false;
         if (label != null)
             label.gameObject.SetActive(true);
     }

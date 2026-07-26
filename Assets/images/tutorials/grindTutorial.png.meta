@@ -1,0 +1,1469 @@
+fileFormatVersion: 2
+guid: 762319a826a2e4d71b2f0144ae7617f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7531507442905429222
+    second: grindTutorial_0
+  - first:
+      213: 585255599220537171
+    second: grindTutorial_1
+  - first:
+      213: -3387070106669502641
+    second: grindTutorial_2
+  - first:
+      213: -4016831764028465975
+    second: grindTutorial_3
+  - first:
+      213: -6929189008369017018
+    second: grindTutorial_4
+  - first:
+      213: 1870738429639316000
+    second: grindTutorial_5
+  - first:
+      213: -229165147963814014
+    second: grindTutorial_6
+  - first:
+      213: 2206481334577616548
+    second: grindTutorial_7
+  - first:
+      213: 4590990124332529559
+    second: grindTutorial_8
+  - first:
+      213: 3637217498582293837
+    second: grindTutorial_9
+  - first:
+      213: -3670181281480659578
+    second: grindTutorial_10
+  - first:
+      213: -8887236281396207075
+    second: grindTutorial_11
+  - first:
+      213: 7665994585109862188
+    second: grindTutorial_12
+  - first:
+      213: 1337931014363504502
+    second: grindTutorial_13
+  - first:
+      213: 2333783492347384427
+    second: grindTutorial_14
+  - first:
+      213: -1358647832445996294
+    second: grindTutorial_15
+  - first:
+      213: -8392688426920349418
+    second: grindTutorial_16
+  - first:
+      213: -9188257201737116036
+    second: grindTutorial_17
+  - first:
+      213: -1785044806169629322
+    second: grindTutorial_18
+  - first:
+      213: -3333460597788280497
+    second: grindTutorial_19
+  - first:
+      213: 8119844288162695872
+    second: grindTutorial_20
+  - first:
+      213: 2531111683046582409
+    second: grindTutorial_21
+  - first:
+      213: 1606726211157682962
+    second: grindTutorial_22
+  - first:
+      213: -1956764054839005789
+    second: grindTutorial_23
+  - first:
+      213: -7829724015726172617
+    second: grindTutorial_24
+  - first:
+      213: -2799051979153339779
+    second: grindTutorial_25
+  - first:
+      213: 6789415190822341643
+    second: grindTutorial_26
+  - first:
+      213: 3729582799074977600
+    second: grindTutorial_27
+  - first:
+      213: 8870103785340684157
+    second: grindTutorial_28
+  - first:
+      213: 6575808646656003210
+    second: grindTutorial_29
+  - first:
+      213: -7330305382820331683
+    second: grindTutorial_30
+  - first:
+      213: 6868173897627765778
+    second: grindTutorial_31
+  - first:
+      213: -2931215663951244971
+    second: grindTutorial_32
+  - first:
+      213: 6293921653501639842
+    second: grindTutorial_33
+  - first:
+      213: -7763228727104103077
+    second: grindTutorial_34
+  - first:
+      213: -604665387349325680
+    second: grindTutorial_35
+  - first:
+      213: -296847028063918891
+    second: grindTutorial_36
+  - first:
+      213: 306949171093255524
+    second: grindTutorial_37
+  - first:
+      213: 5504663703109511620
+    second: grindTutorial_38
+  - first:
+      213: -1416272132291809585
+    second: grindTutorial_39
+  - first:
+      213: 6836983039057263544
+    second: grindTutorial_40
+  - first:
+      213: 1925766839672794666
+    second: grindTutorial_41
+  - first:
+      213: 1055924150856217028
+    second: grindTutorial_42
+  - first:
+      213: -2310716434884709305
+    second: grindTutorial_43
+  - first:
+      213: 1464473077100767974
+    second: grindTutorial_44
+  - first:
+      213: 5017150491601240389
+    second: grindTutorial_45
+  - first:
+      213: 6975229204241301158
+    second: grindTutorial_46
+  - first:
+      213: 4168334853302952544
+    second: grindTutorial_47
+  - first:
+      213: -559773959504739120
+    second: grindTutorial_48
+  - first:
+      213: 6295403378508325192
+    second: grindTutorial_49
+  - first:
+      213: 1577227068988062431
+    second: grindTutorial_50
+  - first:
+      213: -914101693427984368
+    second: grindTutorial_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grindTutorial_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1472
+        width: 113
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4b69d9d1a458860800000000000000
+      internalID: 7531507442905429222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1469
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 357395eddde3f1800800000000000000
+      internalID: 585255599220537171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1469
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4fae96fea5bef0d0800000000000000
+      internalID: -3387070106669502641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_3
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1469
+        width: 93
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ccd39eeac85148c0800000000000000
+      internalID: -4016831764028465975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_4
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1472
+        width: 94
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f9f9e2f4396df90800000000000000
+      internalID: -6929189008369017018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_5
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1472
+        width: 61
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022d25ea0b236f910800000000000000
+      internalID: 1870738429639316000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_6
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1472
+        width: 95
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f87b81387d1dcf0800000000000000
+      internalID: -229165147963814014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_7
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1469
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a65707551ffe9e10800000000000000
+      internalID: 2206481334577616548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_8
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 1469
+        width: 109
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797ba28a13976bf30800000000000000
+      internalID: 4590990124332529559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_9
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1469
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d15dd4b0ef97230800000000000000
+      internalID: 3637217498582293837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_10
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1470
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68dae08e195e01dc0800000000000000
+      internalID: -3670181281480659578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_11
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 1470
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d126a6c40b13aa480800000000000000
+      internalID: -8887236281396207075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_12
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 1472
+        width: 62
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c279a8f7575136a60800000000000000
+      internalID: 7665994585109862188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_13
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 1469
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f5d1d3b29419210800000000000000
+      internalID: 1337931014363504502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_14
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 1470
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62590ca8b3436020800000000000000
+      internalID: 2333783492347384427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_15
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1422
+        width: 109
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2b33caefc152de0800000000000000
+      internalID: -1358647832445996294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_16
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 1469
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61171e2975e278b80800000000000000
+      internalID: -8392688426920349418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_17
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 1469
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76d889a1c0cc7080800000000000000
+      internalID: -9188257201737116036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_18
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 1469
+        width: 109
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d6a14d43f3a37e0800000000000000
+      internalID: -1785044806169629322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_19
+      rect:
+        serializedVersion: 2
+        x: 2282
+        y: 1469
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49711c6f3b2db1d0800000000000000
+      internalID: -3333460597788280497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_20
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 1422
+        width: 109
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca0c6bfb5b7fa070800000000000000
+      internalID: 8119844288162695872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_21
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 1469
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98825d25aa0502320800000000000000
+      internalID: 2531111683046582409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_22
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 1469
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21bec5be9fc3c4610800000000000000
+      internalID: 1606726211157682962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_23
+      rect:
+        serializedVersion: 2
+        x: 2783
+        y: 1469
+        width: 93
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad6112a57d28d4e0800000000000000
+      internalID: -1956764054839005789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_24
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 1472
+        width: 94
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 736eb49cd7b375390800000000000000
+      internalID: -7829724015726172617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_25
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 1229
+        width: 102
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a06b21e05c729d0800000000000000
+      internalID: -2799051979153339779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_26
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1232
+        width: 62
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c4b99e429d83e50800000000000000
+      internalID: 6789415190822341643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_27
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1232
+        width: 94
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047654babc322c330800000000000000
+      internalID: 3729582799074977600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_28
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1229
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77441e9560f81b70800000000000000
+      internalID: 8870103785340684157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_29
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1232
+        width: 66
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c8fdebf17f14b50800000000000000
+      internalID: 6575808646656003210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_30
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1230
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f3cd98716854a90800000000000000
+      internalID: -7330305382820331683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_31
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 1229
+        width: 93
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c86bf45c7a05f50800000000000000
+      internalID: 6868173897627765778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_32
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 1229
+        width: 102
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551102642ea3257d0800000000000000
+      internalID: -2931215663951244971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_33
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1229
+        width: 94
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acba11b560885750800000000000000
+      internalID: 6293921653501639842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_34
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 1232
+        width: 94
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d1ad2aa98734490800000000000000
+      internalID: -7763228727104103077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_35
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 1232
+        width: 62
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098c11ba80ccb97f0800000000000000
+      internalID: -604665387349325680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_36
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 1229
+        width: 109
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d4ae93633361ebf0800000000000000
+      internalID: -296847028063918891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_37
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 1229
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4653d1315a0824400800000000000000
+      internalID: 306949171093255524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_38
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 1232
+        width: 161
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c924d7197e746c40800000000000000
+      internalID: 5504663703109511620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_39
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 1232
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce2679dff3685ce0800000000000000
+      internalID: -1416272132291809585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_40
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 1230
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bbf062a9d7d1ee50800000000000000
+      internalID: 6836983039057263544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_41
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 1274
+        width: 23
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e6ceeccb2b9ba10800000000000000
+      internalID: 1925766839672794666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_42
+      rect:
+        serializedVersion: 2
+        x: 2361
+        y: 1229
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c17a81bb6567ae00800000000000000
+      internalID: 1055924150856217028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_43
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 817
+        width: 162
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7443a0a25afaeefd0800000000000000
+      internalID: -2310716434884709305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_44
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 758
+        width: 177
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eae6b7218ad25410800000000000000
+      internalID: 1464473077100767974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_45
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 749
+        width: 81
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54181944acf70a540800000000000000
+      internalID: 5017150491601240389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_46
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 435
+        width: 418
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aebbb1410efcc060800000000000000
+      internalID: 6975229204241301158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_47
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 273
+        width: 436
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062a00cd676e8d930800000000000000
+      internalID: 4168334853302952544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_48
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 566
+        width: 162
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4c435bc884b38f0800000000000000
+      internalID: -559773959504739120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_49
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 151
+        width: 82
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84168cda404cd5750800000000000000
+      internalID: 6295403378508325192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_50
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 239
+        width: 177
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdaf929a9af63e510800000000000000
+      internalID: 1577227068988062431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grindTutorial_51
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1
+        width: 162
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01854aa5a557053f0800000000000000
+      internalID: -914101693427984368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      grindTutorial_0: 7531507442905429222
+      grindTutorial_1: 585255599220537171
+      grindTutorial_10: -3670181281480659578
+      grindTutorial_11: -8887236281396207075
+      grindTutorial_12: 7665994585109862188
+      grindTutorial_13: 1337931014363504502
+      grindTutorial_14: 2333783492347384427
+      grindTutorial_15: -1358647832445996294
+      grindTutorial_16: -8392688426920349418
+      grindTutorial_17: -9188257201737116036
+      grindTutorial_18: -1785044806169629322
+      grindTutorial_19: -3333460597788280497
+      grindTutorial_2: -3387070106669502641
+      grindTutorial_20: 8119844288162695872
+      grindTutorial_21: 2531111683046582409
+      grindTutorial_22: 1606726211157682962
+      grindTutorial_23: -1956764054839005789
+      grindTutorial_24: -7829724015726172617
+      grindTutorial_25: -2799051979153339779
+      grindTutorial_26: 6789415190822341643
+      grindTutorial_27: 3729582799074977600
+      grindTutorial_28: 8870103785340684157
+      grindTutorial_29: 6575808646656003210
+      grindTutorial_3: -4016831764028465975
+      grindTutorial_30: -7330305382820331683
+      grindTutorial_31: 6868173897627765778
+      grindTutorial_32: -2931215663951244971
+      grindTutorial_33: 6293921653501639842
+      grindTutorial_34: -7763228727104103077
+      grindTutorial_35: -604665387349325680
+      grindTutorial_36: -296847028063918891
+      grindTutorial_37: 306949171093255524
+      grindTutorial_38: 5504663703109511620
+      grindTutorial_39: -1416272132291809585
+      grindTutorial_4: -6929189008369017018
+      grindTutorial_40: 6836983039057263544
+      grindTutorial_41: 1925766839672794666
+      grindTutorial_42: 1055924150856217028
+      grindTutorial_43: -2310716434884709305
+      grindTutorial_44: 1464473077100767974
+      grindTutorial_45: 5017150491601240389
+      grindTutorial_46: 6975229204241301158
+      grindTutorial_47: 4168334853302952544
+      grindTutorial_48: -559773959504739120
+      grindTutorial_49: 6295403378508325192
+      grindTutorial_5: 1870738429639316000
+      grindTutorial_50: 1577227068988062431
+      grindTutorial_51: -914101693427984368
+      grindTutorial_6: -229165147963814014
+      grindTutorial_7: 2206481334577616548
+      grindTutorial_8: 4590990124332529559
+      grindTutorial_9: 3637217498582293837
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

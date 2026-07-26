@@ -15,9 +15,6 @@ public class Boss : MonoBehaviour
     OperationFlash operationFlash = new OperationFlash();
     bool displayFrozen;
 
-    Sprite pendingOpSprite;
-    Material pendingOpMaterial;
-
     void Awake()
     {
         rate = 1;
@@ -99,23 +96,28 @@ public class Boss : MonoBehaviour
         if (string.IsNullOrEmpty(appliedOperation)) {
             if (string.Equals("+", affect)) {
                 appliedOperation = "+";
+                operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
             } else if (string.Equals("-", affect)) {
                 appliedOperation = "-";
+                operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
             } else if (string.Equals("x", affect)) {
                 appliedOperation = "x";
+                operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
             } else if (string.Equals("/", affect)) {
                 appliedOperation = "/";
+                operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
             } else if (string.Equals("decay", affect)) {
                 appliedOperation = "decay";
+                operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
             } else if (string.Equals("grow", affect)) {
                 appliedOperation = "grow";
-            } else { // attempted to apply a number without an operation
-                // red error effect
+                operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
+            } else if (int.TryParse(affect, out int number)) { // number without an operation — no flash
+                countdown -= number;
+                AudioManager.Instance.PlaySFX(SFX.Subtract);
+            } else {
                 return;
             }
-            operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
-            pendingOpSprite = block.GetSymbolSprite();
-            pendingOpMaterial = block.GetSymbolMaterial();
         } else {
             if (int.TryParse(affect, out int number)) {
                 int before = countdown;
@@ -144,9 +146,6 @@ public class Boss : MonoBehaviour
                 }
                 if (rate != rateBefore)
                     CameraShake.ShakeFromChange((float)rateBefore, (float)rate);
-                operationFlash.PlayCombo(pendingOpSprite, pendingOpMaterial, block.GetSymbolSprite(), block.GetSymbolMaterial());
-                pendingOpSprite = null;
-                pendingOpMaterial = null;
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation
                 // red error effect
