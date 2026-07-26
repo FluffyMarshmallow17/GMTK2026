@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: b91633dc4f4d74c948b36bb10b601e30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2321111029896159921
+    second: eTutorial_0
+  - first:
+      213: -1853524390954458141
+    second: eTutorial_1
+  - first:
+      213: 2520392884114829023
+    second: eTutorial_2
+  - first:
+      213: 6761690557403184403
+    second: eTutorial_3
+  - first:
+      213: -8132035379717577074
+    second: eTutorial_4
+  - first:
+      213: 7274604654477343116
+    second: eTutorial_5
+  - first:
+      213: -468165643827658143
+    second: eTutorial_6
+  - first:
+      213: -9115867170872028483
+    second: eTutorial_7
+  - first:
+      213: 5305076130738357832
+    second: eTutorial_8
+  - first:
+      213: 1361790334278632004
+    second: eTutorial_9
+  - first:
+      213: -8971130291686685998
+    second: eTutorial_10
+  - first:
+      213: -3430019261118199042
+    second: eTutorial_11
+  - first:
+      213: 7009716677482650681
+    second: eTutorial_12
+  - first:
+      213: 869118399640182660
+    second: eTutorial_13
+  - first:
+      213: 2735074216193899229
+    second: eTutorial_14
+  - first:
+      213: 4914040146958073804
+    second: eTutorial_15
+  - first:
+      213: -8193642616544736949
+    second: eTutorial_16
+  - first:
+      213: -2103506241872727575
+    second: eTutorial_17
+  - first:
+      213: -7401144871233081020
+    second: eTutorial_18
+  - first:
+      213: -1492635872525182097
+    second: eTutorial_19
+  - first:
+      213: -6022542100038149468
+    second: eTutorial_20
+  - first:
+      213: 1059985523009156985
+    second: eTutorial_21
+  - first:
+      213: -5025680873252694943
+    second: eTutorial_22
+  - first:
+      213: 3159768207445466000
+    second: eTutorial_23
+  - first:
+      213: -5503907508030133406
+    second: eTutorial_24
+  - first:
+      213: -531927456903629047
+    second: eTutorial_25
+  - first:
+      213: -60910994250625349
+    second: eTutorial_26
+  - first:
+      213: 1979743513203252511
+    second: eTutorial_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: eTutorial_0
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 1464
+        width: 84
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2a3351f2e363020800000000000000
+      internalID: 2321111029896159921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_1
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 1428
+        width: 99
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e323a60365f646e0800000000000000
+      internalID: -1853524390954458141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_2
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 1494
+        width: 176
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde261879fb3af220800000000000000
+      internalID: 2520392884114829023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_3
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 1525
+        width: 126
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d312bacb956dd50800000000000000
+      internalID: 6761690557403184403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_4
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 1550
+        width: 103
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86660358e4352f80800000000000000
+      internalID: -8132035379717577074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_5
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 1565
+        width: 53
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c897687046694f460800000000000000
+      internalID: 7274604654477343116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_6
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 1343
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1624c9fc3ddb089f0800000000000000
+      internalID: -468165643827658143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_7
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1357
+        width: 52
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db217842b1fed7180800000000000000
+      internalID: -9115867170872028483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_8
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1366
+        width: 53
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 846401722aa6f9940800000000000000
+      internalID: 5305076130738357832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_9
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 1378
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4420d3d081d06e210800000000000000
+      internalID: 1361790334278632004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_10
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 1397
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2c442e784208380800000000000000
+      internalID: -8971130291686685998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_11
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 1412
+        width: 65
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa4d40b7af1660d0800000000000000
+      internalID: -3430019261118199042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_12
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 1436
+        width: 117
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c1c79dd24874160800000000000000
+      internalID: 7009716677482650681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_13
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1219
+        width: 85
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f1f46649abf0c00800000000000000
+      internalID: 869118399640182660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_14
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1234
+        width: 85
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda3192328fe4f520800000000000000
+      internalID: 2735074216193899229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_15
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1254
+        width: 114
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfb17b5a7d223440800000000000000
+      internalID: 4914040146958073804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_16
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1283
+        width: 65
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b494958b3755a4e80800000000000000
+      internalID: -8193642616544736949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_17
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1298
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e1fb56c738dec2e0800000000000000
+      internalID: -2103506241872727575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_18
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1326
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441b2fad3f9d94990800000000000000
+      internalID: -7401144871233081020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_19
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1166
+        width: 100
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b912f0597194be0800000000000000
+      internalID: -1492635872525182097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_20
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1184
+        width: 64
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa146a6ed1ab6ca0800000000000000
+      internalID: -6022542100038149468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_21
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1201
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97774069733d5be00800000000000000
+      internalID: 1059985523009156985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 1101
+        width: 345
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1645c4b7fd1314ab0800000000000000
+      internalID: -5025680873252694943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_23
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 769
+        width: 138
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b1c598170c9db20800000000000000
+      internalID: 3159768207445466000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_24
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 857
+        width: 176
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b224b48413e93b0800000000000000
+      internalID: -5503907508030133406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_25
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 736
+        width: 253
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9077bf4dbc63e98f0800000000000000
+      internalID: -531927456903629047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_26
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 456
+        width: 295
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe86c006c9972ff0800000000000000
+      internalID: -60910994250625349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eTutorial_27
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 4
+        width: 418
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d1dd27c36797b10800000000000000
+      internalID: 1979743513203252511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      eTutorial_0: 2321111029896159921
+      eTutorial_1: -1853524390954458141
+      eTutorial_10: -8971130291686685998
+      eTutorial_11: -3430019261118199042
+      eTutorial_12: 7009716677482650681
+      eTutorial_13: 869118399640182660
+      eTutorial_14: 2735074216193899229
+      eTutorial_15: 4914040146958073804
+      eTutorial_16: -8193642616544736949
+      eTutorial_17: -2103506241872727575
+      eTutorial_18: -7401144871233081020
+      eTutorial_19: -1492635872525182097
+      eTutorial_2: 2520392884114829023
+      eTutorial_20: -6022542100038149468
+      eTutorial_21: 1059985523009156985
+      eTutorial_22: -5025680873252694943
+      eTutorial_23: 3159768207445466000
+      eTutorial_24: -5503907508030133406
+      eTutorial_25: -531927456903629047
+      eTutorial_26: -60910994250625349
+      eTutorial_27: 1979743513203252511
+      eTutorial_3: 6761690557403184403
+      eTutorial_4: -8132035379717577074
+      eTutorial_5: 7274604654477343116
+      eTutorial_6: -468165643827658143
+      eTutorial_7: -9115867170872028483
+      eTutorial_8: 5305076130738357832
+      eTutorial_9: 1361790334278632004
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
