@@ -14,6 +14,10 @@ public class SceneLoader : MonoBehaviour
     public Sprite[] numberSprites;
     [Tooltip("Horizontal gap between level numbers (world units).")]
     public float spacing = 3f;
+    [Tooltip("Levels per row.")]
+    public int columns = 4;
+    [Tooltip("Vertical gap between rows (world units).")]
+    public float rowSpacing = 3f;
     [Tooltip("World-space scale applied to each spawned number sprite.")]
     public float iconScale = 1f;
     [Tooltip("Sorting order for the numbers (the marker draws behind them).")]
@@ -44,13 +48,22 @@ public class SceneLoader : MonoBehaviour
         int levelsUnlocked = PlayerPrefs.GetInt("LevelsUnlocked", 1);
         int totalLevels = DetermineLevelCount();
 
-        float startX = -(totalLevels - 1) * spacing * 0.5f;
+        int cols = Mathf.Max(1, columns);
+        int rows = Mathf.CeilToInt(totalLevels / (float)cols);
 
         for (int level = 1; level <= totalLevels; level++)
         {
+            int i = level - 1;
+            int row = i / cols;
+            int col = i % cols;
+            int itemsInRow = Mathf.Min(cols, totalLevels - row * cols);
+
+            // Center each row horizontally, and the whole block vertically (row 0 on top).
+            float x = (col - (itemsInRow - 1) * 0.5f) * spacing;
+            float y = ((rows - 1) * 0.5f - row) * rowSpacing;
+
             bool unlocked = unlockAllLevels || level <= levelsUnlocked;
-            Vector3 pos = new Vector3(startX + (level - 1) * spacing, 0f, 0f);
-            icons.Add(CreateIcon(level, pos, unlocked));
+            icons.Add(CreateIcon(level, new Vector3(x, y, 0f), unlocked));
         }
 
         if (selectPrefab != null)

@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
     float time;
     float playerTime;
     float bossTime;
+    float miniEnemyTime;
     public Player player;
     public Boss boss;
     public List<MiniEnemy> miniEnemies;
@@ -19,8 +20,11 @@ public class LevelManager : MonoBehaviour
     public bool levelEnded;
 
     public GameObject blockPrefab;
+    public GameObject zonePrefab;
     public LevelData levelData;
     public AudioClip[] musicTracks;
+
+    float zoneTime;
 
     const float SlowMoDiveDuration = 0.95f;
     const float SlowMoScale = 0.12f;
@@ -48,6 +52,8 @@ public class LevelManager : MonoBehaviour
         playerTime = 0;
         bossTime = 0;
         miniEnemies = new List<MiniEnemy>();
+        zoneTime = 0f;
+        miniEnemyTime = 0f;
         numberSpriteCount = blockPrefab.GetComponent<Block>().NumberSpriteCount;
         player.setCountdown(levelData.initialPlayerCount);
         boss.setCountdown(levelData.initialBossCount);
@@ -111,6 +117,24 @@ public class LevelManager : MonoBehaviour
         {
             time = 0;
             spawnBlock();
+        }
+        if (levelData.spawnZones && zonePrefab != null)
+        {
+            zoneTime += Time.deltaTime;
+            if (zoneTime >= Mathf.Max(0.01f, levelData.zoneSpawnRate))
+            {
+                zoneTime = 0f;
+                TrySpawnZone();
+            }
+        }
+        if (levelData.includeMiniEnemies)
+        {
+            miniEnemyTime += Time.deltaTime;
+            if (miniEnemyTime >= Mathf.Max(0.01f, levelData.miniEnemySpawnRate))
+            {
+                miniEnemyTime = 0f;
+                addMiniEnemy(UnityEngine.Random.Range(5, 15));
+            }
         }
         for (int i = miniEnemies.Count - 1; i >= 0; i--)
         {
@@ -415,19 +439,90 @@ public class LevelManager : MonoBehaviour
         Block block = Instantiate(blockPrefab, spawnPosition, Quaternion.identity)
             .GetComponent<Block>();
 
+        RollBlockType(out bool spawnNumber, out int typeIndex);
+        if (spawnNumber)
+            block.SetNumber(typeIndex);
+        else
+            block.SetOperation((operationType)typeIndex);
+    }
+
+    // Rolls a block type from the level's probabilities. When isNumber is true,
+    // index is a number-sprite index; otherwise it's an operationType value.
+    // Shared by regular block spawning and by zones (so a zone's type follows the
+    // same odds as the loose blocks around it).
+    public void RollBlockType(out bool isNumber, out int index)
+    {
         float categoryTotal = levelData.numberProbability + levelData.operationProbability;
-        bool spawnNumber = categoryTotal <= 0f
+        isNumber = categoryTotal <= 0f
             || UnityEngine.Random.value < levelData.numberProbability / categoryTotal;
 
-        if (spawnNumber)
-            block.SetNumber(PickWeightedIndex(levelData.numberProbabilities, numberSpriteCount));
+        if (isNumber)
+            index = PickWeightedIndex(levelData.numberProbabilities, numberSpriteCount);
         else
-            block.SetOperation((operationType)PickWeightedIndex(
+            index = PickWeightedIndex(
                 new[] { levelData.addProbability, levelData.subtractProbability, levelData.multiplyProbability, levelData.divideProbability, levelData.decayProbability, levelData.growProbability },
-                6));
+                6);
+    }
 
-        if (levelData.includeMiniEnemies)
-            addMiniEnemy(UnityEngine.Random.Range(5, 15));
+    // Spawns one zone at a spot that doesn't overlap existing zones. If no clear
+    // spot is found after a few tries, it skips this attempt (tries again later).
+    void TrySpawnZone()
+    {
+        int size = UnityEngine.Random.Range(levelData.zoneSizeMin, levelData.zoneSizeMax + 1);
+        if (!TryFindZonePosition(size, out Vector3 position))
+            return;
+
+        int cost = UnityEngine.Random.Range(levelData.zoneCostMin, levelData.zoneCostMax + 1);
+        int blockCount = UnityEngine.Random.Range(levelData.zoneBlocksMin, levelData.zoneBlocksMax + 1);
+        RollBlockType(out bool isNumber, out int typeIndex);
+
+        Zone zone = Instantiate(zonePrefab, position, Quaternion.identity).GetComponent<Zone>();
+        zone.Initialize(size, cost, levelData.zoneLifespan, isNumber, typeIndex, blockCount, blockPrefab);
+    }
+
+    bool TryFindZonePosition(float size, out Vector3 position)
+    {
+        float outer = GetEffectiveSpawnMax();
+        float inner = Mathf.Min(levelData.spawnMin, outer);
+        Zone[] existing = FindObjectsByType<Zone>(FindObjectsSortMode.None);
+
+        // Keep the whole zone clear of the player so it never spawns on top of or
+        // reaches them as it grows (radius + a little breathing room).
+        bool hasPlayer = player != null;
+        Vector3 playerPos = hasPlayer ? player.transform.position : Vector3.zero;
+        float playerClearance = size + 4f;
+
+        for (int attempt = 0; attempt < 30; attempt++)
+        {
+            float r = UnityEngine.Random.Range(inner, outer);
+            float a = UnityEngine.Random.Range(0f, Mathf.PI * 2f);
+            Vector3 candidate = new Vector3(Mathf.Cos(a) * r, Mathf.Sin(a) * r, 0f);
+
+            if (hasPlayer && (candidate - playerPos).sqrMagnitude < playerClearance * playerClearance)
+                continue;
+            if (OverlapsAnyZone(candidate, size, existing))
+                continue;
+
+            position = candidate;
+            return true;
+        }
+        position = Vector3.zero;
+        return false;
+    }
+
+    // A candidate overlaps an existing zone if the gap between their centers is
+    // less than the sum of their radii (plus a little breathing room).
+    static bool OverlapsAnyZone(Vector3 position, float size, Zone[] zones)
+    {
+        const float padding = 1f;
+        foreach (Zone zone in zones)
+        {
+            if (zone == null) continue;
+            float minDistance = zone.size + size + padding;
+            if ((zone.transform.position - position).sqrMagnitude < minDistance * minDistance)
+                return true;
+        }
+        return false;
     }
 
     public void addMiniEnemy(int countdown)

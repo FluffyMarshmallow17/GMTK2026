@@ -10,36 +10,42 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf51b65da19b746b79fcfc7f8332b357, type: 3}
-  m_Name: Level1Data
+  m_Name: Level8Data
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  initialPlayerCount: 60
-  initialBossCount: 65
-  includeMiniEnemies: 0
-  changingBorders: 0
+  initialPlayerCount: 50
+  initialBossCount: 500
+  includeMiniEnemies: 1
+  miniEnemySpawnRate: 2
+  changingBorders: 1
   spawnZones: 0
-  zoneSpawnRate: 1
-  zoneLifespan: 5
-  zoneSizeMin: 5
-  zoneSizeMax: 10
-  zoneCostMin: 5
-  zoneCostMax: 10
-  zoneBlocksMin: 2
-  zoneBlocksMax: 5
-  hardcodeRadius: 20
-  maxBlocks: 30
-  spawnMin: 10
-  spawnMax: 20
-  blockRate: 2
+  zoneSpawnRate: 0
+  zoneLifespan: 0
+  zoneSizeMin: 0
+  zoneSizeMax: 0
+  zoneCostMin: 0
+  zoneCostMax: 0
+  zoneBlocksMin: 0
+  zoneBlocksMax: 0
+  hardcodeRadius: 0
+  maxBlocks: 200
+  spawnMin: 15
+  spawnMax: 50
+  blockRate: 0.1
   numberProbability: 0.5
   operationProbability: 0.5
   numberProbabilities:
-  - 0.4
-  - 0.3
+  - 0.15
   - 0.2
+  - 0.2
+  - 0.15
   - 0.1
-  addProbability: 0.5
-  subtractProbability: 0.5
-  multiplyProbability: 0
-  divideProbability: 0
+  - 0.1
+  - 0.05
+  - 0.025
+  - 0.025
+  addProbability: 0.48
+  subtractProbability: 0.48
+  multiplyProbability: 0.01
+  divideProbability: 0.01
   decayProbability: 0
   growProbability: 0
