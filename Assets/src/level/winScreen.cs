@@ -128,7 +128,7 @@ public class WinScreen : MonoBehaviour
         FitWinArtToCamera();
         BranchRoot.SetActive(true);
         PlayWinReveal();
-        AudioManager.Instance.PlayMusic(WinMusic); 
+        AudioManager.Instance.PlayWinMusic(); 
 
         int totalLevels = UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings - 1;
 
