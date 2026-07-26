@@ -1,0 +1,1235 @@
+fileFormatVersion: 2
+guid: 2a2cf657ab89b491393d09c19465ddad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8551700948577699692
+    second: gTutorial_0
+  - first:
+      213: 8552503589747861208
+    second: gTutorial_1
+  - first:
+      213: -1308726190121755492
+    second: gTutorial_2
+  - first:
+      213: 4197867440919617678
+    second: gTutorial_3
+  - first:
+      213: -9039150669722491011
+    second: gTutorial_4
+  - first:
+      213: 3224394826984802270
+    second: gTutorial_5
+  - first:
+      213: -7864708338297962548
+    second: gTutorial_6
+  - first:
+      213: 7191843786675101612
+    second: gTutorial_7
+  - first:
+      213: -8674362748590741406
+    second: gTutorial_8
+  - first:
+      213: -4374963831250448961
+    second: gTutorial_9
+  - first:
+      213: -1534277821702302832
+    second: gTutorial_10
+  - first:
+      213: -8023176354964132581
+    second: gTutorial_11
+  - first:
+      213: -7024156092108456705
+    second: gTutorial_12
+  - first:
+      213: 8026168336516868062
+    second: gTutorial_13
+  - first:
+      213: -8857168867159361025
+    second: gTutorial_14
+  - first:
+      213: 7557994292240042640
+    second: gTutorial_15
+  - first:
+      213: 323577542465208007
+    second: gTutorial_16
+  - first:
+      213: 6519767690604501649
+    second: gTutorial_17
+  - first:
+      213: 6285488321680767122
+    second: gTutorial_18
+  - first:
+      213: 1468754604348170622
+    second: gTutorial_19
+  - first:
+      213: 8600410803287062899
+    second: gTutorial_20
+  - first:
+      213: 851531413585140187
+    second: gTutorial_21
+  - first:
+      213: -7239341055382869627
+    second: gTutorial_22
+  - first:
+      213: 8221452066107657146
+    second: gTutorial_23
+  - first:
+      213: -4804074044230214694
+    second: gTutorial_24
+  - first:
+      213: -4773742119616467966
+    second: gTutorial_25
+  - first:
+      213: -6848180937585787582
+    second: gTutorial_26
+  - first:
+      213: -7332757824800220855
+    second: gTutorial_27
+  - first:
+      213: -100078893218972426
+    second: gTutorial_28
+  - first:
+      213: -5164881672626074876
+    second: gTutorial_29
+  - first:
+      213: 4710856855192417552
+    second: gTutorial_30
+  - first:
+      213: 8425623695519664469
+    second: gTutorial_31
+  - first:
+      213: 7449087317685612805
+    second: gTutorial_32
+  - first:
+      213: -433175230668514471
+    second: gTutorial_33
+  - first:
+      213: 8718098737154701208
+    second: gTutorial_34
+  - first:
+      213: -8876789539095730148
+    second: gTutorial_35
+  - first:
+      213: 2769020379683297362
+    second: gTutorial_36
+  - first:
+      213: -7047305274855883584
+    second: gTutorial_37
+  - first:
+      213: -3445243192643206075
+    second: gTutorial_38
+  - first:
+      213: 4898748550211355381
+    second: gTutorial_39
+  - first:
+      213: 5379078137488881274
+    second: gTutorial_40
+  - first:
+      213: -7079135830714263992
+    second: gTutorial_41
+  - first:
+      213: 2025358998335989819
+    second: gTutorial_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gTutorial_0
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 1629
+        width: 119
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67485134bebda670800000000000000
+      internalID: 8551700948577699692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_1
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 1761
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6ac27a3b890b670800000000000000
+      internalID: 8552503589747861208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_2
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1660
+        width: 97
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9cda89c67876dde0800000000000000
+      internalID: -1308726190121755492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_3
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 1673
+        width: 119
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80213e3232d14a30800000000000000
+      internalID: 4197867440919617678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_4
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1499
+        width: 119
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77e4fb7b5c7e8280800000000000000
+      internalID: -9039150669722491011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_5
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 1542
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed74906f20a5fbc20800000000000000
+      internalID: 3224394826984802270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_6
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 1559
+        width: 84
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf72b17f61fad290800000000000000
+      internalID: -7864708338297962548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_7
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 1576
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf9ed8e1df8ec360800000000000000
+      internalID: 7191843786675101612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_8
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 1604
+        width: 159
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2682e55f9097e9780800000000000000
+      internalID: -8674362748590741406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_9
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 1648
+        width: 45
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd822533910943c0800000000000000
+      internalID: -4374963831250448961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_10
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1415
+        width: 141
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0939caa337625bae0800000000000000
+      internalID: -1534277821702302832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_11
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1444
+        width: 65
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1dac002d93f7a090800000000000000
+      internalID: -8023176354964132581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_12
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1458
+        width: 103
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffcbaf2ff3f258e90800000000000000
+      internalID: -7024156092108456705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_13
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1486
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7639dd39da26f60800000000000000
+      internalID: 8026168336516868062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_14
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1522
+        width: 103
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff93155b7d3051580800000000000000
+      internalID: -8857168867159361025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_15
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1319
+        width: 100
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ac56bc3c363e860800000000000000
+      internalID: 7557994292240042640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1337
+        width: 64
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cebeeb7f049d7400800000000000000
+      internalID: 323577542465208007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_17
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1354
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19adc80eb2eda7a50800000000000000
+      internalID: 6519767690604501649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_18
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1372
+        width: 85
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 298f5ad935a8a3750800000000000000
+      internalID: 6285488321680767122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_19
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1387
+        width: 85
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e716466e780126410800000000000000
+      internalID: 1468754604348170622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_20
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 1279
+        width: 53
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3797b540f0cca5770800000000000000
+      internalID: 8600410803287062899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_21
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 1288
+        width: 53
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd914dd1f4f31db00800000000000000
+      internalID: 851531413585140187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1300
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589a0027aa1b88b90800000000000000
+      internalID: -7239341055382869627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_23
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1319
+        width: 98
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb8f325817781270800000000000000
+      internalID: 8221452066107657146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_24
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 1334
+        width: 64
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adbdbfe1c10845db0800000000000000
+      internalID: -4804074044230214694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_25
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1147
+        width: 126
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ca0f6a5d240cdb0800000000000000
+      internalID: -4773742119616467966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_26
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1172
+        width: 103
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24df89178bf56f0a0800000000000000
+      internalID: -6848180937585787582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_27
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1187
+        width: 53
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94911d4eb9fcc3a90800000000000000
+      internalID: -7332757824800220855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_28
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1205
+        width: 65
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc3b20e6c27c9ef0800000000000000
+      internalID: -100078893218972426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_29
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1220
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b8234cb77a258b0800000000000000
+      internalID: -5164881672626074876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_30
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1248
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0153571c953506140800000000000000
+      internalID: 4710856855192417552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_31
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 1265
+        width: 104
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55940963c14dde470800000000000000
+      internalID: 8425623695519664469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_32
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1086
+        width: 85
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501b48fc279706760800000000000000
+      internalID: 7449087317685612805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1050
+        width: 100
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b518a3c6d0df9f0800000000000000
+      internalID: -433175230668514471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_34
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1116
+        width: 176
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89733e86c98ecf870800000000000000
+      internalID: 8718098737154701208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_35
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 1101
+        width: 345
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18ab4802fe4fc480800000000000000
+      internalID: -8876789539095730148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_36
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 857
+        width: 176
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25817da4d598d6620800000000000000
+      internalID: 2769020379683297362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_37
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 539
+        width: 175
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc7a74d031f23e90800000000000000
+      internalID: -7047305274855883584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_38
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 769
+        width: 138
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5444ba9e1990030d0800000000000000
+      internalID: -3445243192643206075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_39
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 736
+        width: 253
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2ce4b0ad9dbf340800000000000000
+      internalID: 4898748550211355381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_40
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 616
+        width: 298
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a763814011356aa40800000000000000
+      internalID: 5379078137488881274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_41
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 4
+        width: 418
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8465985087bd1cd90800000000000000
+      internalID: -7079135830714263992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gTutorial_42
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 269
+        width: 185
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38257637458b1c10800000000000000
+      internalID: 2025358998335989819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gTutorial_0: 8551700948577699692
+      gTutorial_1: 8552503589747861208
+      gTutorial_10: -1534277821702302832
+      gTutorial_11: -8023176354964132581
+      gTutorial_12: -7024156092108456705
+      gTutorial_13: 8026168336516868062
+      gTutorial_14: -8857168867159361025
+      gTutorial_15: 7557994292240042640
+      gTutorial_16: 323577542465208007
+      gTutorial_17: 6519767690604501649
+      gTutorial_18: 6285488321680767122
+      gTutorial_19: 1468754604348170622
+      gTutorial_2: -1308726190121755492
+      gTutorial_20: 8600410803287062899
+      gTutorial_21: 851531413585140187
+      gTutorial_22: -7239341055382869627
+      gTutorial_23: 8221452066107657146
+      gTutorial_24: -4804074044230214694
+      gTutorial_25: -4773742119616467966
+      gTutorial_26: -6848180937585787582
+      gTutorial_27: -7332757824800220855
+      gTutorial_28: -100078893218972426
+      gTutorial_29: -5164881672626074876
+      gTutorial_3: 4197867440919617678
+      gTutorial_30: 4710856855192417552
+      gTutorial_31: 8425623695519664469
+      gTutorial_32: 7449087317685612805
+      gTutorial_33: -433175230668514471
+      gTutorial_34: 8718098737154701208
+      gTutorial_35: -8876789539095730148
+      gTutorial_36: 2769020379683297362
+      gTutorial_37: -7047305274855883584
+      gTutorial_38: -3445243192643206075
+      gTutorial_39: 4898748550211355381
+      gTutorial_4: -9039150669722491011
+      gTutorial_40: 5379078137488881274
+      gTutorial_41: -7079135830714263992
+      gTutorial_42: 2025358998335989819
+      gTutorial_5: 3224394826984802270
+      gTutorial_6: -7864708338297962548
+      gTutorial_7: 7191843786675101612
+      gTutorial_8: -8674362748590741406
+      gTutorial_9: -4374963831250448961
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
