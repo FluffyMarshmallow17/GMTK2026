@@ -41,6 +41,7 @@ public class SceneLoader : MonoBehaviour
 
     void Start()
     {
+        AudioManager.Instance.PlayMenuMusic();
         int levelsUnlocked = PlayerPrefs.GetInt("LevelsUnlocked", 1);
         int totalLevels = DetermineLevelCount();
 
@@ -85,6 +86,12 @@ public class SceneLoader : MonoBehaviour
         var icon = go.AddComponent<LevelIcon>();
         icon.Init(level, unlocked);
         return icon;
+    }
+
+    void PlaySelectSound()
+    {
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.PlaySFX(SFX.Target);
     }
 
     void Update()
@@ -144,6 +151,7 @@ public class SceneLoader : MonoBehaviour
             {
                 selectedIndex = next;
                 UpdateSelectionVisuals();
+                PlaySelectSound();
                 return;
             }
         }

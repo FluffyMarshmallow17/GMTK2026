@@ -1,7 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum SFX { PickupBlock, PickupOperator, Add, Subtract, Multiply, Divide, Target, Push }
+public enum SFX { PickupBlock, PickupOperator, Add, Subtract, Multiply, Divide, Target, Push, Boom }
 
 [System.Serializable]
 public class SFXEntry
@@ -24,10 +25,19 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private List<SFXEntry> sfxLibrary;
 
     [Header("Music")]
-    [SerializeField] private AudioSource musicSource; // drag the AudioSource you just added
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private float fadeDuration = 1f;
+    [Range(0, 1)] public float musicVolume = 1f;
+
+    [Header("Music Tracks")]
+    public AudioClip menuMusic;
+    public AudioClip levelMusic;
+    public AudioClip winMusic;
+    public AudioClip lossMusic;
 
     private Queue<AudioSource> pool = new Queue<AudioSource>();
     private Dictionary<SFX, SFXEntry> library = new Dictionary<SFX, SFXEntry>();
+    private Coroutine fadeRoutine;
 
     void Awake()
     {
@@ -46,7 +56,11 @@ public class AudioManager : MonoBehaviour
             if (!library.ContainsKey(entry.id))
                 library.Add(entry.id, entry);
         }
+
+        musicSource.volume = musicVolume;
     }
+
+    // ---------- SFX ----------
 
     public void PlaySFX(SFX id)
     {
@@ -61,28 +75,59 @@ public class AudioManager : MonoBehaviour
         src.pitch = 1f + Random.Range(-entry.pitchJitter, entry.pitchJitter);
         src.PlayOneShot(entry.clip, entry.volume);
     }
-    
-    // Music
-    public void PlayMusic(AudioClip clip, bool restart = true)
+
+    // ---------- Music ----------
+
+    public void PlayMenuMusic() => PlayMusic(menuMusic, true);
+    public void PlayLevelMusic() => PlayMusic(levelMusic, true);
+    public void PlayWinMusic() => PlayMusic(winMusic, false);
+    public void PlayLossMusic() => PlayMusic(lossMusic, false);
+
+    public void PlayMusic(AudioClip clip, bool loop = true)
     {
         if (clip == null) return;
+        if (musicSource.clip == clip && musicSource.isPlaying) return; // already playing this track
 
-        if (musicSource.clip == clip && musicSource.isPlaying && !restart)
-            return; // already playing this track, don't restart it
+        if (fadeRoutine != null)
+            StopCoroutine(fadeRoutine);
 
-        musicSource.clip = clip;
-        musicSource.loop = true;
-        musicSource.Play();
+        fadeRoutine = StartCoroutine(FadeToTrack(clip, loop));
     }
 
-    public void RestartMusic()
+    IEnumerator FadeToTrack(AudioClip newClip, bool loop)
     {
-        musicSource.Stop();
-        musicSource.Play(); // same clip, from the top
+        // Fade out current track
+        float startVol = musicSource.volume;
+        float t = 0f;
+        while (t < fadeDuration)
+        {
+            t += Time.unscaledDeltaTime;
+            musicSource.volume = Mathf.Lerp(startVol, 0f, t / fadeDuration);
+            yield return null;
+        }
+        musicSource.volume = 0f;
+
+        // Swap clip
+        musicSource.clip = newClip;
+        musicSource.loop = loop;
+        musicSource.Play();
+
+        // Fade in new track
+        t = 0f;
+        while (t < fadeDuration)
+        {
+            t += Time.unscaledDeltaTime;
+            musicSource.volume = Mathf.Lerp(0f, musicVolume, t / fadeDuration);
+            yield return null;
+        }
+        musicSource.volume = musicVolume;
+        fadeRoutine = null;
     }
 
     public void StopMusic()
     {
+        if (fadeRoutine != null)
+            StopCoroutine(fadeRoutine);
         musicSource.Stop();
     }
 }

@@ -120,12 +120,14 @@ public class WinScreen : MonoBehaviour
 
     public void ShowWinScreen(int currentLevelIndex)
     {
+        
         CameraShake.Clear();
         SnapToMainCamera();
         RevealAmbientBackground();
         FitWinArtToCamera();
         BranchRoot.SetActive(true);
         PlayWinReveal();
+        AudioManager.Instance.PlayWinMusic();
 
         int totalLevels = UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings - 1;
 
