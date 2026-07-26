@@ -6,6 +6,8 @@ public class LoseScreen : MonoBehaviour
     public GameObject returnToMenuButton;
     public GameObject retryButton;
 
+    bool transitioning;
+
     GameObject BranchRoot =>
         transform.parent != null && transform.parent.parent != null
             ? transform.parent.parent.gameObject
@@ -19,6 +21,19 @@ public class LoseScreen : MonoBehaviour
         Transform root = BranchRoot.transform.root;
         Vector3 p = cam.transform.position;
         root.position = new Vector3(p.x, p.y, 0f);
+    }
+
+    void RevealAmbientBackground()
+    {
+        Transform root = BranchRoot.transform.root;
+        AmbientGridPulses.ActivateUnder(root);
+        ScreenFade fade = root.GetComponentInChildren<ScreenFade>(true);
+        if (fade == null)
+            fade = FindAnyObjectByType<ScreenFade>();
+        if (fade != null)
+            fade.FadeFromWhite(0.9f, ScreenFade.Ease.EaseOutCubic, null);
+        else
+            fade?.ClearOverlay();
     }
 
     void FitLoseArtToCamera()
@@ -55,6 +70,7 @@ public class LoseScreen : MonoBehaviour
     public void ShowLoseScreen(int currentLevelIndex)
     {
         SnapToMainCamera();
+        RevealAmbientBackground();
         FitLoseArtToCamera();
         BranchRoot.SetActive(true);
 
@@ -64,8 +80,16 @@ public class LoseScreen : MonoBehaviour
 
     public void returnToMenu()
     {
-        Time.timeScale = 1f;
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
+        if (transitioning)
+            return;
+
+        transitioning = true;
+        if (returnToMenuButton != null)
+            returnToMenuButton.GetComponent<UnityEngine.UI.Button>().interactable = false;
+        if (retryButton != null)
+            retryButton.GetComponent<UnityEngine.UI.Button>().interactable = false;
+
+        ScreenFade.TransitionToMenu(this);
     }
 
     public void RetryLevel(int currentLevelIndex)

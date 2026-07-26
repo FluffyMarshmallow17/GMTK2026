@@ -121,6 +121,19 @@ public class CameraShake : MonoBehaviour
         instance.decay = decayRate;
     }
 
+    /// <summary>Stop shake immediately and remove any in-flight offset.</summary>
+    public static void Clear()
+    {
+        if (instance == null)
+            return;
+
+        instance.transform.position -= instance.lastOffset;
+        instance.lastOffset = Vector3.zero;
+        instance.trauma = 0f;
+        instance.useUnscaledTime = false;
+        instance.cinematicMaxOffset = -1f;
+    }
+
     static void AddTrauma(float amount)
     {
         EnsureInstance();

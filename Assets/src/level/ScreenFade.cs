@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ScreenFade : MonoBehaviour
 {
@@ -14,6 +16,8 @@ public class ScreenFade : MonoBehaviour
         EaseInExpo,
         EaseOutExpo,
     }
+
+    public const float SceneTransitionDuration = 1f;
 
     [SerializeField] int sortingOrder = 400;
 
@@ -79,6 +83,83 @@ public class ScreenFade : MonoBehaviour
         if (hold > 0f)
             yield return new WaitForSecondsRealtime(hold);
         yield return FadeToColorRoutine(Color.black, toBlack, toBlackEase, null);
+        onComplete?.Invoke();
+    }
+
+    public void FadeFromWhite(float duration, Ease ease, Action onComplete)
+    {
+        EnsureOverlay();
+        if (fadeRoutine != null)
+            StopCoroutine(fadeRoutine);
+        fadeRoutine = StartCoroutine(FadeFromWhiteRoutine(duration, ease, onComplete));
+    }
+
+    public void FadeFromBlack(float duration, Ease ease, Action onComplete)
+    {
+        EnsureOverlay();
+        if (fadeRoutine != null)
+            StopCoroutine(fadeRoutine);
+        fadeRoutine = StartCoroutine(FadeFromBlackRoutine(duration, ease, onComplete));
+    }
+
+    /// <summary>
+    /// Full-screen UI fade to black (~1s), load Menu, then fade in from black (~1s).
+    /// Survives the scene load so Overlay UI is covered throughout.
+    /// </summary>
+    public static void TransitionToMenu(MonoBehaviour _, float fadeDuration = SceneTransitionDuration)
+    {
+        MenuTransition.Begin(fadeDuration);
+    }
+
+    IEnumerator FadeFromWhiteRoutine(float duration, Ease ease, Action onComplete)
+    {
+        EnsureOverlay();
+        Color start = overlay.color;
+        start.a = 1f;
+        overlay.color = start;
+
+        if (duration <= 0f)
+        {
+            SetColor(Color.white, 0f);
+            onComplete?.Invoke();
+            yield break;
+        }
+
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            float u = Evaluate(ease, Mathf.Clamp01(elapsed / duration));
+            SetColor(Color.white, 1f - u);
+            yield return null;
+        }
+
+        SetColor(Color.white, 0f);
+        onComplete?.Invoke();
+    }
+
+    IEnumerator FadeFromBlackRoutine(float duration, Ease ease, Action onComplete)
+    {
+        EnsureOverlay();
+        SetColor(Color.black, 1f);
+
+        if (duration <= 0f)
+        {
+            SetColor(Color.black, 0f);
+            onComplete?.Invoke();
+            yield break;
+        }
+
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            float u = Evaluate(ease, Mathf.Clamp01(elapsed / duration));
+            SetColor(Color.black, 1f - u);
+            yield return null;
+        }
+
+        SetColor(Color.black, 0f);
         onComplete?.Invoke();
     }
 
@@ -165,6 +246,18 @@ public class ScreenFade : MonoBehaviour
         overlay.color = color;
     }
 
+    /// <summary>Remove the fade overlay so the grid / UI can show through.</summary>
+    public void ClearOverlay()
+    {
+        if (fadeRoutine != null)
+        {
+            StopCoroutine(fadeRoutine);
+            fadeRoutine = null;
+        }
+        EnsureOverlay();
+        SetColor(Color.black, 0f);
+    }
+
     static Sprite GetWhiteSprite()
     {
         if (whiteSprite != null)
@@ -175,5 +268,91 @@ public class ScreenFade : MonoBehaviour
         tex.Apply();
         whiteSprite = Sprite.Create(tex, new Rect(0f, 0f, 1f, 1f), new Vector2(0.5f, 0.5f), 1f);
         return whiteSprite;
+    }
+}
+
+/// <summary>
+/// DontDestroyOnLoad UI blackout used when returning to the Menu scene.
+/// </summary>
+sealed class MenuTransition : MonoBehaviour
+{
+    static MenuTransition active;
+
+    Image panel;
+
+    public static void Begin(float fadeDuration)
+    {
+        if (active != null)
+            return;
+
+        var go = new GameObject("MenuTransition");
+        DontDestroyOnLoad(go);
+        active = go.AddComponent<MenuTransition>();
+        active.StartCoroutine(active.Run(fadeDuration));
+    }
+
+    IEnumerator Run(float fadeDuration)
+    {
+        panel = CreateOverlay();
+        yield return FadeAlpha(0f, 1f, fadeDuration, ScreenFade.Ease.EaseInOutCubic);
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Menu");
+        yield return null;
+
+        yield return FadeAlpha(1f, 0f, fadeDuration, ScreenFade.Ease.EaseOutCubic);
+
+        active = null;
+        Destroy(gameObject);
+    }
+
+    Image CreateOverlay()
+    {
+        var canvas = gameObject.AddComponent<Canvas>();
+        canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        canvas.sortingOrder = 10000;
+        gameObject.AddComponent<CanvasScaler>();
+
+        var panelGo = new GameObject("Black");
+        panelGo.transform.SetParent(transform, false);
+        var image = panelGo.AddComponent<Image>();
+        image.color = new Color(0f, 0f, 0f, 0f);
+        image.raycastTarget = true;
+
+        var rect = image.rectTransform;
+        rect.anchorMin = Vector2.zero;
+        rect.anchorMax = Vector2.one;
+        rect.offsetMin = Vector2.zero;
+        rect.offsetMax = Vector2.zero;
+        return image;
+    }
+
+    IEnumerator FadeAlpha(float from, float to, float duration, ScreenFade.Ease ease)
+    {
+        if (duration <= 0f)
+        {
+            SetAlpha(to);
+            yield break;
+        }
+
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            float u = ScreenFade.Evaluate(ease, Mathf.Clamp01(elapsed / duration));
+            SetAlpha(Mathf.LerpUnclamped(from, to, u));
+            yield return null;
+        }
+
+        SetAlpha(to);
+    }
+
+    void SetAlpha(float alpha)
+    {
+        if (panel == null)
+            return;
+        Color c = panel.color;
+        c.a = alpha;
+        panel.color = c;
     }
 }

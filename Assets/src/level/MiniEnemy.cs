@@ -148,26 +148,33 @@ public class MiniEnemy : MonoBehaviour
         if (string.IsNullOrEmpty(appliedOperation)) {
             if (string.Equals("+", affect)) {
                 appliedOperation = "+";
+                operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
             } else if (string.Equals("-", affect)) {
                 appliedOperation = "-";
+                operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
             } else if (string.Equals("x", affect)) {
                 appliedOperation = "x";
+                operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
             } else if (string.Equals("/", affect)) {
                 appliedOperation = "/";
+                operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
             } else if (string.Equals("decay", affect)) {
                 appliedOperation = "decay";
+                operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
             } else if (string.Equals("grow", affect)) {
                 appliedOperation = "grow";
-            } else { // attempted to apply a number without an operation
-                // red error effect
+                operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
+            } else if (int.TryParse(affect, out int number)) { // attempted to apply a number without an operation
+                countdown -= number;
+                AudioManager.Instance.PlaySFX(SFX.Subtract);
+            } else {
                 return;
             }
-            operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
         } else {
             if (int.TryParse(affect, out int number)) {
                 int before = countdown;
                 double rateBefore = rate;
-                if (string.Equals("+", appliedOperation)) {
+                 if (string.Equals("+", appliedOperation)) {
                     countdown += number;
                     AudioManager.Instance.PlaySFX(SFX.Add);
                 } else if (string.Equals("-", appliedOperation)) {

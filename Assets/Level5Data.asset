@@ -15,7 +15,7 @@ MonoBehaviour:
   initialPlayerCount: 50
   initialBossCount: 1000
   includeMiniEnemies: 0
-  changingBorders: 0
+  changingBorders: 1
   hardcodeRadius: 20
   maxBlocks: 50
   spawnMin: 10

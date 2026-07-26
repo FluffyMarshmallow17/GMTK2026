@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf51b65da19b746b79fcfc7f8332b357, type: 3}
   m_Name: Level1Data
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  initialPlayerCount: 20
-  initialBossCount: 30
+  initialPlayerCount: 10
+  initialBossCount: 5
   includeMiniEnemies: 0
   changingBorders: 0
   hardcodeRadius: 20

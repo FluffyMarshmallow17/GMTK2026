@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level6Data
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   initialPlayerCount: 500
-  initialBossCount: 2000
+  initialBossCount: 5
   includeMiniEnemies: 1
   changingBorders: 1
   hardcodeRadius: 0

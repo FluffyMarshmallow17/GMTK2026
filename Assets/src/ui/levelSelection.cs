@@ -1,46 +1,176 @@
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
+// World-space level select: floating glowing number sprites, a Select marker
+// that locks onto the highlighted level, and left/right + Enter (or a click)
+// to play it.
 public class SceneLoader : MonoBehaviour
 {
-    public Transform levelContainer;
-    public LevelButton levelPrefab;
-    public LevelButton[] levelButtons;
+    [Header("Level icons")]
+    [Tooltip("Number sprites in order: element 0 = level 1, element 1 = level 2, ...")]
+    public Sprite[] numberSprites;
+    [Tooltip("Horizontal gap between level numbers (world units).")]
+    public float spacing = 3f;
+    [Tooltip("World-space scale applied to each spawned number sprite.")]
+    public float iconScale = 1f;
+    [Tooltip("Sorting order for the numbers (the marker draws behind them).")]
+    public int sortingOrder = 10;
+    [Tooltip("Optional glow material for the numbers. Leave empty for the default sprite material.")]
+    public Material iconMaterial;
 
+    [Header("Selection marker")]
+    [Tooltip("The Select prefab that highlights the currently chosen level.")]
+    public GameObject selectPrefab;
+    [Tooltip("How quickly the marker slides onto the selected level.")]
+    public float markerFollowSmoothTime = 0.08f;
+
+    [Header("Levels")]
     [Tooltip("Fallback used only if no 'Level N' scenes are found in Build Settings.")]
     public int levelCount = 1;
 
-    // TEMPORARY: unlocks every level button regardless of progress. Set to false to restore normal locking.
+    // TEMPORARY: unlocks every level regardless of progress. Set to false to restore normal locking.
     public bool unlockAllLevels = true;
+
+    readonly List<LevelIcon> icons = new List<LevelIcon>();
+    Transform marker;
+    Vector3 markerVelocity;
+    int selectedIndex = -1;
 
     void Start()
     {
-        // Read the highest reached level from local storage (default to 1)
         int levelsUnlocked = PlayerPrefs.GetInt("LevelsUnlocked", 1);
         int totalLevels = DetermineLevelCount();
-        levelButtons = new LevelButton[totalLevels];
+
+        float startX = -(totalLevels - 1) * spacing * 0.5f;
 
         for (int level = 1; level <= totalLevels; level++)
         {
-            LevelButton button =
-                Instantiate(levelPrefab, levelContainer);
-
-            levelButtons[level - 1] = button; // Store the button reference
-            button.SetText($"{level}");
-            button.gameObject.SetActive(true); // Always show every level button
-
-            int enterLevel = level;
-            button.Button.onClick.AddListener(() =>
-            {
-                loadLevel(enterLevel);
-            });
-
-            // Only gate interaction (locked levels still show, just aren't clickable)
-            button.Button.interactable = unlockAllLevels || enterLevel <= levelsUnlocked;
+            bool unlocked = unlockAllLevels || level <= levelsUnlocked;
+            Vector3 pos = new Vector3(startX + (level - 1) * spacing, 0f, 0f);
+            icons.Add(CreateIcon(level, pos, unlocked));
         }
 
-        levelPrefab.gameObject.SetActive(false); // Hide the prefab
+        if (selectPrefab != null)
+            marker = Instantiate(selectPrefab, transform).transform;
+
+        // Start on the first playable level.
+        selectedIndex = icons.FindIndex(i => i.selectable);
+        if (selectedIndex < 0) selectedIndex = 0;
+        if (marker != null && icons.Count > 0)
+            marker.position = icons[selectedIndex].transform.position;
+
+        UpdateSelectionVisuals();
+    }
+
+    LevelIcon CreateIcon(int level, Vector3 localPos, bool unlocked)
+    {
+        var go = new GameObject($"Level {level}");
+        go.transform.SetParent(transform, false);
+        go.transform.localPosition = localPos;
+        go.transform.localScale = Vector3.one * iconScale;
+
+        var sr = go.AddComponent<SpriteRenderer>();
+        int spriteIndex = level - 1;
+        if (numberSprites != null && spriteIndex >= 0 && spriteIndex < numberSprites.Length)
+            sr.sprite = numberSprites[spriteIndex];
+        sr.sortingOrder = sortingOrder;
+        if (iconMaterial != null) sr.sharedMaterial = iconMaterial;
+
+        var col = go.AddComponent<BoxCollider2D>();
+        if (sr.sprite != null) col.size = sr.sprite.bounds.size;
+
+        var icon = go.AddComponent<LevelIcon>();
+        icon.Init(level, unlocked);
+        return icon;
+    }
+
+    void Update()
+    {
+        HandleKeyboard();
+        HandleMouse();
+        FollowMarker();
+    }
+
+    void HandleKeyboard()
+    {
+        var kb = Keyboard.current;
+        if (kb == null) return;
+
+        if (kb.leftArrowKey.wasPressedThisFrame || kb.aKey.wasPressedThisFrame)
+            Move(-1);
+        else if (kb.rightArrowKey.wasPressedThisFrame || kb.dKey.wasPressedThisFrame)
+            Move(1);
+
+        if (kb.enterKey.wasPressedThisFrame || kb.numpadEnterKey.wasPressedThisFrame)
+            ConfirmSelection();
+    }
+
+    void HandleMouse()
+    {
+        var mouse = Mouse.current;
+        if (mouse == null || !mouse.leftButton.wasPressedThisFrame) return;
+
+        Camera cam = Camera.main;
+        if (cam == null) return;
+
+        Vector3 world = cam.ScreenToWorldPoint(mouse.position.ReadValue());
+        Collider2D hit = Physics2D.OverlapPoint(world);
+        if (hit == null) return;
+
+        var icon = hit.GetComponent<LevelIcon>();
+        if (icon == null || !icon.selectable) return;
+
+        int idx = icons.IndexOf(icon);
+        if (idx < 0) return;
+
+        // Clicking a level locks the marker onto it and plays it.
+        selectedIndex = idx;
+        UpdateSelectionVisuals();
+        ConfirmSelection();
+    }
+
+    // Steps the selection in `dir`, skipping locked levels and stopping at the ends.
+    void Move(int dir)
+    {
+        int next = selectedIndex;
+        for (int step = 0; step < icons.Count; step++)
+        {
+            next += dir;
+            if (next < 0 || next >= icons.Count) return;
+            if (icons[next].selectable)
+            {
+                selectedIndex = next;
+                UpdateSelectionVisuals();
+                return;
+            }
+        }
+    }
+
+    void ConfirmSelection()
+    {
+        if (selectedIndex < 0 || selectedIndex >= icons.Count) return;
+        LevelIcon icon = icons[selectedIndex];
+        if (icon.selectable)
+            loadLevel(icon.levelNumber);
+    }
+
+    void UpdateSelectionVisuals()
+    {
+        for (int i = 0; i < icons.Count; i++)
+            icons[i].SetSelected(i == selectedIndex);
+    }
+
+    void FollowMarker()
+    {
+        if (marker == null || selectedIndex < 0 || selectedIndex >= icons.Count) return;
+        marker.position = Vector3.SmoothDamp(
+            marker.position,
+            icons[selectedIndex].transform.position,
+            ref markerVelocity,
+            markerFollowSmoothTime);
     }
 
     // Scans Build Settings for scenes named "Level {n}" and returns the highest n found,
@@ -62,19 +192,19 @@ public class SceneLoader : MonoBehaviour
         return highest > 0 ? highest : levelCount;
     }
 
-    // Load a scene by its Build Settings index
+    // Load a scene by its "Level {n}" name.
     public void loadLevel(int level)
     {
         loadLevelByName($"Level {level}");
     }
 
-    // Load by scene name
+    // Load by scene name.
     public void loadLevelByName(string levelName)
     {
         SceneManager.LoadScene(levelName);
     }
 
-    // Call this function from your level's "Finish Line" script to unlock the next level
+    // Call this from your level's "Finish Line" script to unlock the next level.
     public static void UnlockNextLevel(int currentLevelIndex)
     {
         int highestUnlocked = PlayerPrefs.GetInt("LevelsUnlocked", 1);

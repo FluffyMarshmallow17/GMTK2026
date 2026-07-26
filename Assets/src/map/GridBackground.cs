@@ -21,6 +21,12 @@ public class GridBackground : MonoBehaviour
     [Tooltip("Global cap on how many pulses can spawn per second; extra requests are dropped.")]
     public float maxPulsesPerSecond = 2f;
     public int sortingOrder = -100;
+    [Tooltip("Menu / win-lose: full-screen cyan inside-map grid (same as gameplay play area).")]
+    public bool decorativeMode;
+    [Tooltip("Map radius used in decorative mode so the whole view counts as inside.")]
+    public float decorativeMapRadius = 500f;
+    [Tooltip("Keep pulses animating when timeScale is 0 (win/lose screens).")]
+    public bool useUnscaledTime;
 
     static GridBackground instance;
 
@@ -80,14 +86,28 @@ public class GridBackground : MonoBehaviour
             instance = null;
     }
 
+    /// <summary>Make this the target for static Pulse calls (e.g. ambient backdrop on win/lose).</summary>
+    public void ClaimAsActiveInstance()
+    {
+        instance = this;
+    }
+
     void Update()
     {
         if (material == null)
             return;
 
+        float dt = useUnscaledTime ? Time.unscaledDeltaTime : Time.deltaTime;
+
         material.SetVector("_MapCenter", transform.position);
-        if (mapCollider != null)
+        if (decorativeMode)
+        {
+            material.SetFloat("_MapRadius", decorativeMapRadius);
+        }
+        else if (mapCollider != null)
+        {
             material.SetFloat("_MapRadius", mapCollider.radius * Mathf.Abs(transform.lossyScale.x));
+        }
 
         for (int i = 0; i < MaxPulses; i++)
         {
@@ -97,7 +117,7 @@ public class GridBackground : MonoBehaviour
                 continue;
             }
 
-            pulseAges[i] += Time.deltaTime;
+            pulseAges[i] += dt;
             float t = pulseAges[i] / pulseDuration;
             if (t >= 1f)
             {
@@ -108,7 +128,7 @@ public class GridBackground : MonoBehaviour
 
             // The ring's center drifts with the emitter's velocity (decaying over
             // the pulse's life) so ripples don't visibly lag behind a moving player.
-            pulsePositions[i] += pulseVelocities[i] * ((1f - t) * Time.deltaTime);
+            pulsePositions[i] += pulseVelocities[i] * ((1f - t) * dt);
 
             // Water-ripple motion: the ring surges outward then decelerates
             // (quadratic ease-out) while its energy dissipates over the lifetime.
@@ -125,7 +145,7 @@ public class GridBackground : MonoBehaviour
         // the glow never pops into existence. Each spot is animated: the core
         // breathes, and blobs of glow wander outward along the grid lines.
         int spotCount = 0;
-        float now = Time.time;
+        float now = useUnscaledTime ? Time.unscaledTime : Time.time;
         for (int i = spotSources.Count - 1; i >= 0; i--)
         {
             if (spotSources[i] == null)
@@ -135,7 +155,7 @@ public class GridBackground : MonoBehaviour
                 spotSeeds.RemoveAt(i);
                 continue;
             }
-            spotAges[i] += Time.deltaTime;
+            spotAges[i] += dt;
             if (spotCount >= MaxSpots)
                 continue;
 
@@ -199,10 +219,11 @@ public class GridBackground : MonoBehaviour
         // Rate-limit per emitter so rapid decay on the player doesn't steal
         // pulses from the boss / minis ticking on the same frame.
         float minInterval = 1f / Mathf.Max(instance.maxPulsesPerSecond, 0.01f);
+        float pulseClock = instance.useUnscaledTime ? Time.unscaledTime : Time.time;
         if (lastPulseBySource.TryGetValue(sourceId, out float lastTime)
-            && Time.time - lastTime < minInterval)
+            && pulseClock - lastTime < minInterval)
             return;
-        lastPulseBySource[sourceId] = Time.time;
+        lastPulseBySource[sourceId] = pulseClock;
 
         // Prefer a free slot so an in-flight pulse is never cut short; if every
         // slot is busy, recycle the oldest (most faded) one.

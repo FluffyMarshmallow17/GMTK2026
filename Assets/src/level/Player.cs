@@ -32,6 +32,8 @@ public class Player : MonoBehaviour
     SmoothCountdownDisplay countdownDisplay = new SmoothCountdownDisplay();
     OperationFlash operationFlash = new OperationFlash();
     bool displayFrozen;
+    bool coasting;
+    Vector2 coastVelocity;
 
     void Awake()
     {
@@ -102,6 +104,14 @@ public class Player : MonoBehaviour
         displayFrozen = false;
     }
 
+    /// <summary>Keep moving at the given velocity without WASD during level-end cinematic.</summary>
+    public void BeginCoastMovement(Vector2 velocity)
+    {
+        coasting = true;
+        coastVelocity = velocity;
+        controls.Player.Disable();
+    }
+
     void FixedUpdate()
     {
         blocks.RemoveAll(b => b == null);
@@ -110,14 +120,19 @@ public class Player : MonoBehaviour
         if (inConnection == null)
             inConnection = null;
 
-        Vector2 movement = controls.Player.Move.ReadValue<Vector2>();
-
-        if (movement.x != 0)
+        if (coasting)
         {
-            rb.AddTorque(-movement.x * 0.5f);
+            rb.linearVelocity = coastVelocity;
         }
+        else
+        {
+            Vector2 movement = controls.Player.Move.ReadValue<Vector2>();
 
-        rb.linearVelocity = movement * moveSpeed;
+            if (movement.x != 0)
+                rb.AddTorque(-movement.x * 0.5f);
+
+            rb.linearVelocity = movement * moveSpeed;
+        }
 
         foreach (Block block in blocks)
         {
