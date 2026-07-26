@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: 77731f538b47445f7b1b6d0e5868c77c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5215706762718163440
+    second: divideTutorial_0
+  - first:
+      213: 4154388835255508052
+    second: divideTutorial_1
+  - first:
+      213: -7776107932296734006
+    second: divideTutorial_2
+  - first:
+      213: -4704416032574883488
+    second: divideTutorial_3
+  - first:
+      213: -7425206161762151794
+    second: divideTutorial_4
+  - first:
+      213: 1901148528155000519
+    second: divideTutorial_5
+  - first:
+      213: -75683306123485684
+    second: divideTutorial_6
+  - first:
+      213: 3611073765108555740
+    second: divideTutorial_7
+  - first:
+      213: -5099431839781741130
+    second: divideTutorial_8
+  - first:
+      213: 3184249517820739846
+    second: divideTutorial_9
+  - first:
+      213: -3964809392085387449
+    second: divideTutorial_10
+  - first:
+      213: 1959900625448023298
+    second: divideTutorial_11
+  - first:
+      213: 2271712252967310522
+    second: divideTutorial_12
+  - first:
+      213: -4777182327242338420
+    second: divideTutorial_13
+  - first:
+      213: -637355601824253462
+    second: divideTutorial_14
+  - first:
+      213: -3772533393214690622
+    second: divideTutorial_15
+  - first:
+      213: 1198143845968771886
+    second: divideTutorial_16
+  - first:
+      213: 3786538525397752627
+    second: divideTutorial_17
+  - first:
+      213: -1458576135157489466
+    second: divideTutorial_18
+  - first:
+      213: 1630892205272317990
+    second: divideTutorial_19
+  - first:
+      213: 1604819769136411255
+    second: divideTutorial_20
+  - first:
+      213: 1788134767130533159
+    second: divideTutorial_21
+  - first:
+      213: -9193431732319799710
+    second: divideTutorial_22
+  - first:
+      213: -225747431848392663
+    second: divideTutorial_23
+  - first:
+      213: 3956568880987804020
+    second: divideTutorial_24
+  - first:
+      213: 7007335946030763992
+    second: divideTutorial_25
+  - first:
+      213: -3417883495710462393
+    second: divideTutorial_26
+  - first:
+      213: 320328819540115769
+    second: divideTutorial_27
+  - first:
+      213: 7715732606713464009
+    second: divideTutorial_28
+  - first:
+      213: 1998508875437257297
+    second: divideTutorial_29
+  - first:
+      213: 5413806116564536809
+    second: divideTutorial_30
+  - first:
+      213: 8890566539585141018
+    second: divideTutorial_31
+  - first:
+      213: 4026723960396111620
+    second: divideTutorial_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: divideTutorial_0
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1566
+        width: 149
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f13b6caaa9e16840800000000000000
+      internalID: 5215706762718163440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_1
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1707
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45cd04082aa57a930800000000000000
+      internalID: 4154388835255508052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_2
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1707
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca1b500907b51490800000000000000
+      internalID: -7776107932296734006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_3
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 1562
+        width: 136
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069b8be1b8e86beb0800000000000000
+      internalID: -4704416032574883488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_4
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1618
+        width: 28
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e821028165e54f890800000000000000
+      internalID: -7425206161762151794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_5
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1566
+        width: 34
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce7fed738c326a10800000000000000
+      internalID: 1901148528155000519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_6
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1566
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e151f1f6e13fef0800000000000000
+      internalID: -75683306123485684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_7
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1566
+        width: 34
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf1703057c1d1230800000000000000
+      internalID: 3611073765108555740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_8
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1562
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd1e7972cd2b39b0800000000000000
+      internalID: -5099431839781741130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_9
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1566
+        width: 81
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6010ae9c01ab03c20800000000000000
+      internalID: 3184249517820739846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_10
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 1563
+        width: 99
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7473e964dda2af8c0800000000000000
+      internalID: -3964809392085387449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_11
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 1562
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20535ee1c37f23b10800000000000000
+      internalID: 1959900625448023298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_12
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 968
+        width: 228
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4d40e024eb68f10800000000000000
+      internalID: 2271712252967310522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_13
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1268
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f4275ebf904bdb0800000000000000
+      internalID: -4777182327242338420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_14
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1012
+        width: 406
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9f8adf478a727f0800000000000000
+      internalID: -637355601824253462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_15
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 921
+        width: 487
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2caa32addd445abc0800000000000000
+      internalID: -3772533393214690622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_16
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1157
+        width: 310
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2bf9c8da79a0a010800000000000000
+      internalID: 1198143845968771886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_17
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 994
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b1aa61abc7c8430800000000000000
+      internalID: 3786538525397752627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_18
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1036
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c06312abb812cbe0800000000000000
+      internalID: -1458576135157489466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_19
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 505
+        width: 277
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620c532e1d712a610800000000000000
+      internalID: 1630892205272317990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_20
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 548
+        width: 220
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77276ebc317754610800000000000000
+      internalID: 1604819769136411255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_21
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 584
+        width: 406
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d5755c81bb0d810800000000000000
+      internalID: 1788134767130533159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 412
+        width: 487
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26636406c8e5a6080800000000000000
+      internalID: -9193431732319799710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_23
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 507
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92848b328ebfddcf0800000000000000
+      internalID: -225747431848392663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_24
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 227
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47194a83f6e88e630800000000000000
+      internalID: 3956568880987804020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_25
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 136
+        width: 116
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df4dfc9aee0f3160800000000000000
+      internalID: 7007335946030763992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_26
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 26
+        width: 418
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ee182c11d3190d0800000000000000
+      internalID: -3417883495710462393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_27
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 142
+        width: 89
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931420c3d59027400800000000000000
+      internalID: 320328819540115769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_28
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 85
+        width: 155
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c40e051de9c31b60800000000000000
+      internalID: 7715732606713464009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_29
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 20
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15237e0db312cbb10800000000000000
+      internalID: 1998508875437257297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_30
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 62
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed8aacbaf3b12b40800000000000000
+      internalID: 5413806116564536809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_31
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 62
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1932fbd923a16b70800000000000000
+      internalID: 8890566539585141018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divideTutorial_32
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 20
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40fd6f38b1cc1e730800000000000000
+      internalID: 4026723960396111620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      divideTutorial_0: 5215706762718163440
+      divideTutorial_1: 4154388835255508052
+      divideTutorial_10: -3964809392085387449
+      divideTutorial_11: 1959900625448023298
+      divideTutorial_12: 2271712252967310522
+      divideTutorial_13: -4777182327242338420
+      divideTutorial_14: -637355601824253462
+      divideTutorial_15: -3772533393214690622
+      divideTutorial_16: 1198143845968771886
+      divideTutorial_17: 3786538525397752627
+      divideTutorial_18: -1458576135157489466
+      divideTutorial_19: 1630892205272317990
+      divideTutorial_2: -7776107932296734006
+      divideTutorial_20: 1604819769136411255
+      divideTutorial_21: 1788134767130533159
+      divideTutorial_22: -9193431732319799710
+      divideTutorial_23: -225747431848392663
+      divideTutorial_24: 3956568880987804020
+      divideTutorial_25: 7007335946030763992
+      divideTutorial_26: -3417883495710462393
+      divideTutorial_27: 320328819540115769
+      divideTutorial_28: 7715732606713464009
+      divideTutorial_29: 1998508875437257297
+      divideTutorial_3: -4704416032574883488
+      divideTutorial_30: 5413806116564536809
+      divideTutorial_31: 8890566539585141018
+      divideTutorial_32: 4026723960396111620
+      divideTutorial_4: -7425206161762151794
+      divideTutorial_5: 1901148528155000519
+      divideTutorial_6: -75683306123485684
+      divideTutorial_7: 3611073765108555740
+      divideTutorial_8: -5099431839781741130
+      divideTutorial_9: 3184249517820739846
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

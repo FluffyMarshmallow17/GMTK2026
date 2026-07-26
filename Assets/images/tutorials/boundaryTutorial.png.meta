@@ -1,0 +1,1469 @@
+fileFormatVersion: 2
+guid: 5b833e4b44bda48ce8780f14b955aa86
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1413303361404633076
+    second: boundaryTutorial_0
+  - first:
+      213: 6008169214509561797
+    second: boundaryTutorial_1
+  - first:
+      213: 1215150976029641027
+    second: boundaryTutorial_2
+  - first:
+      213: -8401859989826329904
+    second: boundaryTutorial_3
+  - first:
+      213: -1683435690551099359
+    second: boundaryTutorial_4
+  - first:
+      213: -4504718691212982824
+    second: boundaryTutorial_5
+  - first:
+      213: 20219862108722658
+    second: boundaryTutorial_6
+  - first:
+      213: -4384294499052552305
+    second: boundaryTutorial_7
+  - first:
+      213: 6205723670887112307
+    second: boundaryTutorial_8
+  - first:
+      213: 1559216280623104819
+    second: boundaryTutorial_9
+  - first:
+      213: 4437708644831203505
+    second: boundaryTutorial_10
+  - first:
+      213: -3263439896573831513
+    second: boundaryTutorial_11
+  - first:
+      213: 3126069599428712187
+    second: boundaryTutorial_12
+  - first:
+      213: 6765854117998453659
+    second: boundaryTutorial_13
+  - first:
+      213: 1187130042775499548
+    second: boundaryTutorial_14
+  - first:
+      213: -7086749776294594432
+    second: boundaryTutorial_15
+  - first:
+      213: -759107309481161783
+    second: boundaryTutorial_16
+  - first:
+      213: -7060697005222636378
+    second: boundaryTutorial_17
+  - first:
+      213: 3658701796598383582
+    second: boundaryTutorial_18
+  - first:
+      213: -6597457804283059743
+    second: boundaryTutorial_19
+  - first:
+      213: 1198351829536578619
+    second: boundaryTutorial_20
+  - first:
+      213: -4791994824287379996
+    second: boundaryTutorial_21
+  - first:
+      213: -586699017351772928
+    second: boundaryTutorial_22
+  - first:
+      213: 2308860772201908604
+    second: boundaryTutorial_23
+  - first:
+      213: -7147116633123847032
+    second: boundaryTutorial_24
+  - first:
+      213: 3793888592713810770
+    second: boundaryTutorial_25
+  - first:
+      213: -4770357395169217755
+    second: boundaryTutorial_26
+  - first:
+      213: 6856129584028099404
+    second: boundaryTutorial_27
+  - first:
+      213: -1050545122126509983
+    second: boundaryTutorial_28
+  - first:
+      213: 6627043892271323174
+    second: boundaryTutorial_29
+  - first:
+      213: 8006548263486724164
+    second: boundaryTutorial_30
+  - first:
+      213: -4477544739998725112
+    second: boundaryTutorial_31
+  - first:
+      213: 7715144708563737459
+    second: boundaryTutorial_32
+  - first:
+      213: -2862495369445701699
+    second: boundaryTutorial_33
+  - first:
+      213: 8590020322019415020
+    second: boundaryTutorial_34
+  - first:
+      213: -5719128503725249390
+    second: boundaryTutorial_35
+  - first:
+      213: 6864229314022929985
+    second: boundaryTutorial_36
+  - first:
+      213: -2661087220849713101
+    second: boundaryTutorial_37
+  - first:
+      213: 1231414477096041823
+    second: boundaryTutorial_38
+  - first:
+      213: -402310416513286774
+    second: boundaryTutorial_39
+  - first:
+      213: -7194947780438849929
+    second: boundaryTutorial_40
+  - first:
+      213: -4209730910367372748
+    second: boundaryTutorial_41
+  - first:
+      213: 2450621618525996533
+    second: boundaryTutorial_42
+  - first:
+      213: -3725149336822595466
+    second: boundaryTutorial_43
+  - first:
+      213: -5329602007804420962
+    second: boundaryTutorial_44
+  - first:
+      213: 2355686620449838260
+    second: boundaryTutorial_45
+  - first:
+      213: 2200032720463898962
+    second: boundaryTutorial_46
+  - first:
+      213: 6153996241407730891
+    second: boundaryTutorial_47
+  - first:
+      213: 2691993851716393561
+    second: boundaryTutorial_48
+  - first:
+      213: 7770875509613067642
+    second: boundaryTutorial_49
+  - first:
+      213: -3999324372811129598
+    second: boundaryTutorial_50
+  - first:
+      213: 4079714444049468819
+    second: boundaryTutorial_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boundaryTutorial_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 2853
+        width: 101
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c008c9fa410f26ce0800000000000000
+      internalID: -1413303361404633076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_1
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 2850
+        width: 109
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7b745611e416350800000000000000
+      internalID: 6008169214509561797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_2
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 2965
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34947b2ef551dd010800000000000000
+      internalID: 1215150976029641027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_3
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 2965
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2a5ddaad8966b80800000000000000
+      internalID: -8401859989826329904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_4
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 2853
+        width: 27
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120cc7e982c33a8e0800000000000000
+      internalID: -1683435690551099359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_5
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 2853
+        width: 28
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d50035a7360c71c0800000000000000
+      internalID: -4504718691212982824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_6
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2853
+        width: 94
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5d5628bd5d74000800000000000000
+      internalID: 20219862108722658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_7
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 2965
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ff541d16bd723c0800000000000000
+      internalID: -4384294499052552305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_8
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 2853
+        width: 92
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e9571acc82f1650800000000000000
+      internalID: 6205723670887112307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_9
+      rect:
+        serializedVersion: 2
+        x: 2373
+        y: 2850
+        width: 109
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333cb8632f273a510800000000000000
+      internalID: 1559216280623104819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_10
+      rect:
+        serializedVersion: 2
+        x: 3113
+        y: 2850
+        width: 108
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b018df1088e59d30800000000000000
+      internalID: 4437708644831203505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_11
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2850
+        width: 102
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a611ea54bee5b2d0800000000000000
+      internalID: -3263439896573831513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_12
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 2850
+        width: 94
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf69811fcb7026b20800000000000000
+      internalID: 3126069599428712187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_13
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 2853
+        width: 94
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b936969297425ed50800000000000000
+      internalID: 6765854117998453659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_14
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 2850
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13f3d5fb78897010800000000000000
+      internalID: 1187130042775499548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_15
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 2853
+        width: 66
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088b1eb20aec6ad90800000000000000
+      internalID: -7086749776294594432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_16
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 2853
+        width: 27
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb09f78ceb1775f0800000000000000
+      internalID: -759107309481161783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_17
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 2850
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a45a01ab7d530e90800000000000000
+      internalID: -7060697005222636378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_18
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 2851
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3845d36e156c230800000000000000
+      internalID: 3658701796598383582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_19
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 2853
+        width: 161
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e16413f41f1174a0800000000000000
+      internalID: -6597457804283059743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_20
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 2853
+        width: 27
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c977bc3a661a010800000000000000
+      internalID: 1198351829536578619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_21
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 2851
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed17dca81a6f7db0800000000000000
+      internalID: -4791994824287379996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 2853
+        width: 66
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0054da82a50abd7f0800000000000000
+      internalID: -586699017351772928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_23
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 2853
+        width: 27
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79cde2b3a8ba0020800000000000000
+      internalID: 2308860772201908604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_24
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 2853
+        width: 94
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8840e5a0a4750dc90800000000000000
+      internalID: -7147116633123847032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_25
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 2850
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2530d1ef29996a430800000000000000
+      internalID: 3793888592713810770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_26
+      rect:
+        serializedVersion: 2
+        x: 2270
+        y: 2853
+        width: 94
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523f74939394ccdb0800000000000000
+      internalID: -4770357395169217755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_27
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 2850
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43aa06088dd52f50800000000000000
+      internalID: 6856129584028099404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_28
+      rect:
+        serializedVersion: 2
+        x: 2649
+        y: 2853
+        width: 106
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168412707c6bb61f0800000000000000
+      internalID: -1050545122126509983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_29
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 2803
+        width: 109
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62811c5fe4df7fb50800000000000000
+      internalID: 6627043892271323174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_30
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 2850
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4489522a939fc1f60800000000000000
+      internalID: 8006548263486724164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_31
+      rect:
+        serializedVersion: 2
+        x: 3009
+        y: 2853
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c057238c09cd1c0800000000000000
+      internalID: -4477544739998725112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_32
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 2610
+        width: 109
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b1da06c33b11b60800000000000000
+      internalID: 7715144708563737459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_33
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db70dfca0af5648d0800000000000000
+      internalID: -2862495369445701699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_34
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 2611
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce39a5398f1e53770800000000000000
+      internalID: 8590020322019415020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_35
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 2610
+        width: 102
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c25a65de291a0b0800000000000000
+      internalID: -5719128503725249390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_36
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 2610
+        width: 108
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146f82f5134a24f50800000000000000
+      internalID: 6864229314022929985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_37
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 2610
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330ebec854be11bd0800000000000000
+      internalID: -2661087220849713101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_38
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 2613
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d359e41fcd61110800000000000000
+      internalID: 1231414477096041823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_39
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 2610
+        width: 93
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d3946cec4ba6af0800000000000000
+      internalID: -402310416513286774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_40
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 2610
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77605793d19662c90800000000000000
+      internalID: -7194947780438849929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_41
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 2610
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a22978a080495c0800000000000000
+      internalID: -4209730910367372748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_42
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 2613
+        width: 94
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5822bc06b520220800000000000000
+      internalID: 2450621618525996533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_43
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 2613
+        width: 62
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67048633a6c9d4cc0800000000000000
+      internalID: -3725149336822595466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_44
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 2610
+        width: 108
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9cdb9a16337906b0800000000000000
+      internalID: -5329602007804420962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_45
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 2610
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b49d06108411b020800000000000000
+      internalID: 2355686620449838260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_46
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 2613
+        width: 161
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259ac7d5a16188e10800000000000000
+      internalID: 2200032720463898962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_47
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 2613
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4623ee9f2676550800000000000000
+      internalID: 6153996241407730891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_48
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 2611
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a57153522eb5520800000000000000
+      internalID: 2691993851716393561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_49
+      rect:
+        serializedVersion: 2
+        x: 2659
+        y: 2655
+        width: 23
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7df448aa12b7db60800000000000000
+      internalID: 7770875509613067642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_50
+      rect:
+        serializedVersion: 2
+        x: 2657
+        y: 2610
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20dd7091cab8f78c0800000000000000
+      internalID: -3999324372811129598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boundaryTutorial_51
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 0
+        width: 2502
+        height: 2501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d499eebae0e9830800000000000000
+      internalID: 4079714444049468819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      boundaryTutorial_0: -1413303361404633076
+      boundaryTutorial_1: 6008169214509561797
+      boundaryTutorial_10: 4437708644831203505
+      boundaryTutorial_11: -3263439896573831513
+      boundaryTutorial_12: 3126069599428712187
+      boundaryTutorial_13: 6765854117998453659
+      boundaryTutorial_14: 1187130042775499548
+      boundaryTutorial_15: -7086749776294594432
+      boundaryTutorial_16: -759107309481161783
+      boundaryTutorial_17: -7060697005222636378
+      boundaryTutorial_18: 3658701796598383582
+      boundaryTutorial_19: -6597457804283059743
+      boundaryTutorial_2: 1215150976029641027
+      boundaryTutorial_20: 1198351829536578619
+      boundaryTutorial_21: -4791994824287379996
+      boundaryTutorial_22: -586699017351772928
+      boundaryTutorial_23: 2308860772201908604
+      boundaryTutorial_24: -7147116633123847032
+      boundaryTutorial_25: 3793888592713810770
+      boundaryTutorial_26: -4770357395169217755
+      boundaryTutorial_27: 6856129584028099404
+      boundaryTutorial_28: -1050545122126509983
+      boundaryTutorial_29: 6627043892271323174
+      boundaryTutorial_3: -8401859989826329904
+      boundaryTutorial_30: 8006548263486724164
+      boundaryTutorial_31: -4477544739998725112
+      boundaryTutorial_32: 7715144708563737459
+      boundaryTutorial_33: -2862495369445701699
+      boundaryTutorial_34: 8590020322019415020
+      boundaryTutorial_35: -5719128503725249390
+      boundaryTutorial_36: 6864229314022929985
+      boundaryTutorial_37: -2661087220849713101
+      boundaryTutorial_38: 1231414477096041823
+      boundaryTutorial_39: -402310416513286774
+      boundaryTutorial_4: -1683435690551099359
+      boundaryTutorial_40: -7194947780438849929
+      boundaryTutorial_41: -4209730910367372748
+      boundaryTutorial_42: 2450621618525996533
+      boundaryTutorial_43: -3725149336822595466
+      boundaryTutorial_44: -5329602007804420962
+      boundaryTutorial_45: 2355686620449838260
+      boundaryTutorial_46: 2200032720463898962
+      boundaryTutorial_47: 6153996241407730891
+      boundaryTutorial_48: 2691993851716393561
+      boundaryTutorial_49: 7770875509613067642
+      boundaryTutorial_5: -4504718691212982824
+      boundaryTutorial_50: -3999324372811129598
+      boundaryTutorial_51: 4079714444049468819
+      boundaryTutorial_6: 20219862108722658
+      boundaryTutorial_7: -4384294499052552305
+      boundaryTutorial_8: 6205723670887112307
+      boundaryTutorial_9: 1559216280623104819
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 8130caa64fabd405c9b38d2837740547
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5162736924463033551
+    second: multiplyTutorial_0
+  - first:
+      213: 1415697358935017806
+    second: multiplyTutorial_1
+  - first:
+      213: 110907263051464821
+    second: multiplyTutorial_2
+  - first:
+      213: -792711292910122822
+    second: multiplyTutorial_3
+  - first:
+      213: -3065366646302437027
+    second: multiplyTutorial_4
+  - first:
+      213: 9094572780340001987
+    second: multiplyTutorial_5
+  - first:
+      213: 5562589787468446432
+    second: multiplyTutorial_6
+  - first:
+      213: -2262511094413463572
+    second: multiplyTutorial_7
+  - first:
+      213: -8714966918181061593
+    second: multiplyTutorial_8
+  - first:
+      213: 955298632101265864
+    second: multiplyTutorial_9
+  - first:
+      213: 2276698358066223724
+    second: multiplyTutorial_10
+  - first:
+      213: -2080401990405177057
+    second: multiplyTutorial_11
+  - first:
+      213: -7612683077117258392
+    second: multiplyTutorial_12
+  - first:
+      213: 6948698837365159206
+    second: multiplyTutorial_13
+  - first:
+      213: 7002023583386158395
+    second: multiplyTutorial_14
+  - first:
+      213: 5826397135701055396
+    second: multiplyTutorial_15
+  - first:
+      213: -4244297699923786632
+    second: multiplyTutorial_16
+  - first:
+      213: -6765992715308082124
+    second: multiplyTutorial_17
+  - first:
+      213: 8304360424877787132
+    second: multiplyTutorial_18
+  - first:
+      213: 5141657118513576747
+    second: multiplyTutorial_19
+  - first:
+      213: -9114348987638470972
+    second: multiplyTutorial_20
+  - first:
+      213: -6534055434179519950
+    second: multiplyTutorial_21
+  - first:
+      213: -8732341386894306147
+    second: multiplyTutorial_22
+  - first:
+      213: -2425454619587338311
+    second: multiplyTutorial_23
+  - first:
+      213: 1114658552098126920
+    second: multiplyTutorial_24
+  - first:
+      213: -5583132373067569909
+    second: multiplyTutorial_25
+  - first:
+      213: 18422461801463865
+    second: multiplyTutorial_26
+  - first:
+      213: -9089612197426660805
+    second: multiplyTutorial_27
+  - first:
+      213: -4555826490670219551
+    second: multiplyTutorial_28
+  - first:
+      213: 2144993046009700974
+    second: multiplyTutorial_29
+  - first:
+      213: -2031037824620025200
+    second: multiplyTutorial_30
+  - first:
+      213: -4220423328219053714
+    second: multiplyTutorial_31
+  - first:
+      213: 3380832731743221379
+    second: multiplyTutorial_32
+  - first:
+      213: -3770000420169296003
+    second: multiplyTutorial_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: multiplyTutorial_0
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1620
+        width: 206
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc696321e9b5a740800000000000000
+      internalID: 5162736924463033551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_1
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1620
+        width: 33
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49c7cc4f3195a310800000000000000
+      internalID: 1415697358935017806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_2
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1620
+        width: 76
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570813171950a8100800000000000000
+      internalID: 110907263051464821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_3
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1761
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8c6a07749bff4f0800000000000000
+      internalID: -792711292910122822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_4
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 1620
+        width: 34
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5110d4b641a575d0800000000000000
+      internalID: -3065366646302437027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_5
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 1761
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc3a1432c9663e70800000000000000
+      internalID: 9094572780340001987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_6
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 1672
+        width: 29
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eab54990f9423d40800000000000000
+      internalID: 5562589787468446432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_7
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1616
+        width: 118
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefea1d9522f990e0800000000000000
+      internalID: -2262511094413463572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_8
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1620
+        width: 33
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c798403c73e0780800000000000000
+      internalID: -8714966918181061593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_9
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1557
+        width: 136
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c100d46b07e14d00800000000000000
+      internalID: 955298632101265864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_10
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1620
+        width: 33
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a904d1815789f10800000000000000
+      internalID: 2276698358066223724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_11
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1616
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1142e3896de023e0800000000000000
+      internalID: -2080401990405177057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_12
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1620
+        width: 81
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8655cc833115a5690800000000000000
+      internalID: -7612683077117258392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_13
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 1617
+        width: 99
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625f15cd6ccbe6060800000000000000
+      internalID: 6948698837365159206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_14
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 1616
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35c3acc95f2c2160800000000000000
+      internalID: 7002023583386158395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_15
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1022
+        width: 228
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a790d943558bd050800000000000000
+      internalID: 5826397135701055396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_16
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1048
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874090baab93915c0800000000000000
+      internalID: -4244297699923786632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_17
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1084
+        width: 243
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c5e23297d5a12a0800000000000000
+      internalID: -6765992715308082124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_18
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1066
+        width: 406
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf707abdec30f3370800000000000000
+      internalID: 8304360424877787132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_19
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 1003
+        width: 419
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b3cd958e5da5740800000000000000
+      internalID: 5141657118513576747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_20
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 559
+        width: 277
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c62ed8b2e3538180800000000000000
+      internalID: -9114348987638470972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_21
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 602
+        width: 220
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ad407933f5255a0800000000000000
+      internalID: -6534055434179519950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 638
+        width: 406
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9419b846cd70d680800000000000000
+      internalID: -8732341386894306147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_23
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 562
+        width: 379
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bf9aa4cfdd075ed0800000000000000
+      internalID: -2425454619587338311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_24
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 561
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84cf8a32c00187f00800000000000000
+      internalID: 1114658552098126920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_25
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 53
+        width: 227
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05e259ffaab482b0800000000000000
+      internalID: -5583132373067569909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_26
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 190
+        width: 116
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9308093a123714000800000000000000
+      internalID: 18422461801463865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_27
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 1
+        width: 487
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a73528dd53bd180800000000000000
+      internalID: -9089612197426660805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_28
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 196
+        width: 89
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee794dc1f376c0c0800000000000000
+      internalID: -4555826490670219551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_29
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 139
+        width: 155
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6267198fcb84cd10800000000000000
+      internalID: 2144993046009700974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_30
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 74
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a24220cdd40d3e0800000000000000
+      internalID: -2031037824620025200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_31
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 116
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e614bbff75b0e65c0800000000000000
+      internalID: -4220423328219053714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_32
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 116
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386719405712bee20800000000000000
+      internalID: 3380832731743221379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_33
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 74
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d775cb897944eabc0800000000000000
+      internalID: -3770000420169296003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      multiplyTutorial_0: 5162736924463033551
+      multiplyTutorial_1: 1415697358935017806
+      multiplyTutorial_10: 2276698358066223724
+      multiplyTutorial_11: -2080401990405177057
+      multiplyTutorial_12: -7612683077117258392
+      multiplyTutorial_13: 6948698837365159206
+      multiplyTutorial_14: 7002023583386158395
+      multiplyTutorial_15: 5826397135701055396
+      multiplyTutorial_16: -4244297699923786632
+      multiplyTutorial_17: -6765992715308082124
+      multiplyTutorial_18: 8304360424877787132
+      multiplyTutorial_19: 5141657118513576747
+      multiplyTutorial_2: 110907263051464821
+      multiplyTutorial_20: -9114348987638470972
+      multiplyTutorial_21: -6534055434179519950
+      multiplyTutorial_22: -8732341386894306147
+      multiplyTutorial_23: -2425454619587338311
+      multiplyTutorial_24: 1114658552098126920
+      multiplyTutorial_25: -5583132373067569909
+      multiplyTutorial_26: 18422461801463865
+      multiplyTutorial_27: -9089612197426660805
+      multiplyTutorial_28: -4555826490670219551
+      multiplyTutorial_29: 2144993046009700974
+      multiplyTutorial_3: -792711292910122822
+      multiplyTutorial_30: -2031037824620025200
+      multiplyTutorial_31: -4220423328219053714
+      multiplyTutorial_32: 3380832731743221379
+      multiplyTutorial_33: -3770000420169296003
+      multiplyTutorial_4: -3065366646302437027
+      multiplyTutorial_5: 9094572780340001987
+      multiplyTutorial_6: 5562589787468446432
+      multiplyTutorial_7: -2262511094413463572
+      multiplyTutorial_8: -8714966918181061593
+      multiplyTutorial_9: 955298632101265864
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

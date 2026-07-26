@@ -11,7 +11,6 @@ public enum TutorialStep
     CycleInventory,  // R — two or more blocks are held in inventory
     Shoot,           // F — shown right after CycleInventory
     Absorb,          // Q — shown right after CycleInventory
-    Symbol,          // shown once every mechanic hint above has played
 }
 
 // Shows a one-time image hint the first time the player reaches a new mechanic.
@@ -26,7 +25,11 @@ public class TutorialManager : MonoBehaviour
     public Sprite rCycleInventory;  // 2+ blocks in inventory
     public Sprite fShoot;           // right after R
     public Sprite qAbsorb;          // right after R
-    public Sprite symbolTutorial;   // shown after all of the above
+    public Sprite symbolTutorial;   // auto-shown after all of the above
+
+    [Header("Level intro (optional, plays on start — not triggered)")]
+    [Tooltip("If set, this image plays once when the level begins, e.g. \"Introducing new symbols!\"")]
+    public Sprite intro;
 
     [Header("Display")]
     [Tooltip("Height of the popup in pixels (width follows the image's aspect).")]
@@ -50,14 +53,21 @@ public class TutorialManager : MonoBehaviour
 
     static TutorialManager instance;
 
-    readonly Queue<TutorialStep> pending = new Queue<TutorialStep>();
+    readonly Queue<Sprite> pending = new Queue<Sprite>();
     Image popup;
     bool playing;
+    bool symbolQueued;
 
     void Awake()
     {
         instance = this;
         BuildPopup();
+    }
+
+    void Start()
+    {
+        // Level intro: not triggered by anything, just plays first when the level loads.
+        Enqueue(intro);
     }
 
     void OnDestroy()
@@ -70,16 +80,33 @@ public class TutorialManager : MonoBehaviour
     public static void Show(TutorialStep step)
     {
         if (instance != null)
-            instance.Enqueue(step);
+            instance.ShowStep(step);
     }
 
-    void Enqueue(TutorialStep step)
+    void ShowStep(TutorialStep step)
     {
-        // Skip anything already shown this session or already waiting in line.
-        if (shownThisSession.Contains(step) || pending.Contains(step))
+        // Each mechanic hint plays at most once per session.
+        if (shownThisSession.Contains(step))
+            return;
+        shownThisSession.Add(step);
+
+        Enqueue(SpriteFor(step));
+
+        // Once every mechanic hint has been reached, follow up with the symbol tutorial.
+        if (!symbolQueued && AllMechanicHintsShown())
+        {
+            symbolQueued = true;
+            Enqueue(symbolTutorial);
+        }
+    }
+
+    // Queues an image to play. Ignores nulls (unassigned sprites) so callers stay simple.
+    void Enqueue(Sprite image)
+    {
+        if (image == null)
             return;
 
-        pending.Enqueue(step);
+        pending.Enqueue(image);
         if (!playing)
             StartCoroutine(PlayPending());
     }
@@ -88,15 +115,7 @@ public class TutorialManager : MonoBehaviour
     {
         playing = true;
         while (pending.Count > 0)
-        {
-            TutorialStep step = pending.Dequeue();
-            shownThisSession.Add(step);
-            yield return PlayHint(SpriteFor(step));
-
-            // Once every mechanic hint has played, finish with the symbol tutorial.
-            if (step != TutorialStep.Symbol && !shownThisSession.Contains(TutorialStep.Symbol) && AllMechanicHintsShown())
-                pending.Enqueue(TutorialStep.Symbol);
-        }
+            yield return PlayHint(pending.Dequeue());
         playing = false;
     }
 
@@ -143,7 +162,6 @@ public class TutorialManager : MonoBehaviour
             case TutorialStep.CycleInventory: return rCycleInventory;
             case TutorialStep.Shoot: return fShoot;
             case TutorialStep.Absorb: return qAbsorb;
-            case TutorialStep.Symbol: return symbolTutorial;
             default: return null;
         }
     }

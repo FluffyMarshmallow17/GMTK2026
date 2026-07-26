@@ -1,0 +1,2119 @@
+fileFormatVersion: 2
+guid: b8aa84a51f1644008bebee9f7fee156f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -570088465352994929
+    second: rateTutorial_0
+  - first:
+      213: -3233486957457060135
+    second: rateTutorial_1
+  - first:
+      213: -7302519198848037935
+    second: rateTutorial_2
+  - first:
+      213: 3603771232563051171
+    second: rateTutorial_3
+  - first:
+      213: 469445464052789871
+    second: rateTutorial_4
+  - first:
+      213: -1050452307969564984
+    second: rateTutorial_5
+  - first:
+      213: -2319697828245202690
+    second: rateTutorial_6
+  - first:
+      213: 8851471681753672800
+    second: rateTutorial_7
+  - first:
+      213: -5990001209941340877
+    second: rateTutorial_8
+  - first:
+      213: -6313479061862081826
+    second: rateTutorial_9
+  - first:
+      213: -399228381348587892
+    second: rateTutorial_10
+  - first:
+      213: 533085239030487599
+    second: rateTutorial_11
+  - first:
+      213: -4322895069470990418
+    second: rateTutorial_12
+  - first:
+      213: 8255187925257932115
+    second: rateTutorial_13
+  - first:
+      213: 6480153581241571400
+    second: rateTutorial_14
+  - first:
+      213: -3454348784816321753
+    second: rateTutorial_15
+  - first:
+      213: -1828579734481337904
+    second: rateTutorial_16
+  - first:
+      213: -1842528779500587043
+    second: rateTutorial_17
+  - first:
+      213: -5481150652406231583
+    second: rateTutorial_18
+  - first:
+      213: 5479054699054066490
+    second: rateTutorial_19
+  - first:
+      213: -5702908544373307913
+    second: rateTutorial_20
+  - first:
+      213: -2480063580086112508
+    second: rateTutorial_21
+  - first:
+      213: 5900684540043122456
+    second: rateTutorial_22
+  - first:
+      213: 3016204399653680992
+    second: rateTutorial_23
+  - first:
+      213: -7367106099952408101
+    second: rateTutorial_24
+  - first:
+      213: 7926195581671966916
+    second: rateTutorial_25
+  - first:
+      213: 4022861328727687034
+    second: rateTutorial_26
+  - first:
+      213: -630736626227682306
+    second: rateTutorial_27
+  - first:
+      213: -5935900580867409460
+    second: rateTutorial_28
+  - first:
+      213: -6536110904413330608
+    second: rateTutorial_29
+  - first:
+      213: 6152293971685530238
+    second: rateTutorial_30
+  - first:
+      213: -1388269747061277607
+    second: rateTutorial_31
+  - first:
+      213: -8403076973561672751
+    second: rateTutorial_32
+  - first:
+      213: -8134319447183034969
+    second: rateTutorial_33
+  - first:
+      213: -5611961446170232267
+    second: rateTutorial_34
+  - first:
+      213: 1976695784371235618
+    second: rateTutorial_35
+  - first:
+      213: 4905494819582620422
+    second: rateTutorial_36
+  - first:
+      213: -3191547944486887422
+    second: rateTutorial_37
+  - first:
+      213: 4191165765225394721
+    second: rateTutorial_38
+  - first:
+      213: 849812444902451230
+    second: rateTutorial_39
+  - first:
+      213: 324241353338402961
+    second: rateTutorial_40
+  - first:
+      213: -2283889340966198546
+    second: rateTutorial_41
+  - first:
+      213: 599250322149265075
+    second: rateTutorial_42
+  - first:
+      213: -4765185604793378478
+    second: rateTutorial_43
+  - first:
+      213: -6694822109018018349
+    second: rateTutorial_44
+  - first:
+      213: -1323130082053447295
+    second: rateTutorial_45
+  - first:
+      213: -8995536692898249385
+    second: rateTutorial_46
+  - first:
+      213: -1462461265544091547
+    second: rateTutorial_47
+  - first:
+      213: -6037059340517871285
+    second: rateTutorial_48
+  - first:
+      213: 9148680926910574855
+    second: rateTutorial_49
+  - first:
+      213: -6211014918705457994
+    second: rateTutorial_50
+  - first:
+      213: 7316303656777078953
+    second: rateTutorial_51
+  - first:
+      213: 4453467041560840587
+    second: rateTutorial_52
+  - first:
+      213: 824696046839447639
+    second: rateTutorial_53
+  - first:
+      213: -3987039321348465344
+    second: rateTutorial_54
+  - first:
+      213: 8199116624844365385
+    second: rateTutorial_55
+  - first:
+      213: -5246264090128103514
+    second: rateTutorial_56
+  - first:
+      213: -268352932766416065
+    second: rateTutorial_57
+  - first:
+      213: -5433350733760304685
+    second: rateTutorial_58
+  - first:
+      213: 6947539766473444480
+    second: rateTutorial_59
+  - first:
+      213: -8845568567412520129
+    second: rateTutorial_60
+  - first:
+      213: 12108114255732592
+    second: rateTutorial_61
+  - first:
+      213: -5488902829236500638
+    second: rateTutorial_62
+  - first:
+      213: -8518377886070208101
+    second: rateTutorial_63
+  - first:
+      213: 251142629688661188
+    second: rateTutorial_64
+  - first:
+      213: -2961561280214800288
+    second: rateTutorial_65
+  - first:
+      213: 4152081379946359773
+    second: rateTutorial_66
+  - first:
+      213: -5824025163351594633
+    second: rateTutorial_67
+  - first:
+      213: -7832212268975145225
+    second: rateTutorial_68
+  - first:
+      213: -1124545800420282875
+    second: rateTutorial_69
+  - first:
+      213: -5559502978773353562
+    second: rateTutorial_70
+  - first:
+      213: 2539166238861436283
+    second: rateTutorial_71
+  - first:
+      213: -2332907614638400275
+    second: rateTutorial_72
+  - first:
+      213: 6273709525224951841
+    second: rateTutorial_73
+  - first:
+      213: 6349530790551245803
+    second: rateTutorial_74
+  - first:
+      213: 741414124394197237
+    second: rateTutorial_75
+  - first:
+      213: -2535101986602174123
+    second: rateTutorial_76
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rateTutorial_0
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 987
+        width: 120
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f461caf83a618f0800000000000000
+      internalID: -570088465352994929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_1
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 984
+        width: 102
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dec9e27eb85023d0800000000000000
+      internalID: -3233486957457060135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_2
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 984
+        width: 92
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db4133aa7d38aa90800000000000000
+      internalID: -7302519198848037935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_3
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 984
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa31b8a7da230230800000000000000
+      internalID: 3603771232563051171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_4
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 937
+        width: 101
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f62f84e892ec38600800000000000000
+      internalID: 469445464052789871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_5
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 984
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce1cf1013b0c61f0800000000000000
+      internalID: -1050452307969564984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_6
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 987
+        width: 66
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef813319d17cecfd0800000000000000
+      internalID: -2319697828245202690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_7
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 985
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c6b52f89eb6da70800000000000000
+      internalID: 8851471681753672800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_8
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 987
+        width: 160
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d494dc2ad3fdca0800000000000000
+      internalID: -5990001209941340877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_9
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 984
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda18d45e340268a0800000000000000
+      internalID: -6313479061862081826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_10
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 987
+        width: 92
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c86967107e7a57af0800000000000000
+      internalID: -399228381348587892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_11
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 984
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a9a635336e56700800000000000000
+      internalID: 533085239030487599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_12
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 984
+        width: 93
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafd4e686ddf104c0800000000000000
+      internalID: -4322895069470990418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_13
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 984
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35dc71f1ea1509270800000000000000
+      internalID: 8255187925257932115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_14
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 984
+        width: 95
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84811eb49512ee950800000000000000
+      internalID: 6480153581241571400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_15
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 987
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b88b60510bf00d0800000000000000
+      internalID: -3454348784816321753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_16
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 987
+        width: 61
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d103c27b649f96e0800000000000000
+      internalID: -1828579734481337904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_17
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 984
+        width: 109
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7fe6156d50e66e0800000000000000
+      internalID: -1842528779500587043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_18
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 984
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed0de2a58a0fe3b0800000000000000
+      internalID: -5481150652406231583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_19
+      rect:
+        serializedVersion: 2
+        x: 2587
+        y: 987
+        width: 161
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b6d023833890c40800000000000000
+      internalID: 5479054699054066490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_20
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 987
+        width: 94
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5c61ae4e23bd0b0800000000000000
+      internalID: -5702908544373307913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_21
+      rect:
+        serializedVersion: 2
+        x: 2865
+        y: 985
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f6598505b059dd0800000000000000
+      internalID: -2480063580086112508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_22
+      rect:
+        serializedVersion: 2
+        x: 3033
+        y: 772
+        width: 307
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817d8e4735173e150800000000000000
+      internalID: 5900684540043122456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_23
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 744
+        width: 109
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067f353cbe5bbd920800000000000000
+      internalID: 3016204399653680992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_24
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 744
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd929b1e808c2c990800000000000000
+      internalID: -7367106099952408101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_25
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 744
+        width: 93
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c804d103e08ffd60800000000000000
+      internalID: 7926195581671966916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_26
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 747
+        width: 66
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f387f701314d730800000000000000
+      internalID: 4022861328727687034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_27
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 744
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3eed6516c2f37f0800000000000000
+      internalID: -630736626227682306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_28
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 744
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9fc571fd17f9da0800000000000000
+      internalID: -5935900580867409460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_29
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 745
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053e2e123c11b45a0800000000000000
+      internalID: -6536110904413330608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_30
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 744
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ad71065c6516550800000000000000
+      internalID: 6152293971685530238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_31
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 747
+        width: 69
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95cbdf93500ebbce0800000000000000
+      internalID: -1388269747061277607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_32
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 744
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db87929306426b80800000000000000
+      internalID: -8403076973561672751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_33
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 745
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a57a1d6f871d1f80800000000000000
+      internalID: -8134319447183034969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_34
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 747
+        width: 61
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53af5d35cce4e12b0800000000000000
+      internalID: -5611961446170232267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_35
+      rect:
+        serializedVersion: 2
+        x: 2190
+        y: 744
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ba578c752ae6b10800000000000000
+      internalID: 1976695784371235618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_36
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 747
+        width: 65
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603bdb84c81d31440800000000000000
+      internalID: 4905494819582620422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_37
+      rect:
+        serializedVersion: 2
+        x: 2381
+        y: 789
+        width: 23
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2002b35dd0855b3d0800000000000000
+      internalID: -3191547944486887422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_38
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 744
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122b907ce030a2a30800000000000000
+      internalID: 4191165765225394721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_39
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 21
+        width: 304
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18ed188ae32bcb00800000000000000
+      internalID: 849812444902451230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_40
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 264
+        width: 141
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1983a3ffacfef7400800000000000000
+      internalID: 324241353338402961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_41
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 267
+        width: 66
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2a865bebefd40e0800000000000000
+      internalID: -2283889340966198546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_42
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 264
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bece373ef6f05800800000000000000
+      internalID: 599250322149265075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_43
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 267
+        width: 161
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2595c7180f8aeddb0800000000000000
+      internalID: -4765185604793378478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_44
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 264
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddac8533c63713a0800000000000000
+      internalID: -6694822109018018349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_45
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 267
+        width: 66
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181229b533c43ade0800000000000000
+      internalID: -1323130082053447295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_46
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 265
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755cec7c90f692380800000000000000
+      internalID: -8995536692898249385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_47
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 267
+        width: 160
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568e9793a3b44bbe0800000000000000
+      internalID: -1462461265544091547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_48
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 264
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b417a78f38e083ca0800000000000000
+      internalID: -6037059340517871285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_49
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 267
+        width: 92
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70175ebc4d4a6fe70800000000000000
+      internalID: 9148680926910574855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_50
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 264
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4d8ebb6da0ec9a0800000000000000
+      internalID: -6211014918705457994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_51
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 264
+        width: 93
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8d613996bb88560800000000000000
+      internalID: 7316303656777078953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_52
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 264
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89c427cda4edcd30800000000000000
+      internalID: 4453467041560840587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_53
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 264
+        width: 95
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750c8876fa8e17b00800000000000000
+      internalID: 824696046839447639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_54
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 267
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d92898cd03ba8c0800000000000000
+      internalID: -3987039321348465344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_55
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 267
+        width: 61
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e19d7212d19c170800000000000000
+      internalID: 8199116624844365385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_56
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 264
+        width: 109
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7c60e1b968137b0800000000000000
+      internalID: -5246264090128103514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_57
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 264
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f330600fd6e964cf0800000000000000
+      internalID: -268352932766416065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_58
+      rect:
+        serializedVersion: 2
+        x: 2553
+        y: 267
+        width: 162
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9eb167b4cd894b0800000000000000
+      internalID: -5433350733760304685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_59
+      rect:
+        serializedVersion: 2
+        x: 2727
+        y: 267
+        width: 94
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ccc83ab9e9a6060800000000000000
+      internalID: 6947539766473444480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_60
+      rect:
+        serializedVersion: 2
+        x: 2831
+        y: 265
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b0407f04a3e3580800000000000000
+      internalID: -8845568567412520129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_61
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 24
+        width: 109
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07fdc1904440b2000800000000000000
+      internalID: 12108114255732592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_62
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 24
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267c8b055ff73d3b0800000000000000
+      internalID: -5488902829236500638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_63
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 24
+        width: 93
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b990e36e174a8c980800000000000000
+      internalID: -8518377886070208101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_64
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 27
+        width: 66
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4dc8e14ec3c7300800000000000000
+      internalID: 251142629688661188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_65
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 24
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068ee38e4bb66e6d0800000000000000
+      internalID: -2961561280214800288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_66
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 24
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb673234082f9930800000000000000
+      internalID: 4152081379946359773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_67
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 25
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779ed7f88f7ec2fa0800000000000000
+      internalID: -5824025163351594633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_68
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 24
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7feb74e20746e4390800000000000000
+      internalID: -7832212268975145225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_69
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 25
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50eaa487d8fc460f0800000000000000
+      internalID: -1124545800420282875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_70
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 27
+        width: 27
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6abfc7e0f7da8d2b0800000000000000
+      internalID: -5559502978773353562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_71
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 24
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75200dbd3eec3320800000000000000
+      internalID: 2539166238861436283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_72
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 27
+        width: 161
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec9caf72e8df9fd0800000000000000
+      internalID: -2332907614638400275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_73
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 24
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120940bd291b01750800000000000000
+      internalID: 6273709525224951841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_74
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 27
+        width: 65
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3563ddc901e1850800000000000000
+      internalID: 6349530790551245803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_75
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 69
+        width: 23
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f039fbc7380a4a00800000000000000
+      internalID: 741414124394197237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rateTutorial_76
+      rect:
+        serializedVersion: 2
+        x: 2407
+        y: 24
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559b03bbc2281dcd0800000000000000
+      internalID: -2535101986602174123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rateTutorial_0: -570088465352994929
+      rateTutorial_1: -3233486957457060135
+      rateTutorial_10: -399228381348587892
+      rateTutorial_11: 533085239030487599
+      rateTutorial_12: -4322895069470990418
+      rateTutorial_13: 8255187925257932115
+      rateTutorial_14: 6480153581241571400
+      rateTutorial_15: -3454348784816321753
+      rateTutorial_16: -1828579734481337904
+      rateTutorial_17: -1842528779500587043
+      rateTutorial_18: -5481150652406231583
+      rateTutorial_19: 5479054699054066490
+      rateTutorial_2: -7302519198848037935
+      rateTutorial_20: -5702908544373307913
+      rateTutorial_21: -2480063580086112508
+      rateTutorial_22: 5900684540043122456
+      rateTutorial_23: 3016204399653680992
+      rateTutorial_24: -7367106099952408101
+      rateTutorial_25: 7926195581671966916
+      rateTutorial_26: 4022861328727687034
+      rateTutorial_27: -630736626227682306
+      rateTutorial_28: -5935900580867409460
+      rateTutorial_29: -6536110904413330608
+      rateTutorial_3: 3603771232563051171
+      rateTutorial_30: 6152293971685530238
+      rateTutorial_31: -1388269747061277607
+      rateTutorial_32: -8403076973561672751
+      rateTutorial_33: -8134319447183034969
+      rateTutorial_34: -5611961446170232267
+      rateTutorial_35: 1976695784371235618
+      rateTutorial_36: 4905494819582620422
+      rateTutorial_37: -3191547944486887422
+      rateTutorial_38: 4191165765225394721
+      rateTutorial_39: 849812444902451230
+      rateTutorial_4: 469445464052789871
+      rateTutorial_40: 324241353338402961
+      rateTutorial_41: -2283889340966198546
+      rateTutorial_42: 599250322149265075
+      rateTutorial_43: -4765185604793378478
+      rateTutorial_44: -6694822109018018349
+      rateTutorial_45: -1323130082053447295
+      rateTutorial_46: -8995536692898249385
+      rateTutorial_47: -1462461265544091547
+      rateTutorial_48: -6037059340517871285
+      rateTutorial_49: 9148680926910574855
+      rateTutorial_5: -1050452307969564984
+      rateTutorial_50: -6211014918705457994
+      rateTutorial_51: 7316303656777078953
+      rateTutorial_52: 4453467041560840587
+      rateTutorial_53: 824696046839447639
+      rateTutorial_54: -3987039321348465344
+      rateTutorial_55: 8199116624844365385
+      rateTutorial_56: -5246264090128103514
+      rateTutorial_57: -268352932766416065
+      rateTutorial_58: -5433350733760304685
+      rateTutorial_59: 6947539766473444480
+      rateTutorial_6: -2319697828245202690
+      rateTutorial_60: -8845568567412520129
+      rateTutorial_61: 12108114255732592
+      rateTutorial_62: -5488902829236500638
+      rateTutorial_63: -8518377886070208101
+      rateTutorial_64: 251142629688661188
+      rateTutorial_65: -2961561280214800288
+      rateTutorial_66: 4152081379946359773
+      rateTutorial_67: -5824025163351594633
+      rateTutorial_68: -7832212268975145225
+      rateTutorial_69: -1124545800420282875
+      rateTutorial_7: 8851471681753672800
+      rateTutorial_70: -5559502978773353562
+      rateTutorial_71: 2539166238861436283
+      rateTutorial_72: -2332907614638400275
+      rateTutorial_73: 6273709525224951841
+      rateTutorial_74: 6349530790551245803
+      rateTutorial_75: 741414124394197237
+      rateTutorial_76: -2535101986602174123
+      rateTutorial_8: -5990001209941340877
+      rateTutorial_9: -6313479061862081826
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
