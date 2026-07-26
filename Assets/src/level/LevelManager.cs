@@ -36,7 +36,7 @@ public class LevelManager : MonoBehaviour
     const float ShakeMaxOffset = 1.9f;
     const float FadeToWhite = 1.1f;
     const float HoldWhite = 0.25f;
-    const float FadeToBlack = 2.55f;
+    const float FadeFromWhite = 0.9f;
 
     int numberSpriteCount;
 
@@ -144,7 +144,10 @@ public class LevelManager : MonoBehaviour
     IEnumerator LevelEndCinematic(Transform focus, TextMeshPro countdownLabel, Action showScreen)
     {
         if (player != null)
-            player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+        {
+            Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
+            player.BeginCoastMovement(playerRb != null ? playerRb.linearVelocity : Vector2.zero);
+        }
 
         Camera cam = Camera.main;
         CameraFollow follow = cam != null ? cam.GetComponent<CameraFollow>() : null;
@@ -221,20 +224,40 @@ public class LevelManager : MonoBehaviour
         if (HoldWhite > 0f)
             yield return new WaitForSecondsRealtime(HoldWhite);
 
-        // Let shake ease off as we sink into black.
         CameraShake.ReleaseCinematic(0.55f);
 
-        bool blackDone = false;
-        if (fade != null)
-            fade.FadeToBlack(FadeToBlack, ScreenFade.Ease.EaseOutCubic, () => blackDone = true);
-        else
-            blackDone = true;
-
-        while (!blackDone)
-            yield return null;
-
         Time.timeScale = 0f;
+        HideLevelGameplay();
         showScreen?.Invoke();
+    }
+
+    void HideLevelGameplay()
+    {
+        if (player != null)
+            player.gameObject.SetActive(false);
+        if (boss != null)
+            boss.gameObject.SetActive(false);
+        if (map != null)
+            map.SetActive(false);
+
+        foreach (Block block in FindObjectsByType<Block>(FindObjectsSortMode.None))
+            block.gameObject.SetActive(false);
+
+        if (miniEnemies != null)
+        {
+            for (int i = miniEnemies.Count - 1; i >= 0; i--)
+            {
+                if (miniEnemies[i] != null)
+                    miniEnemies[i].gameObject.SetActive(false);
+            }
+        }
+
+        Camera cam = Camera.main;
+        if (cam != null)
+        {
+            cam.clearFlags = CameraClearFlags.SolidColor;
+            cam.backgroundColor = Color.black;
+        }
     }
 
     IEnumerator AnimateTimeScale(float from, float to, float duration, ScreenFade.Ease ease)
@@ -317,14 +340,15 @@ public class LevelManager : MonoBehaviour
     {
         // Interval grows as the field fills: blockRate / (1 - count/maxBlocks).
         // e.g. maxBlocks=50, count=48 → multiplier 25 → very slow spawns.
-        if (levelData.maxBlocks <= 0)
+        int maxBlocks = GetEffectiveMaxBlocks();
+        if (maxBlocks <= 0)
             return Mathf.Max(0.01f, levelData.blockRate);
 
         int count = CountBlocks();
-        if (count >= levelData.maxBlocks)
+        if (count >= maxBlocks)
             return float.PositiveInfinity;
 
-        float fill = (float)count / levelData.maxBlocks;
+        float fill = (float)count / maxBlocks;
         return Mathf.Max(0.01f, levelData.blockRate / (1f - fill));
     }
 
@@ -333,13 +357,53 @@ public class LevelManager : MonoBehaviour
         return FindObjectsByType<Block>(FindObjectsSortMode.None).Length;
     }
 
+    /// <summary>
+    /// Spawn outer radius: at least levelData.spawnMax, or the map border if larger.
+    /// </summary>
+    float GetEffectiveSpawnMax()
+    {
+        float spawnMax = levelData.spawnMax;
+        if (map == null)
+            return spawnMax;
+
+        Map mapScript = map.GetComponent<Map>();
+        if (mapScript == null)
+            return spawnMax;
+
+        float mapRadius = mapScript.GetRadius();
+        if (spawnMax < mapRadius)
+            return mapRadius;
+        return spawnMax;
+    }
+
+    /// <summary>
+    /// maxBlocks scaled by spawn area when the map is larger than spawnMax,
+    /// so block density stays roughly constant as the border grows.
+    /// </summary>
+    int GetEffectiveMaxBlocks()
+    {
+        if (levelData.maxBlocks <= 0)
+            return levelData.maxBlocks;
+
+        float configuredMax = Mathf.Max(0.01f, levelData.spawnMax);
+        float effectiveMax = GetEffectiveSpawnMax();
+        if (effectiveMax <= configuredMax)
+            return levelData.maxBlocks;
+
+        // Area scales with r^2.
+        float areaScale = (effectiveMax * effectiveMax) / (configuredMax * configuredMax);
+        return Mathf.Max(1, Mathf.RoundToInt(levelData.maxBlocks * areaScale));
+    }
+
     public void spawnBlock()
     {
-        if (levelData.maxBlocks > 0 && CountBlocks() >= levelData.maxBlocks)
+        int maxBlocks = GetEffectiveMaxBlocks();
+        if (maxBlocks > 0 && CountBlocks() >= maxBlocks)
             return;
 
-        float minRadius = Mathf.Min(levelData.spawnMin, levelData.spawnMax);
-        float maxRadius = Mathf.Max(levelData.spawnMin, levelData.spawnMax);
+        float spawnMax = GetEffectiveSpawnMax();
+        float minRadius = Mathf.Min(levelData.spawnMin, spawnMax);
+        float maxRadius = Mathf.Max(levelData.spawnMin, spawnMax);
         float radius = UnityEngine.Random.Range(minRadius, maxRadius);
         float angle = UnityEngine.Random.Range(0f, Mathf.PI * 2f);
         Vector3 spawnPosition = new Vector3(

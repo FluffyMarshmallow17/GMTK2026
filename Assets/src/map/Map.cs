@@ -86,6 +86,11 @@ public class Map : MonoBehaviour
         ApplyRadius(currentRadius);
     }
 
+    public float GetRadius()
+    {
+        return currentRadius;
+    }
+
     float GridLineThickness()
     {
         // The grid shader lights pixels within _LineWidth on both sides of a line,
