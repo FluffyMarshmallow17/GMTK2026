@@ -113,6 +113,19 @@ public class CameraShake : MonoBehaviour
         instance.trauma = Mathf.Clamp01(amount);
     }
 
+    /// <summary>
+    /// Hold trauma at a floor for a sustained rumble (call every frame while active).
+    /// Won't reduce a larger shake already in progress.
+    /// </summary>
+    public static void SustainTrauma(float amount)
+    {
+        EnsureInstance();
+        if (instance == null)
+            return;
+
+        instance.trauma = Mathf.Max(instance.trauma, Mathf.Clamp01(amount));
+    }
+
     public static void ReleaseCinematic(float decayRate = 0.7f)
     {
         if (instance == null)

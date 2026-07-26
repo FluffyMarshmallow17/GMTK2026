@@ -10,6 +10,10 @@ public class Player : MonoBehaviour
     public float moveSpeed = 5f;
     public float orbitalSpeed = 15f;
     public float shootForce = 1000f;
+    [Tooltip("Backward nudge applied to the player when shooting a block.")]
+    public float shootRecoil = 4f;
+    [Tooltip("How fast the shoot recoil fades (units/sec).")]
+    public float recoilFalloff = 20f;
     public TextMeshPro display;
 
     public List<Block> inRange;
@@ -34,6 +38,19 @@ public class Player : MonoBehaviour
     bool displayFrozen;
     bool coasting;
     Vector2 coastVelocity;
+    Vector2 recoilVelocity;
+
+    // The operation currently staged, remembered so the follow-up number can flash
+    // the whole operation+number combo together.
+    Sprite pendingOpSprite;
+    Material pendingOpMaterial;
+
+    // While touching the boss, both drain 10% of their countdown per second.
+    Boss touchingBoss;
+    float playerBossDrainAccum;
+    float bossBossDrainAccum;
+    [Tooltip("Sustained camera shake (0-1) while draining against the boss.")]
+    public float bossDrainShake = 0.4f;
 
     void Awake()
     {
@@ -131,8 +148,11 @@ public class Player : MonoBehaviour
             if (movement.x != 0)
                 rb.AddTorque(-movement.x * 0.5f);
 
-            rb.linearVelocity = movement * moveSpeed;
+            rb.linearVelocity = movement * moveSpeed + recoilVelocity;
         }
+
+        // Shoot recoil fades out over a few frames.
+        recoilVelocity = Vector2.MoveTowards(recoilVelocity, Vector2.zero, recoilFalloff * Time.fixedDeltaTime);
 
         foreach (Block block in blocks)
         {
@@ -189,6 +209,41 @@ public class Player : MonoBehaviour
             AudioManager.Instance.PlaySFX(SFX.Subtract);
             time = 0;
             GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity, GetInstanceID());
+            // Big out-of-bounds loss should be felt with a screen shake too.
+            CameraShake.ShakeFromChange(before, countdown);
+        }
+
+        DrainFromBossContact();
+    }
+
+    // While the player is in contact with the boss, both lose 10% of their own
+    // countdown per second. Fractional loss is accumulated so small counts still drain.
+    void DrainFromBossContact()
+    {
+        if (touchingBoss == null || coasting)
+            return;
+
+        // Rumble the camera the whole time the drain is happening.
+        CameraShake.SustainTrauma(bossDrainShake);
+
+        float dt = Time.fixedDeltaTime;
+
+        playerBossDrainAccum += Mathf.Max(0, countdown) * 0.10f * dt;
+        int playerLoss = (int)playerBossDrainAccum;
+        if (playerLoss > 0)
+        {
+            playerBossDrainAccum -= playerLoss;
+            int before = countdown;
+            countdown -= playerLoss;
+            GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity, GetInstanceID());
+        }
+
+        bossBossDrainAccum += Mathf.Max(0, touchingBoss.getCountdown()) * 0.10f * dt;
+        int bossLoss = (int)bossBossDrainAccum;
+        if (bossLoss > 0)
+        {
+            bossBossDrainAccum -= bossLoss;
+            touchingBoss.decreaseCountdown(bossLoss);
         }
     }
 
@@ -260,7 +315,8 @@ public class Player : MonoBehaviour
                 RemoveMarker(selectedBlock, selectedPrefab);
                 Vector2 center = transform.position;
                 Vector2 shootDirection = ((Vector2)selectedBlock.transform.position - center).normalized;
-                selectedBlock.GetComponent<Rigidbody2D>().AddForce(shootDirection * shootForce);
+                selectedBlock.GetComponent<Rigidbody2D>().AddForce(shootDirection * shootForce * 2f); // doubled push
+                recoilVelocity += -shootDirection * shootRecoil; // slight kickback on the player
                 blocks.Remove(selectedBlock);
                 selectedBlock = null;
                 AudioManager.Instance.PlaySFX(SFX.Push);
@@ -392,6 +448,21 @@ public class Player : MonoBehaviour
 
             Destroy(other.gameObject);
         }
+
+        Boss boss = other.gameObject.GetComponentInParent<Boss>();
+        if (boss != null)
+            touchingBoss = boss;
+    }
+
+    void OnCollisionExit2D(Collision2D other)
+    {
+        Boss boss = other.gameObject.GetComponentInParent<Boss>();
+        if (boss != null && boss == touchingBoss)
+        {
+            touchingBoss = null;
+            playerBossDrainAccum = 0f;
+            bossBossDrainAccum = 0f;
+        }
     }
 
     private void applyAffect(Block block)
@@ -415,6 +486,9 @@ public class Player : MonoBehaviour
                 return;
             }
             FlashOperation(block);
+            // Remember this operation so the follow-up number flashes the whole combo.
+            pendingOpSprite = block.GetSymbolSprite();
+            pendingOpMaterial = block.GetSymbolMaterial();
         } else {
             if (int.TryParse(affect, out int number)) {
                 int before = countdown;
@@ -443,6 +517,10 @@ public class Player : MonoBehaviour
                 }
                 if (rate != rateBefore)
                     CameraShake.ShakeFromChange((float)rateBefore, (float)rate);
+                // Flash the operation and the number together as one combo.
+                operationFlash.PlayCombo(pendingOpSprite, pendingOpMaterial, block.GetSymbolSprite(), block.GetSymbolMaterial());
+                pendingOpSprite = null;
+                pendingOpMaterial = null;
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation
                 // red error effect
