@@ -14,6 +14,10 @@ public class MiniEnemy : MonoBehaviour
     public float countdownDisplaySmoothTime = 0.35f;    public float launchForce = 12f;
     public float launchDuration = 0.45f;
     public float launchStartScale = 0.2f;
+    [Tooltip("Seconds to fade in when spawned.")]
+    public float fadeInDuration = 0.3f;
+    [Tooltip("Seconds to fade out when despawning.")]
+    public float fadeOutDuration = 0.4f;
 
     Rigidbody2D rb;
     LevelManager levelManager;
@@ -24,6 +28,11 @@ public class MiniEnemy : MonoBehaviour
     float launchTimer;
     Vector2 launchDirection;
 
+    enum FadeState { In, Alive, Out }
+    FadeState fadeState;
+    float fadeTimer;
+    SpriteRenderer[] renderers;
+
     void Awake()
     {
         rate = 1;
@@ -31,6 +40,8 @@ public class MiniEnemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         levelManager = FindAnyObjectByType<LevelManager>();
         normalScale = transform.localScale;
+        // Cache the body sprites before OperationFlash adds its own renderer.
+        renderers = GetComponentsInChildren<SpriteRenderer>(true);
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
         if (playerObject != null)
         {
@@ -38,6 +49,11 @@ public class MiniEnemy : MonoBehaviour
         }
         countdownDisplay.Init(display, countdown, countdownDisplaySmoothTime);
         operationFlash.Init(display, transform);
+
+        // Fade into existence on spawn.
+        fadeState = FadeState.In;
+        fadeTimer = 0f;
+        SetAlpha(0f);
     }
 
     public float getRate()
@@ -50,22 +66,76 @@ public class MiniEnemy : MonoBehaviour
         if (operationFlash.IsActive)
             operationFlash.Update();
         else
-            countdownDisplay.Update(countdown);
+            countdownDisplay.Update(Mathf.Max(0, countdown));
+
+        UpdateFade();
+    }
+
+    void UpdateFade()
+    {
+        if (fadeState == FadeState.In)
+        {
+            fadeTimer += Time.deltaTime;
+            float a = Mathf.Clamp01(fadeTimer / Mathf.Max(0.01f, fadeInDuration));
+            SetAlpha(a);
+            if (a >= 1f)
+                fadeState = FadeState.Alive;
+        }
+        else if (fadeState == FadeState.Out)
+        {
+            fadeTimer += Time.deltaTime;
+            float a = 1f - Mathf.Clamp01(fadeTimer / Mathf.Max(0.01f, fadeOutDuration));
+            SetAlpha(a);
+            if (a <= 0f)
+                Destroy(gameObject);
+        }
+    }
+
+    void SetAlpha(float a)
+    {
+        if (renderers != null)
+            foreach (SpriteRenderer r in renderers)
+            {
+                if (r == null) continue;
+                Color c = r.color;
+                c.a = a;
+                r.color = c;
+            }
+        if (display != null)
+            display.alpha = a;
+    }
+
+    // Stop acting and fade out, then destroy (used for every despawn).
+    void BeginFadeOut()
+    {
+        if (fadeState == FadeState.Out)
+            return;
+        fadeState = FadeState.Out;
+        fadeTimer = 0f;
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null)
+            col.enabled = false;
     }
 
     void FixedUpdate()
     {
+        if (fadeState == FadeState.Out)
+            return; // dying: just let the fade play out
+
         if (countdown <= 0)
         {
-            Destroy(gameObject);
+            BeginFadeOut();
+            return;
         }
 
         if (launching)
         {
             launchTimer += Time.deltaTime;
             float t = Mathf.Clamp01(launchTimer / launchDuration);
-            // Ease out: fast shove that quickly settles to normal speed
-            float eased = 1f - (1f - t) * (1f - t);
+            // Smooth ease-in-out for a nicer launch into existence.
+            float eased = Mathf.SmoothStep(0f, 1f, t);
             transform.localScale = Vector3.Lerp(normalScale * launchStartScale, normalScale, eased);
             float speed = Mathf.Lerp(launchForce, moveSpeed, eased);
             rb.linearVelocity = launchDirection * speed;
@@ -134,7 +204,7 @@ public class MiniEnemy : MonoBehaviour
             player.decreaseCountdown(countdown);
             CameraShake.ShakeFromChange(before, player.getCountdown());
             AudioManager.Instance.PlaySFX(SFX.Subtract);
-            Destroy(gameObject);
+            BeginFadeOut();
         }
         if (block != null)
         {
