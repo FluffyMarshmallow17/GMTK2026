@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 5ff14bcca2e6c43b99b5ce542185f2b8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2713511376918786083
+    second: qTutorial_0
+  - first:
+      213: -1917186378062791276
+    second: qTutorial_1
+  - first:
+      213: -2892493503917179060
+    second: qTutorial_2
+  - first:
+      213: -2329265770580986370
+    second: qTutorial_3
+  - first:
+      213: 6318656454808802245
+    second: qTutorial_4
+  - first:
+      213: -2603019506798575077
+    second: qTutorial_5
+  - first:
+      213: -8464227839503190338
+    second: qTutorial_6
+  - first:
+      213: -605314511375917858
+    second: qTutorial_7
+  - first:
+      213: 3075963516513138783
+    second: qTutorial_8
+  - first:
+      213: -4121179890577072658
+    second: qTutorial_9
+  - first:
+      213: 4654214705993838025
+    second: qTutorial_10
+  - first:
+      213: -3787499493108272220
+    second: qTutorial_11
+  - first:
+      213: -6638712539316746921
+    second: qTutorial_12
+  - first:
+      213: 2883228774327765382
+    second: qTutorial_13
+  - first:
+      213: -7021403123959529899
+    second: qTutorial_14
+  - first:
+      213: -5274936289629891661
+    second: qTutorial_15
+  - first:
+      213: -8397220753886012865
+    second: qTutorial_16
+  - first:
+      213: 751955795015331864
+    second: qTutorial_17
+  - first:
+      213: 7686997407760633948
+    second: qTutorial_18
+  - first:
+      213: -961516296991136989
+    second: qTutorial_19
+  - first:
+      213: 1485325577074536047
+    second: qTutorial_20
+  - first:
+      213: -2262517279995938187
+    second: qTutorial_21
+  - first:
+      213: -8063155852900458031
+    second: qTutorial_22
+  - first:
+      213: 2057744409125159308
+    second: qTutorial_23
+  - first:
+      213: -8094725046101073335
+    second: qTutorial_24
+  - first:
+      213: 8117199588521430225
+    second: qTutorial_25
+  - first:
+      213: 4421855037568520037
+    second: qTutorial_26
+  - first:
+      213: 3892036523482895016
+    second: qTutorial_27
+  - first:
+      213: 7775874119045800153
+    second: qTutorial_28
+  - first:
+      213: 4770110445835664808
+    second: qTutorial_29
+  - first:
+      213: -1743990519186415729
+    second: qTutorial_30
+  - first:
+      213: -3171797033857570870
+    second: qTutorial_31
+  - first:
+      213: 6629368393379896491
+    second: qTutorial_32
+  - first:
+      213: 1996827335700510593
+    second: qTutorial_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: qTutorial_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1632
+        width: 93
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320b933783458a520800000000000000
+      internalID: 2713511376918786083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_1
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1632
+        width: 66
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d79579529c465e0800000000000000
+      internalID: -1917186378062791276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1629
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f34e7bb7ccbd7d0800000000000000
+      internalID: -2892493503917179060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_3
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1630
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef53b056f19ccafd0800000000000000
+      internalID: -2329265770580986370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_4
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1630
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c39b96619060b750800000000000000
+      internalID: 6318656454808802245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_5
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1628
+        width: 143
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12cbd9cc8730ebd0800000000000000
+      internalID: -2603019506798575077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_6
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1632
+        width: 61
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6b07810a5098a80800000000000000
+      internalID: -8464227839503190338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_7
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1629
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc9c04b8ad7997f0800000000000000
+      internalID: -605314511375917858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_8
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1629
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58b3d7658400ba20800000000000000
+      internalID: 3075963516513138783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_9
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1629
+        width: 109
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed9ba679b0aec6c0800000000000000
+      internalID: -4121179890577072658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_10
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1630
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd6923bd97179040800000000000000
+      internalID: 4654214705993838025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_11
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1629
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a33f4e2749107bc0800000000000000
+      internalID: -3787499493108272220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_12
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1632
+        width: 66
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75508107e1e8ed3a0800000000000000
+      internalID: -6638712539316746921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_13
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 1629
+        width: 109
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689cdf35b49430820800000000000000
+      internalID: 2883228774327765382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_14
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 1629
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ef29b4f07fe8e90800000000000000
+      internalID: -7021403123959529899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_15
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 1630
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b31bc37469abc6b0800000000000000
+      internalID: -5274936289629891661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_16
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 1582
+        width: 101
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a1618f634177b80800000000000000
+      internalID: -8397220753886012865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_17
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 1632
+        width: 161
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8107fa0cfcb7f6a00800000000000000
+      internalID: 751955795015331864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_18
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 1629
+        width: 108
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50dbe63a63bdaa60800000000000000
+      internalID: 7686997407760633948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_19
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 1629
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3232810b50208a2f0800000000000000
+      internalID: -961516296991136989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_20
+      rect:
+        serializedVersion: 2
+        x: 2406
+        y: 1632
+        width: 27
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e64552ebfec9410800000000000000
+      internalID: 1485325577074536047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_21
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1078
+        width: 224
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ab8ab658ce990e0800000000000000
+      internalID: -2262517279995938187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 941
+        width: 52
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d1a143e87ae91090800000000000000
+      internalID: -8063155852900458031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_23
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 562
+        width: 407
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81837043a39e8c10800000000000000
+      internalID: 2057744409125159308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_24
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 852
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94220b05572c9af80800000000000000
+      internalID: -8094725046101073335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_25
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 614
+        width: 202
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc44ccd40616a070800000000000000
+      internalID: 8117199588521430225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_26
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 852
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f0b8a8ab59d5d30800000000000000
+      internalID: 4421855037568520037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_27
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 423
+        width: 419
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a25b03e89a430630800000000000000
+      internalID: 3892036523482895016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_28
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 731
+        width: 181
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0e0eb105479eb60800000000000000
+      internalID: 7775874119045800153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_29
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 731
+        width: 181
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad3a676d26d23240800000000000000
+      internalID: 4770110445835664808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_30
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 480
+        width: 181
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f9e34ecd91cc7e0800000000000000
+      internalID: -1743990519186415729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_31
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 415
+        width: 53
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7284117638bf3d0800000000000000
+      internalID: -3171797033857570870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_32
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 480
+        width: 193
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac5c9c0e6f300c50800000000000000
+      internalID: 6629368393379896491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qTutorial_33
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1
+        width: 241
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187f736d1e726bb10800000000000000
+      internalID: 1996827335700510593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      qTutorial_0: 2713511376918786083
+      qTutorial_1: -1917186378062791276
+      qTutorial_10: 4654214705993838025
+      qTutorial_11: -3787499493108272220
+      qTutorial_12: -6638712539316746921
+      qTutorial_13: 2883228774327765382
+      qTutorial_14: -7021403123959529899
+      qTutorial_15: -5274936289629891661
+      qTutorial_16: -8397220753886012865
+      qTutorial_17: 751955795015331864
+      qTutorial_18: 7686997407760633948
+      qTutorial_19: -961516296991136989
+      qTutorial_2: -2892493503917179060
+      qTutorial_20: 1485325577074536047
+      qTutorial_21: -2262517279995938187
+      qTutorial_22: -8063155852900458031
+      qTutorial_23: 2057744409125159308
+      qTutorial_24: -8094725046101073335
+      qTutorial_25: 8117199588521430225
+      qTutorial_26: 4421855037568520037
+      qTutorial_27: 3892036523482895016
+      qTutorial_28: 7775874119045800153
+      qTutorial_29: 4770110445835664808
+      qTutorial_3: -2329265770580986370
+      qTutorial_30: -1743990519186415729
+      qTutorial_31: -3171797033857570870
+      qTutorial_32: 6629368393379896491
+      qTutorial_33: 1996827335700510593
+      qTutorial_4: 6318656454808802245
+      qTutorial_5: -2603019506798575077
+      qTutorial_6: -8464227839503190338
+      qTutorial_7: -605314511375917858
+      qTutorial_8: 3075963516513138783
+      qTutorial_9: -4121179890577072658
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
