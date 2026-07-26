@@ -36,7 +36,7 @@ public class Boss : MonoBehaviour
     {
         rate = 1;
         appliedOperation = "";
-        countdown = 100;
+        // countdown is set by LevelManager from LevelData — don't hardcode it here.
         sr = transform.Find("Sprite").GetComponent<SpriteRenderer>();
         material = sr.material;
         countdownDisplay.Init(display, countdown, countdownDisplaySmoothTime);

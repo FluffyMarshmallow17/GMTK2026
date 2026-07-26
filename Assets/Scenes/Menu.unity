@@ -608,7 +608,6 @@ MonoBehaviour:
   selectPrefab: {fileID: 5563583969229557322, guid: 3c872765e04064db8ad76359db80e3e0, type: 3}
   markerFollowSmoothTime: 0.08
   levelCount: 1
-  unlockAllLevels: 1
 --- !u!1001 &3000000010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -729,7 +728,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5189479915956194574, guid: ed990850eeb964cddabcfa9e297ee5e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 5189479915956194574, guid: ed990850eeb964cddabcfa9e297ee5e8, type: 3}
       propertyPath: m_LocalPosition.y
