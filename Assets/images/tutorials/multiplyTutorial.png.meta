@@ -1,109 +1,109 @@
 fileFormatVersion: 2
-guid: 5ff14bcca2e6c43b99b5ce542185f2b8
+guid: 8130caa64fabd405c9b38d2837740547
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2713511376918786083
-    second: qTutorial_0
+      213: 5162736924463033551
+    second: multiplyTutorial_0
   - first:
-      213: -1917186378062791276
-    second: qTutorial_1
+      213: 1415697358935017806
+    second: multiplyTutorial_1
   - first:
-      213: -2892493503917179060
-    second: qTutorial_2
+      213: 110907263051464821
+    second: multiplyTutorial_2
   - first:
-      213: -2329265770580986370
-    second: qTutorial_3
+      213: -792711292910122822
+    second: multiplyTutorial_3
   - first:
-      213: 6318656454808802245
-    second: qTutorial_4
+      213: -3065366646302437027
+    second: multiplyTutorial_4
   - first:
-      213: -2603019506798575077
-    second: qTutorial_5
+      213: 9094572780340001987
+    second: multiplyTutorial_5
   - first:
-      213: -8464227839503190338
-    second: qTutorial_6
+      213: 5562589787468446432
+    second: multiplyTutorial_6
   - first:
-      213: -605314511375917858
-    second: qTutorial_7
+      213: -2262511094413463572
+    second: multiplyTutorial_7
   - first:
-      213: 3075963516513138783
-    second: qTutorial_8
+      213: -8714966918181061593
+    second: multiplyTutorial_8
   - first:
-      213: -4121179890577072658
-    second: qTutorial_9
+      213: 955298632101265864
+    second: multiplyTutorial_9
   - first:
-      213: 4654214705993838025
-    second: qTutorial_10
+      213: 2276698358066223724
+    second: multiplyTutorial_10
   - first:
-      213: -3787499493108272220
-    second: qTutorial_11
+      213: -2080401990405177057
+    second: multiplyTutorial_11
   - first:
-      213: -6638712539316746921
-    second: qTutorial_12
+      213: -7612683077117258392
+    second: multiplyTutorial_12
   - first:
-      213: 2883228774327765382
-    second: qTutorial_13
+      213: 6948698837365159206
+    second: multiplyTutorial_13
   - first:
-      213: -7021403123959529899
-    second: qTutorial_14
+      213: 7002023583386158395
+    second: multiplyTutorial_14
   - first:
-      213: -5274936289629891661
-    second: qTutorial_15
+      213: 5826397135701055396
+    second: multiplyTutorial_15
   - first:
-      213: -8397220753886012865
-    second: qTutorial_16
+      213: -4244297699923786632
+    second: multiplyTutorial_16
   - first:
-      213: 751955795015331864
-    second: qTutorial_17
+      213: -6765992715308082124
+    second: multiplyTutorial_17
   - first:
-      213: 7686997407760633948
-    second: qTutorial_18
+      213: 8304360424877787132
+    second: multiplyTutorial_18
   - first:
-      213: -961516296991136989
-    second: qTutorial_19
+      213: 5141657118513576747
+    second: multiplyTutorial_19
   - first:
-      213: 1485325577074536047
-    second: qTutorial_20
+      213: -9114348987638470972
+    second: multiplyTutorial_20
   - first:
-      213: -2262517279995938187
-    second: qTutorial_21
+      213: -6534055434179519950
+    second: multiplyTutorial_21
   - first:
-      213: -8063155852900458031
-    second: qTutorial_22
+      213: -8732341386894306147
+    second: multiplyTutorial_22
   - first:
-      213: 2057744409125159308
-    second: qTutorial_23
+      213: -2425454619587338311
+    second: multiplyTutorial_23
   - first:
-      213: -8094725046101073335
-    second: qTutorial_24
+      213: 1114658552098126920
+    second: multiplyTutorial_24
   - first:
-      213: 8117199588521430225
-    second: qTutorial_25
+      213: -5583132373067569909
+    second: multiplyTutorial_25
   - first:
-      213: 4421855037568520037
-    second: qTutorial_26
+      213: 18422461801463865
+    second: multiplyTutorial_26
   - first:
-      213: 3892036523482895016
-    second: qTutorial_27
+      213: -9089612197426660805
+    second: multiplyTutorial_27
   - first:
-      213: 7775874119045800153
-    second: qTutorial_28
+      213: -4555826490670219551
+    second: multiplyTutorial_28
   - first:
-      213: 4770110445835664808
-    second: qTutorial_29
+      213: 2144993046009700974
+    second: multiplyTutorial_29
   - first:
-      213: -1743990519186415729
-    second: qTutorial_30
+      213: -2031037824620025200
+    second: multiplyTutorial_30
   - first:
-      213: -3171797033857570870
-    second: qTutorial_31
+      213: -4220423328219053714
+    second: multiplyTutorial_31
   - first:
-      213: 6629368393379896491
-    second: qTutorial_32
+      213: 3380832731743221379
+    second: multiplyTutorial_32
   - first:
-      213: 1996827335700510593
-    second: qTutorial_33
+      213: -3770000420169296003
+    second: multiplyTutorial_33
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -199,13 +199,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: qTutorial_0
+      name: multiplyTutorial_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 1632
-        width: 93
-        height: 142
+        x: 546
+        y: 1620
+        width: 206
+        height: 177
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 320b933783458a520800000000000000
-      internalID: 2713511376918786083
+      spriteID: fcc696321e9b5a740800000000000000
+      internalID: 5162736924463033551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_1
+      name: multiplyTutorial_1
       rect:
         serializedVersion: 2
-        x: 117
-        y: 1632
-        width: 66
-        height: 105
+        x: 913
+        y: 1620
+        width: 33
+        height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 49d79579529c465e0800000000000000
-      internalID: -1917186378062791276
+      spriteID: e49c7cc4f3195a310800000000000000
+      internalID: 1415697358935017806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_2
+      name: multiplyTutorial_2
       rect:
         serializedVersion: 2
-        x: 180
-        y: 1629
-        width: 103
-        height: 108
+        x: 967
+        y: 1620
+        width: 76
+        height: 167
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4f34e7bb7ccbd7d0800000000000000
-      internalID: -2892493503917179060
+      spriteID: 570813171950a8100800000000000000
+      internalID: 110907263051464821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_3
+      name: multiplyTutorial_3
       rect:
         serializedVersion: 2
-        x: 290
-        y: 1630
-        width: 79
-        height: 108
+        x: 1060
+        y: 1761
+        width: 35
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +280,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef53b056f19ccafd0800000000000000
-      internalID: -2329265770580986370
+      spriteID: ab8c6a07749bff4f0800000000000000
+      internalID: -792711292910122822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_4
+      name: multiplyTutorial_4
       rect:
         serializedVersion: 2
-        x: 377
-        y: 1630
-        width: 79
-        height: 108
+        x: 1269
+        y: 1620
+        width: 34
+        height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,20 +302,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c39b96619060b750800000000000000
-      internalID: 6318656454808802245
+      spriteID: d5110d4b641a575d0800000000000000
+      internalID: -3065366646302437027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_5
+      name: multiplyTutorial_5
       rect:
         serializedVersion: 2
-        x: 515
-        y: 1628
-        width: 143
-        height: 150
+        x: 1329
+        y: 1761
+        width: 35
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,20 +324,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b12cbd9cc8730ebd0800000000000000
-      internalID: -2603019506798575077
+      spriteID: 3cc3a1432c9663e70800000000000000
+      internalID: 9094572780340001987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_6
+      name: multiplyTutorial_6
       rect:
         serializedVersion: 2
-        x: 719
-        y: 1632
-        width: 61
-        height: 134
+        x: 1723
+        y: 1672
+        width: 29
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,20 +346,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb6b07810a5098a80800000000000000
-      internalID: -8464227839503190338
+      spriteID: 0eab54990f9423d40800000000000000
+      internalID: 5562589787468446432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_7
+      name: multiplyTutorial_7
       rect:
         serializedVersion: 2
-        x: 787
-        y: 1629
-        width: 103
-        height: 108
+        x: 772
+        y: 1616
+        width: 118
+        height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,20 +368,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edc9c04b8ad7997f0800000000000000
-      internalID: -605314511375917858
+      spriteID: cefea1d9522f990e0800000000000000
+      internalID: -2262511094413463572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_8
+      name: multiplyTutorial_8
       rect:
         serializedVersion: 2
-        x: 947
-        y: 1629
-        width: 109
-        height: 108
+        x: 1061
+        y: 1620
+        width: 33
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,20 +390,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f58b3d7658400ba20800000000000000
-      internalID: 3075963516513138783
+      spriteID: 72c798403c73e0780800000000000000
+      internalID: -8714966918181061593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_9
+      name: multiplyTutorial_9
       rect:
         serializedVersion: 2
-        x: 1073
-        y: 1629
-        width: 109
-        height: 155
+        x: 1119
+        y: 1557
+        width: 136
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,20 +412,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eed9ba679b0aec6c0800000000000000
-      internalID: -4121179890577072658
+      spriteID: 8c100d46b07e14d00800000000000000
+      internalID: 955298632101265864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_10
+      name: multiplyTutorial_10
       rect:
         serializedVersion: 2
-        x: 1189
-        y: 1630
-        width: 80
-        height: 108
+        x: 1330
+        y: 1620
+        width: 33
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,20 +434,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cd6923bd97179040800000000000000
-      internalID: 4654214705993838025
+      spriteID: c6a904d1815789f10800000000000000
+      internalID: 2276698358066223724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_11
+      name: multiplyTutorial_11
       rect:
         serializedVersion: 2
-        x: 1275
-        y: 1629
-        width: 103
-        height: 108
+        x: 1380
+        y: 1616
+        width: 128
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,20 +456,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a33f4e2749107bc0800000000000000
-      internalID: -3787499493108272220
+      spriteID: f1142e3896de023e0800000000000000
+      internalID: -2080401990405177057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_12
+      name: multiplyTutorial_12
       rect:
         serializedVersion: 2
-        x: 1391
-        y: 1632
-        width: 66
-        height: 105
+        x: 1525
+        y: 1620
+        width: 81
+        height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,20 +478,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75508107e1e8ed3a0800000000000000
-      internalID: -6638712539316746921
+      spriteID: 8655cc833115a5690800000000000000
+      internalID: -7612683077117258392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_13
+      name: multiplyTutorial_13
       rect:
         serializedVersion: 2
-        x: 1465
-        y: 1629
-        width: 109
-        height: 155
+        x: 1608
+        y: 1617
+        width: 99
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,20 +500,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 689cdf35b49430820800000000000000
-      internalID: 2883228774327765382
+      spriteID: 625f15cd6ccbe6060800000000000000
+      internalID: 6948698837365159206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_14
+      name: multiplyTutorial_14
       rect:
         serializedVersion: 2
-        x: 1631
-        y: 1629
-        width: 109
-        height: 108
+        x: 1720
+        y: 1616
+        width: 34
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,20 +522,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55ef29b4f07fe8e90800000000000000
-      internalID: -7021403123959529899
+      spriteID: b35c3acc95f2c2160800000000000000
+      internalID: 7002023583386158395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_15
+      name: multiplyTutorial_15
       rect:
         serializedVersion: 2
-        x: 1798
-        y: 1630
-        width: 80
-        height: 108
+        x: 219
+        y: 1022
+        width: 228
+        height: 402
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,20 +544,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b31bc37469abc6b0800000000000000
-      internalID: -5274936289629891661
+      spriteID: 4a790d943558bd050800000000000000
+      internalID: 5826397135701055396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_16
+      name: multiplyTutorial_16
       rect:
         serializedVersion: 2
-        x: 1883
-        y: 1582
-        width: 101
-        height: 152
+        x: 488
+        y: 1048
+        width: 68
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -566,20 +566,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3a1618f634177b80800000000000000
-      internalID: -8397220753886012865
+      spriteID: 874090baab93915c0800000000000000
+      internalID: -4244297699923786632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_17
+      name: multiplyTutorial_17
       rect:
         serializedVersion: 2
-        x: 1997
-        y: 1632
-        width: 161
-        height: 105
+        x: 757
+        y: 1084
+        width: 243
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -588,129 +588,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8107fa0cfcb7f6a00800000000000000
-      internalID: 751955795015331864
+      spriteID: 43c5e23297d5a12a0800000000000000
+      internalID: -6765992715308082124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_18
+      name: multiplyTutorial_18
       rect:
         serializedVersion: 2
-        x: 2176
-        y: 1629
-        width: 108
-        height: 155
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c50dbe63a63bdaa60800000000000000
-      internalID: 7686997407760633948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: qTutorial_19
-      rect:
-        serializedVersion: 2
-        x: 2292
-        y: 1629
-        width: 103
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3232810b50208a2f0800000000000000
-      internalID: -961516296991136989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: qTutorial_20
-      rect:
-        serializedVersion: 2
-        x: 2406
-        y: 1632
-        width: 27
-        height: 152
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f6e64552ebfec9410800000000000000
-      internalID: 1485325577074536047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: qTutorial_21
-      rect:
-        serializedVersion: 2
-        x: 1169
-        y: 1078
-        width: 224
-        height: 333
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57ab8ab658ce990e0800000000000000
-      internalID: -2262517279995938187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: qTutorial_22
-      rect:
-        serializedVersion: 2
-        x: 1585
-        y: 941
-        width: 52
-        height: 181
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d1a143e87ae91090800000000000000
-      internalID: -8063155852900458031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: qTutorial_23
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 562
-        width: 407
+        x: 1095
+        y: 1066
+        width: 406
         height: 307
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -720,84 +610,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c81837043a39e8c10800000000000000
-      internalID: 2057744409125159308
+      spriteID: cf707abdec30f3370800000000000000
+      internalID: 8304360424877787132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_24
+      name: multiplyTutorial_19
       rect:
         serializedVersion: 2
-        x: 1354
-        y: 852
-        width: 181
-        height: 193
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94220b05572c9af80800000000000000
-      internalID: -8094725046101073335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: qTutorial_25
-      rect:
-        serializedVersion: 2
-        x: 1527
-        y: 614
-        width: 202
-        height: 290
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1dc44ccd40616a070800000000000000
-      internalID: 8117199588521430225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: qTutorial_26
-      rect:
-        serializedVersion: 2
-        x: 1687
-        y: 852
-        width: 181
-        height: 193
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 56f0b8a8ab59d5d30800000000000000
-      internalID: 4421855037568520037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: qTutorial_27
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 423
+        x: 1551
+        y: 1003
         width: 419
         height: 419
       alignment: 0
@@ -808,20 +632,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a25b03e89a430630800000000000000
-      internalID: 3892036523482895016
+      spriteID: b2b3cd958e5da5740800000000000000
+      internalID: 5141657118513576747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_28
+      name: multiplyTutorial_20
       rect:
         serializedVersion: 2
-        x: 1289
-        y: 731
-        width: 181
-        height: 52
+        x: 175
+        y: 559
+        width: 277
+        height: 402
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -830,20 +654,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d0e0eb105479eb60800000000000000
-      internalID: 7775874119045800153
+      spriteID: 4c62ed8b2e3538180800000000000000
+      internalID: -9114348987638470972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_29
+      name: multiplyTutorial_21
       rect:
         serializedVersion: 2
-        x: 1751
-        y: 731
-        width: 181
-        height: 52
+        x: 772
+        y: 602
+        width: 220
+        height: 322
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -852,20 +676,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ad3a676d26d23240800000000000000
-      internalID: 4770110445835664808
+      spriteID: 23ad407933f5255a0800000000000000
+      internalID: -6534055434179519950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_30
+      name: multiplyTutorial_22
       rect:
         serializedVersion: 2
-        x: 1354
-        y: 480
-        width: 181
-        height: 181
+        x: 1091
+        y: 638
+        width: 406
+        height: 307
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -874,20 +698,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8f9e34ecd91cc7e0800000000000000
-      internalID: -1743990519186415729
+      spriteID: d9419b846cd70d680800000000000000
+      internalID: -8732341386894306147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_31
+      name: multiplyTutorial_23
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 415
-        width: 53
-        height: 182
+        x: 1569
+        y: 562
+        width: 379
+        height: 378
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -896,20 +720,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac7284117638bf3d0800000000000000
-      internalID: -3171797033857570870
+      spriteID: 9bf9aa4cfdd075ed0800000000000000
+      internalID: -2425454619587338311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_32
+      name: multiplyTutorial_24
       rect:
         serializedVersion: 2
-        x: 1675
-        y: 480
-        width: 193
-        height: 181
+        x: 488
+        y: 561
+        width: 68
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -918,20 +742,64 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bac5c9c0e6f300c50800000000000000
-      internalID: 6629368393379896491
+      spriteID: 84cf8a32c00187f00800000000000000
+      internalID: 1114658552098126920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qTutorial_33
+      name: multiplyTutorial_25
       rect:
         serializedVersion: 2
-        x: 1365
+        x: 220
+        y: 53
+        width: 227
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05e259ffaab482b0800000000000000
+      internalID: -5583132373067569909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_26
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 190
+        width: 116
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9308093a123714000800000000000000
+      internalID: 18422461801463865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_27
+      rect:
+        serializedVersion: 2
+        x: 1012
         y: 1
-        width: 241
-        height: 366
+        width: 487
+        height: 487
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -940,8 +808,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 187f736d1e726bb10800000000000000
-      internalID: 1996827335700510593
+      spriteID: b3a73528dd53bd180800000000000000
+      internalID: -9089612197426660805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_28
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 196
+        width: 89
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee794dc1f376c0c0800000000000000
+      internalID: -4555826490670219551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_29
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 139
+        width: 155
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6267198fcb84cd10800000000000000
+      internalID: 2144993046009700974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_30
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 74
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a24220cdd40d3e0800000000000000
+      internalID: -2031037824620025200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_31
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 116
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e614bbff75b0e65c0800000000000000
+      internalID: -4220423328219053714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_32
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 116
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386719405712bee20800000000000000
+      internalID: 3380832731743221379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplyTutorial_33
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 74
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d775cb897944eabc0800000000000000
+      internalID: -3770000420169296003
       vertices: []
       indices: 
       edges: []
@@ -960,40 +960,40 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      qTutorial_0: 2713511376918786083
-      qTutorial_1: -1917186378062791276
-      qTutorial_10: 4654214705993838025
-      qTutorial_11: -3787499493108272220
-      qTutorial_12: -6638712539316746921
-      qTutorial_13: 2883228774327765382
-      qTutorial_14: -7021403123959529899
-      qTutorial_15: -5274936289629891661
-      qTutorial_16: -8397220753886012865
-      qTutorial_17: 751955795015331864
-      qTutorial_18: 7686997407760633948
-      qTutorial_19: -961516296991136989
-      qTutorial_2: -2892493503917179060
-      qTutorial_20: 1485325577074536047
-      qTutorial_21: -2262517279995938187
-      qTutorial_22: -8063155852900458031
-      qTutorial_23: 2057744409125159308
-      qTutorial_24: -8094725046101073335
-      qTutorial_25: 8117199588521430225
-      qTutorial_26: 4421855037568520037
-      qTutorial_27: 3892036523482895016
-      qTutorial_28: 7775874119045800153
-      qTutorial_29: 4770110445835664808
-      qTutorial_3: -2329265770580986370
-      qTutorial_30: -1743990519186415729
-      qTutorial_31: -3171797033857570870
-      qTutorial_32: 6629368393379896491
-      qTutorial_33: 1996827335700510593
-      qTutorial_4: 6318656454808802245
-      qTutorial_5: -2603019506798575077
-      qTutorial_6: -8464227839503190338
-      qTutorial_7: -605314511375917858
-      qTutorial_8: 3075963516513138783
-      qTutorial_9: -4121179890577072658
+      multiplyTutorial_0: 5162736924463033551
+      multiplyTutorial_1: 1415697358935017806
+      multiplyTutorial_10: 2276698358066223724
+      multiplyTutorial_11: -2080401990405177057
+      multiplyTutorial_12: -7612683077117258392
+      multiplyTutorial_13: 6948698837365159206
+      multiplyTutorial_14: 7002023583386158395
+      multiplyTutorial_15: 5826397135701055396
+      multiplyTutorial_16: -4244297699923786632
+      multiplyTutorial_17: -6765992715308082124
+      multiplyTutorial_18: 8304360424877787132
+      multiplyTutorial_19: 5141657118513576747
+      multiplyTutorial_2: 110907263051464821
+      multiplyTutorial_20: -9114348987638470972
+      multiplyTutorial_21: -6534055434179519950
+      multiplyTutorial_22: -8732341386894306147
+      multiplyTutorial_23: -2425454619587338311
+      multiplyTutorial_24: 1114658552098126920
+      multiplyTutorial_25: -5583132373067569909
+      multiplyTutorial_26: 18422461801463865
+      multiplyTutorial_27: -9089612197426660805
+      multiplyTutorial_28: -4555826490670219551
+      multiplyTutorial_29: 2144993046009700974
+      multiplyTutorial_3: -792711292910122822
+      multiplyTutorial_30: -2031037824620025200
+      multiplyTutorial_31: -4220423328219053714
+      multiplyTutorial_32: 3380832731743221379
+      multiplyTutorial_33: -3770000420169296003
+      multiplyTutorial_4: -3065366646302437027
+      multiplyTutorial_5: 9094572780340001987
+      multiplyTutorial_6: 5562589787468446432
+      multiplyTutorial_7: -2262511094413463572
+      multiplyTutorial_8: -8714966918181061593
+      multiplyTutorial_9: 955298632101265864
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -32,7 +32,7 @@ public class SceneLoader : MonoBehaviour
     public int levelCount = 1;
 
     // TEMPORARY: unlocks every level regardless of progress. Set to false to restore normal locking.
-    public bool unlockAllLevels = true;
+    public bool unlockAllLevels = false; // TODO
 
     readonly List<LevelIcon> icons = new List<LevelIcon>();
     Transform marker;
@@ -134,6 +134,8 @@ public class SceneLoader : MonoBehaviour
         if (idx < 0) return;
 
         // Clicking a level locks the marker onto it and plays it.
+        if (idx != selectedIndex)
+            PlaySelectSound();
         selectedIndex = idx;
         UpdateSelectionVisuals();
         ConfirmSelection();
@@ -155,6 +157,12 @@ public class SceneLoader : MonoBehaviour
                 return;
             }
         }
+    }
+
+    void PlaySelectSound()
+    {
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.PlaySFX(SFX.Target);
     }
 
     void ConfirmSelection()

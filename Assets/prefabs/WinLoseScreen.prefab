@@ -172,9 +172,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LoseScreen
   returnToMenuButton: {fileID: 6122840860287740190}
   retryButton: {fileID: 8211901485179807573}
-  selectSprite: {fileID: 21300000, guid: acacba5ebed0347a2acd45fe34a36b98, type: 3}
-  selectMaterial: {fileID: 2100000, guid: 23c5c520933e249d3a6f835ded5d7d3d, type: 2}
-  markerPadding: {x: 40, y: 40}
 --- !u!1 &3178929196899403888
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,9 +538,7 @@ MonoBehaviour:
   winScreenUI: {fileID: 0}
   nextLevelButton: {fileID: 3325076640271986346}
   menuButton: {fileID: 654612660168623204}
-  selectSprite: {fileID: 21300000, guid: acacba5ebed0347a2acd45fe34a36b98, type: 3}
-  selectMaterial: {fileID: 2100000, guid: 23c5c520933e249d3a6f835ded5d7d3d, type: 2}
-  markerPadding: {x: 40, y: 40}
+  WinMusic: {fileID: 8300000, guid: ab28633acf1154bb5a3c2f68d40715a6, type: 3}
 --- !u!1 &6122840860287740190
 GameObject:
   m_ObjectHideFlags: 0

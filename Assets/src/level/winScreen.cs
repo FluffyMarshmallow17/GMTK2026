@@ -19,6 +19,7 @@ public class WinScreen : MonoBehaviour
     Material winArtMaterial;
     Coroutine revealRoutine;
     bool transitioning;
+    public AudioClip WinMusic;
 
     GameObject BranchRoot =>
         transform.parent != null && transform.parent.parent != null
@@ -127,7 +128,7 @@ public class WinScreen : MonoBehaviour
         FitWinArtToCamera();
         BranchRoot.SetActive(true);
         PlayWinReveal();
-        AudioManager.Instance.PlayWinMusic();
+        AudioManager.Instance.PlayMusic(WinMusic); 
 
         int totalLevels = UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings - 1;
 
