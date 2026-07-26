@@ -186,6 +186,7 @@ public class Player : MonoBehaviour
         {
             int before = countdown;
             countdown = (int) ((double) countdown * 0.75);
+            AudioManager.Instance.PlaySFX(SFX.Subtract);
             time = 0;
             GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity, GetInstanceID());
         }
