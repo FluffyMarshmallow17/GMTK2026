@@ -35,9 +35,6 @@ public class SceneLoader : MonoBehaviour
     [Tooltip("Fallback used only if no 'Level N' scenes are found in Build Settings.")]
     public int levelCount = 1;
 
-    // TEMPORARY: unlocks every level regardless of progress. Set to false to restore normal locking.
-    public bool unlockAllLevels = false; // TODO
-
     readonly List<LevelIcon> icons = new List<LevelIcon>();
     Transform marker;
     Vector3 markerVelocity;
@@ -63,7 +60,7 @@ public class SceneLoader : MonoBehaviour
             float x = (col - (itemsInRow - 1) * 0.5f) * spacing;
             float y = ((rows - 1) * 0.5f - row) * rowSpacing;
 
-            bool unlocked = unlockAllLevels || level <= levelsUnlocked;
+            bool unlocked = level <= levelsUnlocked;
             icons.Add(CreateIcon(level, new Vector3(x, y, 0f), unlocked));
         }
 

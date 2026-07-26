@@ -42,10 +42,10 @@ public class Player : MonoBehaviour
     Vector2 coastVelocity;
     Vector2 recoilVelocity;
 
-    // While touching the boss, both drain 10% of their countdown per second.
+    // While touching the boss, both lose the same amount: 20% of the larger of the
+    // two countdowns per second.
     Boss touchingBoss;
-    float playerBossDrainAccum;
-    float bossBossDrainAccum;
+    float bossDrainAccum;
     [Tooltip("Sustained camera shake (0-1) while draining against the boss.")]
     public float bossDrainShake = 0.4f;
 
@@ -225,22 +225,19 @@ public class Player : MonoBehaviour
 
         float dt = Time.fixedDeltaTime;
 
-        playerBossDrainAccum += Mathf.Max(0, countdown) * 0.33f * dt;
-        int playerLoss = (int)playerBossDrainAccum;
-        if (playerLoss > 0)
+        // Both lose the same amount each second: 20% of the larger countdown.
+        int larger = Mathf.Max(Mathf.Max(0, countdown), Mathf.Max(0, touchingBoss.getCountdown()));
+        bossDrainAccum += larger * 0.20f * dt;
+        int loss = (int)bossDrainAccum;
+        if (loss > 0)
         {
-            playerBossDrainAccum -= playerLoss;
-            int before = countdown;
-            countdown -= playerLoss;
-            GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity, GetInstanceID());
-        }
+            bossDrainAccum -= loss;
 
-        bossBossDrainAccum += Mathf.Max(0, touchingBoss.getCountdown()) * 0.33f * dt;
-        int bossLoss = (int)bossBossDrainAccum;
-        if (bossLoss > 0)
-        {
-            bossBossDrainAccum -= bossLoss;
-            touchingBoss.decreaseCountdown(bossLoss);
+            int before = countdown;
+            countdown -= loss;
+            GridBackground.PulseFromChange(transform.position, before, countdown, rb.linearVelocity, GetInstanceID());
+
+            touchingBoss.decreaseCountdown(loss);
         }
     }
 
@@ -254,7 +251,7 @@ public class Player : MonoBehaviour
         if (operationFlash.IsActive)
             operationFlash.Update();
         else if (!displayFrozen)
-            countdownDisplay.Update(countdown);
+            countdownDisplay.Update(Mathf.Max(0, countdown)); // never show negatives before the cinematic
         if (controls.Player.TakeIn.WasPressedThisFrame())
         {
             if (inConnection)
@@ -457,8 +454,7 @@ public class Player : MonoBehaviour
         if (boss != null && boss == touchingBoss)
         {
             touchingBoss = null;
-            playerBossDrainAccum = 0f;
-            bossBossDrainAccum = 0f;
+            bossDrainAccum = 0f;
         }
     }
 
