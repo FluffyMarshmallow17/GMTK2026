@@ -140,6 +140,14 @@ public class WinScreen : MonoBehaviour
         else
         {
             nextLevelButton.SetActive(false);
+            // No "Next Level" button on the final level — center the Menu button.
+            var menuRect = menuButton.GetComponent<RectTransform>();
+            if (menuRect != null)
+            {
+                Vector2 pos = menuRect.anchoredPosition;
+                pos.x = 0f;
+                menuRect.anchoredPosition = pos;
+            }
         }
 
         menuButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => ReturnToMenu());

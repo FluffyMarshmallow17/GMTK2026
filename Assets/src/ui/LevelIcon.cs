@@ -25,8 +25,8 @@ public class LevelIcon : MonoBehaviour
     [Tooltip("Brightness swing of the glow (0 = none).")]
     public float glowPulse = 0.15f;
     public float glowSpeed = 2f;
-    [Tooltip("Color multiplier applied to locked levels.")]
-    public Color lockedTint = new Color(0.35f, 0.35f, 0.4f, 1f);
+    [Tooltip("Color/opacity multiplier applied to locked levels (slightly faded).")]
+    public Color lockedTint = new Color(0.55f, 0.55f, 0.6f, 0.55f);
 
     SpriteRenderer sr;
     Vector3 home;

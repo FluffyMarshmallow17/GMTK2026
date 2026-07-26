@@ -15,6 +15,9 @@ public class Boss : MonoBehaviour
     OperationFlash operationFlash = new OperationFlash();
     bool displayFrozen;
 
+    Sprite pendingOpSprite;
+    Material pendingOpMaterial;
+
     void Awake()
     {
         rate = 1;
@@ -111,6 +114,8 @@ public class Boss : MonoBehaviour
                 return;
             }
             operationFlash.Play(block.GetSymbolSprite(), block.GetSymbolMaterial());
+            pendingOpSprite = block.GetSymbolSprite();
+            pendingOpMaterial = block.GetSymbolMaterial();
         } else {
             if (int.TryParse(affect, out int number)) {
                 int before = countdown;
@@ -139,6 +144,9 @@ public class Boss : MonoBehaviour
                 }
                 if (rate != rateBefore)
                     CameraShake.ShakeFromChange((float)rateBefore, (float)rate);
+                operationFlash.PlayCombo(pendingOpSprite, pendingOpMaterial, block.GetSymbolSprite(), block.GetSymbolMaterial());
+                pendingOpSprite = null;
+                pendingOpMaterial = null;
                 appliedOperation = "";
             } else { // attempted to apply an operation on top of an operation
                 // red error effect
