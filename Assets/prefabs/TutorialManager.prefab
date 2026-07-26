@@ -51,7 +51,7 @@ MonoBehaviour:
   qAbsorb: {fileID: 0}
   symbolTutorial: {fileID: 0}
   intro: {fileID: 0}
-  popupHeight: 600
+  popupHeight: 350
   bottomMargin: 120
   holdDuration: 6
   fadeDuration: 0.3

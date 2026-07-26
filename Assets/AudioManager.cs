@@ -61,7 +61,7 @@ public class AudioManager : MonoBehaviour
         src.pitch = 1f + Random.Range(-entry.pitchJitter, entry.pitchJitter);
         src.PlayOneShot(entry.clip, entry.volume);
     }
-    
+
     // Music
     public void PlayMusic(AudioClip clip, bool restart = true)
     {
